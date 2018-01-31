@@ -78,12 +78,9 @@ Administrators <../admin/admin.html>`__.
        1. The adapter used to send outgoing SMSes. Note that SMS replies
           may be sent out via a different adapter, depending on the
           adapter by which they arrived.
-       2. Our current provider choices are IntelliSMS and Twilio (refer
+       2. Our current provider is Twilio (refer
           to section  for how to set this up)
 
-8.  IntelliSMS Settings:
-
-    1. Enter the username for the IntelliSMS account
 
 9.  FrontlineCloud Settings:
 

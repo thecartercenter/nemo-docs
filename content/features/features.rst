@@ -42,182 +42,8 @@ To send a Broadcast Message:
 7. | Click **Send**
    |  |broadcasts edited|
 
-12.2. Converting and Displaying GPS Coordinates in ARcGIS 10
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are many ways of representing locations.  One of the most common
-uses angular latitude and longitude coordinates to specify the location
-of a point.  These `Geographic
-coordinates <http://en.wikipedia.org/wiki/Geographic_coordinate_system>`__
-may be expressed in several different notations, including Decimal
-Degrees (DD), Degrees Decimal Minutes (DDM), and Degrees Minutes and
-Seconds (DMS). The formula for `converting Degree Minutes and Seconds to
-Decimal
-Degrees <http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html>`__
-is discussed in the ArcGIS 10 Help.  Another common method is to use a
-projected coordinate system and X and Y coordinate pairs, that is, two
-sets of numbers in a planar Cartesian system.
-
-Gridded systems, like Universal Transverse Mercator
-(`UTM <http://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system>`__),
-United States National Grid
-(`USNG <http://en.wikipedia.org/wiki/USNG>`__), Military Grid Reference
-System (`MGRS <http://en.wikipedia.org/wiki/MGRS>`__) divide the world
-into zones which are projected and then overlaid with one or more
-grids.  Within the grids, point locations are specified by their
-position East and North the zone origin or the southeast corner of the
-cell. For USNG and MGRS the numeric values of the northing and easting
-can vary from 1 to 5 digits, depending on the precision of the location
-(they must both use the same number of digits) and then the values are
-concatenated.
-
-Two less frequently used systems, the Global Area Reference System
-(`GARS <http://en.wikipedia.org/wiki/Global_Area_Reference_System>`__)
-and Geographic Reference System
-(`GEOREF <http://en.wikipedia.org/wiki/Georef>`__), divide the world
-into polygonal areas based on different sets of nested grids and encode
-locations as a string of grid ID values.
-
-.. figure:: arcgis-1.png
-   :alt: arcgis 1
-
-Each of these ways of representing a location results in different
-strings of characters with a variety of formats.  This table shows the
-coordinate representation for Philadelphia, Pennsylvania in the US (75°
-9’ 18.382” West longitude by 39° 59’ 0.637” North latitude) in each of
-these systems.  This is not an exhaustive list of the delimiters and
-hemisphere indicators that are used in each system.
-
-ArcGIS 10 can convert coordinates expressed in each of these systems
-into the others, and provides ways of displaying and accepting
-coordinate input in most of them.
-
-**Displaying Coordinates**
-
-.. figure:: arcgis-2.png
-   :alt: arcgis 2
-
-You can see the coordinate value for a place on a map in the ArcMap
-status bar, at the bottom right of the application. The default
-coordinate format in the status bar is based on the units of the first
-layer added to the map, often feet, meters, or degrees of
-longitude/latitude.
-
-.. figure:: arcgis-3.png
-   :alt: arcgis 3
-
-You can change the coordinate display to use any of these systems
-(except GARS and GEOREF) by right-clicking Layers in the table of
-contents and selecting Properties. On the General tab, under Units, you
-can select the type of coordinates you would like to see, for example
-MGRS.
-
-**Go To XY Coordinates**
-
-.. figure:: arcgis-4.png
-   :alt: arcgis 4
-
-If you have a set of coordinates and you want to find their location on
-the map, you can use the Go To XY tool.
-
-.. figure:: arcgis-5.png
-   :alt: arcgis 5
-
-Open the tool from the toolbar, then select a coordinate format. Type
-(or paste) the coordinates into the text box and click one of the
-buttons to Pan to, Zoom to, Flash, Add a Point, Add a Point Labeled with
-Coordinates, or Add a Callout.
-
-The Go To XY tool also keeps a record of recent locations, which you can
-return to by clicking the Recent button and selecting the location. You
-can use this to manually convert coordinates from one format to another.
-To do so, select your input coordinate notation, input your coordinates
-and pan to the location. Then select your new output format and select
-the coordinates from the Recent button.
-
-**Find MGRS coordinates**
-
-.. figure:: arcgis-6.png
-   :alt: arcgis 6
-
-If you work with MGRS coordinates, the Find tool has an MGRS Locator
-that works like the Go To XY tool, but provides additional capabilities
-tailored to the MGRS system.
-
-.. figure:: arcgis-7.png
-   :alt: arcgis 7
-
-To use these, open the Find tool on the Tools toolbar.  In the Find tool
-dialog box, click the Locations tab, select MGRS from the locator
-drop-down list.  Then type (or paste) the coordinate into the MGRS box
-and click Find.
-
-.. figure:: arcgis-8.png
-   :alt: arcgis 8
-
-The tool will return a list of location matches (in our case there
-should only be one). If you right-click on the coordinate you have
-various options for marking the location.
-
-So what’s different about the MGRS Locator?
-
-The locator has options for matching shortened MGRS coordinates when you
-work in the same Grid Zone Designator (GZD).  It has options to pull the
-GZD and 100,000 meter square identifier from the current map center, a
-default value, or use the last one used. This is convenient if you work
-in the same GZD over and over again, you can type “8675725939” or
-“VK8675725939” rather than “18SVK8675725939”, which will save you a few
-extra key strokes when entering your coordinates.
-
-**Converting Tables of Coordinates**
-
-.. figure:: arcgis-9.png
-   :alt: arcgis 9
-
-There may be times when you have a lot of coordinates that you need to
-convert to another system.  If you have the coordinates in a table, you
-can convert all of them by running the Convert Coordinate Notation (CCN)
-geoprocessing tool.
-
-For example, you might convert a table of longitude and latitude values
-in decimal degrees (DD) to MGRS.
-
-.. figure:: arcgis-10.png
-   :alt: arcgis 10
-
-With the CCN tool you can convert between DD, DDM, DMS, UTM, USNG, MGRS,
-GARS, and GEOREF.
-
-The tool takes your table of coordinates and converts them to point
-features with an attribute containing the new output notation.
-
-It is important to note that the CCN tool is a geoprocessing tool and
-represents a single-focus process of converting a table of coordinates;
-its only function is to do the conversion. The output point features do
-not have the same fields as the input table.
-
-If you want the output points to have  all of the attributes of the
-input table (in addition to the new notation field) you must put the
-tool in a `Model Builder
-model <http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html>`__
-that uses the `Join Field
-tool <http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html>`__
-to attach the original fields.
-
-The model would look something like this:
-
-.. figure:: arcgis-11.png
-   :alt: arcgis 11
-
-This table lists the coordinate notations mentioned above, and shows the
-different tools and functions that support them.
-
-.. figure:: arcgis-12.png
-   :alt: arcgis 12
-
-*Content provided by Matt Funk*
-
-12.3. Device Security
+12.2. Device Security
 ^^^^^^^^^^^^^^^^^^^^^
 
 Data sent to ELMO should be set up securely using HTTPS
@@ -239,7 +65,7 @@ here <https://play.google.com/books/reader?id=dnzVBAAAQBAJ&printsec=frontcover&o
 if it is on 6.x, `click
 here <https://play.google.com/books/reader?id=tu6bCgAAQBAJ&printsec=frontcover&output=reader&hl=en&pg=GBS.PP1>`__.
 
-12.3.1. Use a Screen Lock
+12.2.1. Use a Screen Lock
 '''''''''''''''''''''''''
 
 Think of a screen lock as a password to unlock a phone. Using a screen
@@ -282,7 +108,7 @@ use. You will be guided through how to change the screen lock. The
 screen lock options available depend on each device, its operating
 system (OS), and the version of the OS on the device.
 
-12.3.2. Encrypt Device with SD Card Encryption
+12.2.2. Encrypt Device with SD Card Encryption
 ''''''''''''''''''''''''''''''''''''''''''''''
 
 If a device is lost, stolen, or in someone else’s possession, they may
@@ -324,7 +150,7 @@ Some devices require a screen lock if encryption is enabled. Some
 devices only allow certain types of screen locks to be used, such as a
 pin or password, when encryption is enabled.
 
-12.3.3. Turn off Developer Options
+12.2.3. Turn off Developer Options
 ''''''''''''''''''''''''''''''''''
 
 Developer options are settings within the Android system that allow a
@@ -366,7 +192,7 @@ On the top bar inside *Developer Options*, switch the toggle from *On*
 to *Off*. You will know *Developer Options* are turned off when the
 options on the screen are grayed out.
 
-12.3.4. Protection from Harmful Applications
+12.2.4. Protection from Harmful Applications
 ''''''''''''''''''''''''''''''''''''''''''''
 
 Each time an application is installed, it has the potential to access
@@ -437,7 +263,7 @@ If questionable apps have been installed on a device or there are
 applications that are no longer needed on the device, it is recommended
 that these applications be uninstalled for added security.
 
-12.3.5. ODK Collect: Delete after sending forms
+12.2.5. ODK Collect: Delete after sending forms
 '''''''''''''''''''''''''''''''''''''''''''''''
 
 In case you are worried about sensitive information you’ve collected and
