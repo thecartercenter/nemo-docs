@@ -1,0 +1,1571 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing to NEMO Docs &mdash; Elmo 7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Elmo 7.0 documentation" href="../../index.html"/>
+        <link rel="prev" title="Documentation Style Guide" href="../styleguide/styleguide.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Elmo
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getstarted/getstarted.html">1. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../missionsetup/missionsetup.html">2. Setting up a Mission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/settings.html">3. Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formsoverall/formsoverall.html">4. Forms: Overall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formsquestions/formsquestions.html">5. Forms: Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formsoptionsets/formsoptionsets.html">6. Forms: Option Sets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../submitonline/submitonline.html">7. Submitting data: Online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../submittablet/submittablet.html">8. Submitting data: Tablet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../submitsms/submitsms.html">9. Submitting data: SMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../search/search.html">10. Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reports/reports.html">11. Reports and Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/features.html">12. Additional features and information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/admin.html">13. Information for Administrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses/licenses.html">14. About ELMO licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../styleguide/styleguide.html">Documentation Style Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to NEMO Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#authoring-tools-and-environment">Authoring Tools and Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#docs-as-code">Docs as Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#overview-of-workflow">Overview of Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-your-environment">Setting up your Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#terminal-command-line">Terminal (Command Line)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#python">Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#github-and-git">Github and git</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#getting-ready-to-work">Getting Ready to Work</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#clone-the-docs">Clone the Docs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-dependencies">Install Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#workflow-details">Workflow Details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#make-a-new-branch">Make a New Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#work-on-the-docs">Work on the Docs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-view-and-debug">Build, View, and Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#push-your-branch">Push Your Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#issue-a-pull-request">Issue a Pull Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#keep-going">Keep Going</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-in-sphinx">Writing in Sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#indentation">Indentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-files">Documentation Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-css">Custom CSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sections-and-titles">Sections and Titles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#section-labels">Section labels</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-markup">Basic Markup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#emphasis-and-inline-literal">Emphasis and Inline Literal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hyperlinks">Hyperlinks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lists">Lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paragraph-level-markup">Paragraph-level Markup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx-specific-markup">Sphinx-specific Markup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#roles-and-directives">Roles and directives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cross-referencing">Cross referencing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#writing-about-user-interface">Writing about User Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-text-roles">Custom Text Roles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-semantic-markup">Other Semantic Markup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#images-and-figures">Images and Figures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-samples">Code Samples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Elmo</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing to NEMO Docs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/content/contributing/contributing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contributing-to-nemo-docs">
+<h1>Contributing to NEMO Docs<a class="headerlink" href="#contributing-to-nemo-docs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="authoring-tools-and-environment">
+<h2>Authoring Tools and Environment<a class="headerlink" href="#authoring-tools-and-environment" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Developer and authoring tools have lots of options and alternatives. Local tools and workflows presented in this guide are what the author feels would be easiest for a non-coding contributor to set up and use.</p>
+</div>
+<div class="section" id="docs-as-code">
+<span id="id1"></span><h3>Docs as Code<a class="headerlink" href="#docs-as-code" title="Permalink to this headline">¶</a></h3>
+<p>NEMO Documentation follows (as much as possible) the <a class="reference external" href="http://www.writethedocs.org/guide/docs-as-code/">Docs like Code</a> philosophy. This means:</p>
+<ul class="simple">
+<li>Documentation source files are written in a plain text format. (We use <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>.)</li>
+<li>Documentation source files are kept under version control. (We use git and <a class="reference external" href="https://github.com/thecartercenter/nemo-doc">Github</a>.)</li>
+<li>Documentation is built from source to published output using a static site generator. (We use <a class="reference external" href="http://sphinx-doc.org">Sphinx</a>.)</li>
+</ul>
+<p><a class="reference external" href="http://hackwrite.com/posts/docs-as-code/">The ‘Docs as Code’ approach has many advantages</a>, but we are aware that this approach can feel difficult for writers who aren’t used to dealing with the command line. It can also be difficult for coders who are used to this approach, but who typically use simpler authoring tools (like <a class="reference external" href="http://jekyllrb.com">Jekyll</a> and <a class="reference external" href="https://guides.github.com/features/mastering-markdown/">Markdown</a>).</p>
+<p>This section of the Contributor Guide walks through our authoring and publishing workflow and toolchain, to make it as easy as possible for you to contribute.</p>
+</div>
+<div class="section" id="overview-of-workflow">
+<span id="docs-workflow-overview"></span><h3>Overview of Workflow<a class="headerlink" href="#overview-of-workflow" title="Permalink to this headline">¶</a></h3>
+<p>When you first get started you’ll need to:</p>
+<ul class="simple">
+<li>Fork to your own Github Account</li>
+<li>Clone it down to your local machine</li>
+<li>Install dependencies</li>
+</ul>
+<p>And then each time you work you will:</p>
+<ul class="simple">
+<li>Make a branch for a specific task</li>
+<li>Make commits as you go</li>
+<li>Build and view the docs locally
+- Correct any errors and commit</li>
+<li>Push your branch to your Github fork</li>
+<li>Issue a pull request against the current working branch of the main repo (usually <code class="docutils literal"><span class="pre">master</span></code>)</li>
+<li>Pull latest back to your local machine from the main repo</li>
+<li>Repeat</li>
+</ul>
+</div>
+<div class="section" id="setting-up-your-environment">
+<span id="docs-dev-setup"></span><h3>Setting up your Environment<a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="terminal-command-line">
+<span id="docs-terminal"></span><h4>Terminal (Command Line)<a class="headerlink" href="#terminal-command-line" title="Permalink to this headline">¶</a></h4>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>This contributor guide is written primarily from a *nix (Bash Terminal) perspective, which is relevant to all flavors of Linux and MacOS. We consider the Bash terminal commands to be the “canonical” way to build and work with the docs.</p>
+<p>We have also provided explanations for how to adapt these commands to the Windows Command Prompt. (This is different than Windows Powershell, and not all the commands will work in Powershell. For more details on the Windows Command Prompt, <a class="reference external" href="https://www.lifewire.com/how-to-open-command-prompt-2618089">see this article</a></p>
+<p>If you are on a Windows machine, you may prefer to use the adapted Windows instructions here. Alternatively, you can follow the Bash commands:</p>
+<ul class="simple">
+<li>use the <a class="reference external" href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">Linux subsystem (Windows 10)</a></li>
+<li>use a bash terminal emulator, such as<ul>
+<li><span class="xref std std-doc">Cygwin</span></li>
+<li><a class="reference external" href="https://git-for-windows.github.io/">gitbash</a></li>
+</ul>
+</li>
+</ul>
+<p class="last">The lead maintainers of this docs repo are not Windows users, so we rely on our contributor community to keep Windows-specific information complete and accurate. Contributions to this guide with explanations and help for Windows users are greatly appreciated.</p>
+</div>
+<p>Contributing to the docs requires interacting with git, Github, Python, and Sphinx, which requires the use of the Terminal. This is common among Linux users. Mac users unfamiliar with the Terminal can learn more from <a class="reference external" href="https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">this tutorial</a>.</p>
+</div>
+<div class="section" id="python">
+<span id="docs-python"></span><h4>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="python-3">
+<span id="docs-python3"></span><h5>Python 3<a class="headerlink" href="#python-3" title="Permalink to this headline">¶</a></h5>
+<p>If you don’t know, check to see if you have Python 3 installed:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> python3
+</pre></div>
+</div>
+<p>On windows:</p>
+<div class="highlight-doscon"><div class="highlight"><pre><span></span><span class="go">&gt; python</span>
+</pre></div>
+</div>
+<p>If you get an error, you probably don’t have it and will need to <a class="reference external" href="https://www.python.org/downloads/">install Python 3</a>.</p>
+<p>On Windows make sure to select the option “Add python to the Path”, while installing (see <a class="reference external" href="https://www.youtube.com/watch?v=oHOiqFs_x8Y">instructions</a> ) otherwise you need to add it <a class="reference external" href="https://youtu.be/UTUlp6L2zkw">manually</a> .</p>
+<p>If the Python command-line interpreter starts up, type <code class="docutils literal"><span class="pre">quit()</span></code> to exit.</p>
+</div>
+</div>
+<div class="section" id="github-and-git">
+<span id="docs-gh-git"></span><h4>Github and git<a class="headerlink" href="#github-and-git" title="Permalink to this headline">¶</a></h4>
+<p>Git is a distributed version control system. It makes it possible to track changes in files over time, merge changes made by different contributors, compare different versions of the same file, and revert a file to an earlier point. Git can be very complicated, but you do not need to understand its advanced features or inner workings to use it.</p>
+<p>GitHub is an online service that lets individuals and organizations host git repositories. It also provides additional collaboration tools like issue trackers. Open Data Kit uses GitHub for its public code and documentation projects.</p>
+<p>You will need to:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://git-scm.com/downloads">Install git</a></li>
+<li>Make sure that git is installed properly by typing (git) in the terminal or command prompt<ul>
+<li>On windows if you get any error check if environment variables are set up correctly(<a class="reference external" href="https://stackoverflow.com/questions/26620312/installing-git-in-path-with-github-client-for-windows#answer-34767523">see instructions</a>)</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://github.com/">Start a GitHub account</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="getting-ready-to-work">
+<span id="docs-workflow-setup"></span><h3>Getting Ready to Work<a class="headerlink" href="#getting-ready-to-work" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clone-the-docs">
+<span id="fork-the-docs"></span><h4>Clone the Docs<a class="headerlink" href="#clone-the-docs" title="Permalink to this headline">¶</a></h4>
+<p>Go to the <a class="reference external" href="https://github.com/thecartercenter/nemo-doc">NEMO Doc repo on Github</a>, select the <span class="guilabel">Clone or download</span> button. Copy the URI from the text box that opens up. It will be something like: <code class="docutils literal"><span class="pre">https://github.com/your-gh-username/docs.git</span></code></p>
+<p>Open your terminal, and <cite>cd</cite> to your preferred directory. Then <cite>git clone</cite> the repo:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/your-github-username/docs.git
+<span class="go">.</span>
+<span class="go">.</span>
+<span class="go">.</span>
+<span class="gp">$</span> <span class="nb">cd</span> docs
+</pre></div>
+</div>
+<p>The rest of the documentation assumes you are in the directory for the repo (the directory containing <code class="docutils literal"><span class="pre">conf.py</span></code> and <code class="docutils literal"><span class="pre">index.rst</span></code>).</p>
+</div>
+<div class="section" id="install-dependencies">
+<span id="install-doc-dependencies"></span><h4>Install Dependencies<a class="headerlink" href="#install-dependencies" title="Permalink to this headline">¶</a></h4>
+<p>The first time you clone down the repo, you’ll need to install the dependencies. Make sure you have your Python 3 virtual environment set up and activated in the docs repo and then:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install -r requirements.txt
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are working on the design, testing, or deployment of the docs, you might find the need to install an additional PyPi package. If you do, please update the requirements.txt file with <code class="docutils literal"><span class="pre">pip</span> <span class="pre">freeze</span> <span class="pre">&gt;</span> <span class="pre">requirements.txt</span></code>. Pull Requests which change <code class="file docutils literal"><span class="pre">requirements.txt</span></code> should include a note about why the new packages are needed.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you have problems when running the Sphinx commands (see below), you may have a dependency issue. Try running <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> again.</p>
+</div>
+</div>
+</div>
+<div class="section" id="workflow-details">
+<span id="docs-workflow-details"></span><h3>Workflow Details<a class="headerlink" href="#workflow-details" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="make-a-new-branch">
+<span id="git-branch-the-docs"></span><h4>Make a New Branch<a class="headerlink" href="#make-a-new-branch" title="Permalink to this headline">¶</a></h4>
+<p>Create a new branch in which you will work on a specific issue. The branch name should briefly describe what you are doing. For example, the original author of this contributor guide worked in a branch he called <code class="docutils literal"><span class="pre">contributing</span></code>. Also, make sure that all the branches are derived from the <code class="docutils literal"><span class="pre">master</span></code> branch to avoid intermixing of commits.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git checkout -b branch-name
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Branch names should be short, lowercase, and use hyphens for separators.</p>
+<p>Good branch names:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">getting-started-guide</span></code></li>
+<li><code class="docutils literal"><span class="pre">contributing</span></code></li>
+<li><code class="docutils literal"><span class="pre">fix-issue-13</span></code></li>
+</ul>
+<p>Bad branch names:</p>
+<ul class="last simple">
+<li><code class="docutils literal"><span class="pre">getting</span> <span class="pre">started</span> <span class="pre">guide</span></code></li>
+<li><code class="docutils literal"><span class="pre">Getting</span> <span class="pre">started</span> <span class="pre">guide</span></code></li>
+<li><code class="docutils literal"><span class="pre">Getting_started_guide</span></code></li>
+<li><code class="docutils literal"><span class="pre">writing-the-getting-started-guide-adammichaelwood-july-2017-draft</span></code></li>
+</ul>
+</div>
+</div>
+<div class="section" id="work-on-the-docs">
+<span id="write-the-docs"></span><h4>Work on the Docs<a class="headerlink" href="#work-on-the-docs" title="Permalink to this headline">¶</a></h4>
+<p>Write and edit files in your favorite editor.</p>
+</div>
+<div class="section" id="build-view-and-debug">
+<span id="build-the-docs"></span><h4>Build, View, and Debug<a class="headerlink" href="#build-view-and-debug" title="Permalink to this headline">¶</a></h4>
+<p>To build the documentation into a viewable website:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> sphinx-build -b dirhtml . build
+</pre></div>
+</div>
+<p>This calls the sphinx-build utility. The <code class="xref std std-option docutils literal"><span class="pre">-b</span></code> switch specifies the builder, which in this case is <code class="docutils literal"><span class="pre">html</span></code> – as opposed to other builders like <code class="docutils literal"><span class="pre">pdf</span></code>. The <code class="docutils literal"><span class="pre">.</span></code> refers to the current directory (the build source) and <code class="docutils literal"><span class="pre">build</span></code> refers to the target of the build (the built files will be put into a directory labeled <code class="docutils literal"><span class="pre">build</span></code>).</p>
+<p>When you run the build, you may see error or warning messages. These indicate potential problems with the documentation, like:</p>
+<ul class="simple">
+<li>syntax errors</li>
+<li>broken links</li>
+<li>terms not included in the glossary</li>
+</ul>
+<p>Error and warning messages include a file name and line number for tracking them down. Try to resolve all your errors and warnings before issuing a pull request. However, if this is not possible, please add a note in your pull request so that we can help you debug the problem.</p>
+<p><strong>We will not merge Pull Requests that have warnings or errors in them.</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Because of <a class="reference external" href="https://github.com/sphinx-doc/sphinx/issues/2617">a bug in Sphinx</a>, the line numbers in error and warning messages will be off by the length of <cite>rst_prolog</cite> in <code class="file docutils literal"><span class="pre">conf.py</span></code>.</p>
+</div>
+<p>To view the documentation in your web browser, you can use Python’s built-in web server.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> build
+<span class="gp">$</span> python -m http.server <span class="m">8000</span>
+</pre></div>
+</div>
+<p>Then open your browser and go to <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>.</p>
+<p>Read through your doc edits in the browser and correct any issues in your source files. You’ll need to shut down the web server (<code class="kbd docutils literal"><span class="pre">CTRL</span> <span class="pre">C</span></code>) before rebuilding, then return to the main directory of the repo ( <code class="docutils literal"><span class="pre">cd</span> <span class="pre">..</span></code> ).</p>
+<p>It’s a good idea to delete the <code class="docutils literal"><span class="pre">build</span></code> directory before each rebuild.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> rm -rf build
+<span class="gp">$</span> sphinx-build -b dirhtml . build
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">The script <code class="docutils literal"><span class="pre">b.sh</span></code> is a utility script that can be run to build the directory. It not only saves typing effort but will also become the canonical build script for us, so it’s good to get used to it from now.</p>
+</div>
+</div>
+<div class="section" id="push-your-branch">
+<span id="push-the-docs"></span><h4>Push Your Branch<a class="headerlink" href="#push-your-branch" title="Permalink to this headline">¶</a></h4>
+<p>Once your work on the issue is completed, add the files you’ve changed or created additionally, and write a relevant commit message describing the changes.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git add my_changed_files
+<span class="gp">$</span> git commit -m <span class="s2">&quot;A small but relevant commit message&quot;</span>
+</pre></div>
+</div>
+<p>Then it’s time to push the changes. The first time you do this on any branch, you’ll need to specify the branch name:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git push origin branch-name
+</pre></div>
+</div>
+<p>After that, you can just:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git push
+</pre></div>
+</div>
+</div>
+<div class="section" id="issue-a-pull-request">
+<span id="pr-the-docs"></span><h4>Issue a Pull Request<a class="headerlink" href="#issue-a-pull-request" title="Permalink to this headline">¶</a></h4>
+<p>A pull request (or PR) is a request from you to the NEMO Docs maintainers, for us to pull in your changes to the main repo.</p>
+<p>Go the <a class="reference external" href="https://github.com/thecartercenter/nemo-docs">main docs repo on GitHub</a>. You’ll see a message there referencing your recently pushed branches. Select <span class="guilabel">Compare &amp; pull request</span> to start a pull request.</p>
+<p>Follow GitHub’s instructions. The <span class="guilabel">Base fork</span> should be the main repo, and <span class="guilabel">base</span> should be <code class="docutils literal"><span class="pre">master</span></code>. Your repo and working fork should be listed beside them. (This should all populate by default, but you should double check.) If there is a green <strong>Able to be merged</strong> message, you can proceed.</p>
+<p>You must include a PR comment. Things to include:</p>
+<ul class="simple">
+<li>A summary of what you did.</li>
+<li>A note about anything that probably should have been done, but you didn’t do.</li>
+<li>A note about any new work this PR will create.</li>
+<li>The issue number you are working on. If the PR completes the issue, include the text <code class="docutils literal"><span class="pre">Closes</span> <span class="pre">#</span></code> and the issue number.</li>
+<li>A note about any errors or warnings, and why you did not or could not resolve them.</li>
+<li>A note justifying any changes to requirements.txt</li>
+<li>A note about any difficulties, questions, or concerns that came up while working on this issue.</li>
+</ul>
+<p>Complete the pull request. The maintainers will review it as quickly as possible. If there are any problems the maintainers can’t deal with, they will reach out to you.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you happen to rename any document file(<code class="file docutils literal"><span class="pre">*.rst</span></code>), then be sure that you add the redirect in your PR.</p>
+<p>To add the redirect go to <code class="file docutils literal"><span class="pre">s3_website.yml</span></code>. Add a mapping from the old file name to the new file name below the <strong>redirects:</strong> line, one mapping per line. Several examples of how to format these are shown in the file.</p>
+<p>For example you rename a file to <code class="file docutils literal"><span class="pre">newcheck.rst</span></code> from <code class="file docutils literal"><span class="pre">oldcheck.rst</span></code>, then to add the redirect:</p>
+<div class="last highlight-yaml"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">redirects</span><span class="p p-Indicator">:</span>
+ <span class="l l-Scalar l-Scalar-Plain">oldcheck/index.html</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/newcheck</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="keep-going">
+<span id="keep-working-the-docs"></span><h4>Keep Going<a class="headerlink" href="#keep-going" title="Permalink to this headline">¶</a></h4>
+<p>Once the PR is merged, you’ll need to pull in the changes from the main repo into your local copy.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> git checkout master
+<span class="gp">$</span> git pull master
+</pre></div>
+</div>
+<p>Now you can find a new issue to work on, create a new branch, and get to work…</p>
+</div>
+</div>
+</div>
+<div class="section" id="writing-in-sphinx">
+<span id="id2"></span><h2>Writing in Sphinx<a class="headerlink" href="#writing-in-sphinx" title="Permalink to this headline">¶</a></h2>
+<p>The NEMO documentation is built using <a class="reference external" href="http://sphinx-doc.org">Sphinx</a>, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>, a semantic, extensible markup syntax similar to Markdown.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">reStructuredText Primer</a> — Introduction to reStructuredText<ul>
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">reStructuredText Quick Reference</a></li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt">reStrcuturedTest 1-page cheat sheet</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/index.html">Sphinx Markup</a> — Detailed guide to Sphinx’s markup concepts and reStructuredText extensions</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Sphinx and reStructuredText can be very flexible. For the sake of consistency and maintainability, this guide is <em>highly opinionated</em> about how documentation source files are organized and marked up.</p>
+</div>
+<div class="section" id="indentation">
+<span id="id5"></span><h3>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h3>
+<p>Indentation is meaningful in Sphinx and reStructured text.</p>
+<ul class="simple">
+<li>Use <strong>spaces, not tabs</strong>.</li>
+<li>Indent <strong>two spaces</strong>.</li>
+</ul>
+</div>
+<div class="section" id="documentation-files">
+<span id="doc-files"></span><h3>Documentation Files<a class="headerlink" href="#documentation-files" title="Permalink to this headline">¶</a></h3>
+<p>Sphinx document files have the <code class="docutils literal"><span class="pre">.rst</span></code> extension. File names should be all lowercase and use hyphens (not underscores or spaces) as word separators.</p>
+<p>Normally, the title of the page should be the first line of the file, followed by the line of equal-signs.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="gh">Title of Page</span>
+<span class="gh">================</span>
+
+Page content is here...
+</pre></div>
+</div>
+<p>You can also wrap the title in two lines of asterisks.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="gh">*******************</span>
+<span class="gh">Title of Page</span>
+<span class="gh">*******************</span>
+
+Page content here.
+</pre></div>
+</div>
+<p>The asterisks style is useful when you are combining several existing documents (and don’t want to change every subsection headline) or when you are working on a document that might be split into separate documents in the future.</p>
+<p>See <a class="reference internal" href="#sections-titles"><span class="std std-ref">Sections and Titles</span></a> for more details.</p>
+</div>
+<div class="section" id="custom-css">
+<span id="id6"></span><h3>Custom CSS<a class="headerlink" href="#custom-css" title="Permalink to this headline">¶</a></h3>
+<p>You can add custom styling in <code class="file docutils literal"><span class="pre">_static/css/custom.css</span></code>. Whenever you add any custom styling, add short comments describing the changes made and the PR number in which the changes were made.</p>
+<p>For example:</p>
+<div class="highlight-css"><div class="highlight"><pre><span></span><span class="c">/* Example css PR #xyx */</span>
+
+<span class="nt">div</span><span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s1">&#39;example&#39;</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>There are various sections in the <code class="file docutils literal"><span class="pre">custom.css</span></code> file:</p>
+<ul class="simple">
+<li>Styling for rst roles and directives</li>
+<li>Responsive css</li>
+<li>Styling for JS implementation</li>
+<li>Utility classes</li>
+</ul>
+<p>Each of these sections are enclosed between start and end comments. Make sure you add your code to the relevant section. If you don’t find any section relevant, add a new section and add your code there.</p>
+<p>For example:</p>
+<div class="highlight-css"><div class="highlight"><pre><span></span><span class="c">/* New section starts */</span>
+
+<span class="c">/* Example css PR #xyx */</span>
+
+<span class="nt">div</span><span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s1">&#39;example&#39;</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* New section ends */</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="table-of-contents">
+<span id="about-toc"></span><h3>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">index.rst</span></code> file serves as a front-page to the documentation and contains the table of contents. The table of contents controls the documentation navigation menu. To add a new document to the table of contents, add the file new (without the <code class="docutils literal"><span class="pre">.rst</span></code> extension) to the list of file names in <code class="docutils literal"><span class="pre">index.rst</span></code>.</p>
+</div>
+<div class="section" id="sections-and-titles">
+<span id="sections-titles"></span><h3>Sections and Titles<a class="headerlink" href="#sections-and-titles" title="Permalink to this headline">¶</a></h3>
+<p>Headlines require two lines: the text of the headline, followed by a line filled with a single character. Each level in a headline hierarchy uses a different character:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="gh">Title of the Page - &lt;h1&gt; - Equal Signs</span>
+<span class="gh">=========================================</span>
+
+
+<span class="gh">Major Section - &lt;h2&gt; - Hyphens</span>
+<span class="gh">---------------------------------</span>
+
+
+<span class="gh">Subsection - &lt;h3&gt; - Tildes</span>
+<span class="gh">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+
+
+<span class="gh">Sub-subsection - &lt;h4&gt; - Double Quotes</span>
+<span class="gh">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+
+
+<span class="gh">Sub-sub-subsection - &lt;h5&gt; - Single Quotes</span>
+<span class="gh">&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+<p>If you need to combine several existing pages together, or want to start a single-page doc that you think might be split into individual pages later on, you can add a top-level title, demoting the other headline types by one:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="gh">************************************************</span>
+<span class="gh">Page Title - &lt;h1&gt; - Asterisks above and below</span>
+<span class="gh">************************************************</span>
+
+
+<span class="gh">Major Section - &lt;h2&gt; - Equal Signs</span>
+<span class="gh">=======================================</span>
+
+
+<span class="gh">Subsection - &lt;h3&gt; - Hyphens</span>
+<span class="gh">---------------------------------</span>
+
+
+<span class="gh">Sub-subsection - &lt;h4&gt; - Tildes</span>
+<span class="gh">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+
+
+<span class="gh">Sub-sub-subsection - &lt;h5&gt; - Double Quotes</span>
+<span class="gh">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+
+<span class="gh">Sub-sub-sub-subsection - &lt;h6&gt; - Single Quotes</span>
+<span class="gh">&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+<p>In either case, the underline of characters needs to be <em>longer than</em> the line of text. In the case of the asterisks, the two lines of asterisks need to be the same length.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The exact order of underline characters is flexible in reStructuredText. However, this specific ordering should be used throughout the NEMO documentation.</p>
+</div>
+<div class="section" id="section-labels">
+<span id="id7"></span><h4>Section labels<a class="headerlink" href="#section-labels" title="Permalink to this headline">¶</a></h4>
+<p>In order to facilitate efficient <a class="reference internal" href="#cross-referencing"><span class="std std-ref">Cross referencing</span></a>, sections should be labeled. This is done on the line above the section title. The format is:</p>
+<ul class="simple">
+<li>two dots</li>
+<li>underscore</li>
+<li>section label<ul>
+<li>lowercase</li>
+<li>hyphen separators</li>
+</ul>
+</li>
+<li>a single colon</li>
+</ul>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_section-label:</span>
+
+<span class="gh">Section Title</span>
+<span class="gh">----------------</span>
+
+Lorem ipsum content of section blah blah.
+</pre></div>
+</div>
+<p>The section label is a slugified version of the section title.</p>
+<p>Section titles must be unique throughout the entire documentation set. Therefore, if you write a common title that might appear in more than one document (<em>Learn More</em> or <em>Getting Started</em>, for example), you’ll need to include additional words to make the label unique. The best way to do this is to add a meaningful work from the document title.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span> NEMO
+===============
+
+NEMO is a server application...
+
+<span class="p">..</span> <span class="nt">_aggregate-getting-started:</span>
+
+<span class="gh">Get Started</span>
+<span class="gh">-----------------</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="basic-markup">
+<span id="id8"></span><h3>Basic Markup<a class="headerlink" href="#basic-markup" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Escaping Characters</p>
+<p>Markup characters can be escaped using the <code class="docutils literal"><span class="pre">\</span></code> characters.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="ge">*Italic.*</span>
+
+\*Not italic, surrounded by asterisks.\*
+</pre></div>
+</div>
+<p><em>Italic.</em></p>
+<p class="last">*Not italic, surrounded by asterisks.*</p>
+</div>
+<div class="section" id="emphasis-and-inline-literal">
+<span id="inline-markup"></span><h4>Emphasis and Inline Literal<a class="headerlink" href="#emphasis-and-inline-literal" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Single asterisks for <span class="ge">*italic text*</span> (<span class="s">``&lt;em&gt;``</span>).
+
+Double asterisks for <span class="gs">**bold text**</span> (<span class="s">``&lt;strong&gt;``</span>).
+
+Double back-ticks for <span class="s">``inline literal text``</span> (<span class="s">``&lt;code&gt;``</span>).
+</pre></div>
+</div>
+<p>Single asterisks for <em>italic text</em> ( <code class="docutils literal"><span class="pre">&lt;em&gt;</span></code> ).</p>
+<p>Double asterisks for <strong>bold text</strong> ( <code class="docutils literal"><span class="pre">&lt;strong&gt;</span></code> ).</p>
+<p>Double back-ticks for <code class="docutils literal"><span class="pre">inline</span> <span class="pre">literal</span> <span class="pre">text</span></code> ( <code class="docutils literal"><span class="pre">&lt;code&gt;</span></code> ).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <strong>bold</strong>, <em>italic</em>, and <code class="docutils literal"><span class="pre">inline</span> <span class="pre">literal</span></code> styles do not carry semantic meaning. They should not be used when a more semantically appropriate markup construct is available; for example, when <a class="reference internal" href="#interface-writing"><span class="std std-ref">writing about GUI text</span></a>.</p>
+</div>
+</div>
+<div class="section" id="hyperlinks">
+<span id="id9"></span><h4>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">¶</a></h4>
+<p><strong>External</strong> hyperlinks — that is, links to resources <em>outside</em> the documentation — look like this:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>This is a link to <span class="s">`example </span><span class="si">&lt;http://example.com&gt;</span><span class="s">`_</span>.
+</pre></div>
+</div>
+<p>This is a link to <a class="reference external" href="http://example.com">example</a>.</p>
+<p>You can also use “reference style” links:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>This is a link to <span class="s">`example`_</span>.
+
+<span class="p">..</span> <span class="nt">_example:</span> http://example.com
+</pre></div>
+</div>
+<p>This may help make paragraphs with <em>a lot</em> of links more readable. In general, the inline style is preferable. If you use the reference style, be sure to keep the link references below the paragraph where they appear.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>You can also simply place an unadorned URI in the text: http://example.com
+</pre></div>
+</div>
+<p>You can also simply place an unadorned URI in the text: <a class="reference external" href="http://example.com">http://example.com</a></p>
+</div>
+<div class="section" id="lists">
+<span id="id10"></span><h4>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="unordered-bullet-lists">
+<span id="ul"></span><h5>Unordered (bullet) lists<a class="headerlink" href="#unordered-bullet-lists" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Bulleted lists ( <span class="s">``&lt;ul&gt;``</span> ):
+
+<span class="m">-</span> use hyphens
+<span class="m">-</span> are unindented at the first level
+<span class="m">-</span> must have a blank line before and after
+
+  <span class="m">-</span> the blank line requirement means that nested list items will have a blank line before and after as well
+
+  <span class="m">-</span> you may <span class="ge">*optionally*</span> put a blank line <span class="ge">*between*</span> list items
+</pre></div>
+</div>
+<p>Bulleted lists ( <code class="docutils literal"><span class="pre">&lt;ul&gt;</span></code> ):</p>
+<ul class="simple">
+<li>use hyphens</li>
+<li>are unindented at the first level</li>
+<li>must have a blank line before and after<ul>
+<li>the blank line requirement means that nested list items will have a blank line before and after as well</li>
+<li>you may <em>optionally</em> put a blank line <em>between</em> list items</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="ordered-numbered-lists">
+<span id="ol"></span><h5>Ordered (numbered) lists<a class="headerlink" href="#ordered-numbered-lists" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Numbered lists ( <span class="s">``&lt;ol&gt;``</span> ):
+
+<span class="m">1.</span> Start each line with a number and period
+<span class="m">2.</span> Can begin on any number
+<span class="m">3.</span> Must have a blank line before and after
+<span class="m">4.</span> Can have nested sub-lists
+
+   a. nested lists are numbered separately
+   b. nested lists need a blank line before and after
+
+<span class="m">#.</span> Can have automatic number with the <span class="s">``#``</span> character.
+</pre></div>
+</div>
+<p>Numbered lists ( <code class="docutils literal"><span class="pre">&lt;ol&gt;</span></code> ):</p>
+<ol class="arabic simple">
+<li>Start each line with a number and period</li>
+<li>Can begin on any number</li>
+<li>Must have a blank line before and after</li>
+<li>Can have nested sub-lists<ol class="loweralpha">
+<li>nested lists are numbered separately</li>
+<li>nested lists need a blank line before and after</li>
+</ol>
+</li>
+<li>Can have an automatic number with the <code class="docutils literal"><span class="pre">#</span></code> character.</li>
+</ol>
+</div>
+<div class="section" id="definition-lists">
+<span id="dl"></span><h5>Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Definition list ( <span class="s">``&lt;dl&gt;``</span> )
+  a list with several term-definition pairs
+
+Terms
+  should not be indented
+
+Definitions
+  should be indented under the term
+
+Line spacing
+  there should be a blank line between term-definition pairs
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Definition list ( <code class="docutils literal"><span class="pre">&lt;dl&gt;</span></code> )</dt>
+<dd>a list with several term-defition pairs</dd>
+<dt>Terms</dt>
+<dd>should not be indented</dd>
+<dt>Definitions</dt>
+<dd>should be indented under the term</dd>
+<dt>Line spacing</dt>
+<dd>there should be a blank line between term-definition pairs</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="paragraph-level-markup">
+<span id="paragraph-markup"></span><h4>Paragraph-level Markup<a class="headerlink" href="#paragraph-level-markup" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Paragraphs are separated by blank lines. Line breaks in the source code do not create line breaks in the output.
+
+This means that you <span class="ge">*could*</span>, in theory,
+include a lot of arbitrary line breaks
+in your source document files.
+These line breaks would not appear in the output.
+Some people like to do this because they have been trained
+to not exceed 80 column lines, and they like
+to write .txt files this way.
+Please do not do this.
+
+There is <span class="gs">**no reason**</span> to put a limit on line length in source files for documentation, since this is prose and not code. Therefore, please do not put arbitrary line breaks in your files.
+</pre></div>
+</div>
+<p>Paragraphs are separated by blank lines. Line breaks in the source code do not create line breaks in the output.</p>
+<p>This means that you <em>could</em>, in theory,
+include a lot of arbitrary line breaks
+in your source document files.
+These line breaks would not appear in the output.
+Some people like to do this because they have been trained
+to not exceed 80 column lines, and they like
+to write .txt files this way.
+Please do not do this.</p>
+<p>There is <strong>no reason</strong> to put a limit on line length in source files for documentation, since this is prose and not code. Therefore, please do not put arbitrary line breaks in your files.</p>
+<div class="section" id="block-quotes">
+<h5>Block Quotes<a class="headerlink" href="#block-quotes" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>This is not a block quote. Block quotes are indented, and otherwise unadorned.
+
+  This is a block quote.
+  — Adam Michael Wood
+</pre></div>
+</div>
+<p>This is not a block quote. Block quotes are indented, and otherwise unadorned.</p>
+<blockquote>
+<div>This is a block quote.
+— Adam Michael Wood</div></blockquote>
+</div>
+<div class="section" id="line-blocks">
+<h5>Line Blocks<a class="headerlink" href="#line-blocks" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="o">|</span> Line blocks are useful for addresses,
+<span class="o">|</span> verse, and adornment-free lists.
+|
+<span class="o">|</span> Each new line begins with a
+<span class="o">|</span> vertical bar (&quot;|&quot;).
+<span class="o">|</span>     Line breaks and initial indents
+<span class="o">|</span>     are preserved.
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Line blocks are useful for addresses,</div>
+<div class="line">verse, and adornment-free lists.</div>
+<div class="line"><br /></div>
+<div class="line">Each new line begins with a</div>
+<div class="line">vertical bar (“|”).</div>
+<div class="line-block">
+<div class="line">Line breaks and initial indents</div>
+<div class="line">are preserved.</div>
+</div>
+</div>
+</div>
+<div class="section" id="tables">
+<span id="id11"></span><h5>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="grid-style">
+<span id="grid-table"></span><h6>Grid style<a class="headerlink" href="#grid-style" title="Permalink to this headline">¶</a></h6>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>+------------+------------+-----------+
+<span class="o">|</span> Header 1   | Header 2   | Header 3  |
++============+============+===========+
+<span class="o">|</span> body row 1 | column 2   | column 3  |
++------------+------------+-----------+
+<span class="o">|</span> body row 2 | Cells may span columns.|
++------------+------------+-----------+
+<span class="o">|</span> body row 3 | Cells may  | - Cells   |
++------------+ span rows. | - contain |
+<span class="o">|</span> body row 4 |            | - blocks. |
++------------+------------+-----------+
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="34%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header 1</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1</td>
+<td>column 2</td>
+<td>column 3</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="2">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td rowspan="2"><ul class="first last simple">
+<li>Cells</li>
+<li>contain</li>
+<li>blocks.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="simple-style">
+<span id="simple-table"></span><h6>Simple style<a class="headerlink" href="#simple-style" title="Permalink to this headline">¶</a></h6>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Inputs</th>
+<th class="head">Output</th>
+</tr>
+<tr class="row-even"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A or B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="csv-table">
+<span id="id12"></span><h6>CSV Table<a class="headerlink" href="#csv-table" title="Permalink to this headline">¶</a></h6>
+<p>The <cite>csv-table</cite> directive is used to create a table from CSV (comma-separated values) data. CSV is a common data format generated by spreadsheet applications and commercial databases. The data may be internal (an integral part of the document) or external (a separate file).</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Example Table
+ <span class="nc">:header:</span> <span class="nf">&quot;Treat&quot;, &quot;Quantity&quot;, &quot;Description&quot;</span>
+ <span class="nc">:widths:</span> <span class="nf">15, 10, 30</span>
+
+ &quot;Albatross&quot;, 2.99, &quot;On a stick!&quot;
+ &quot;Crunchy Frog&quot;, 1.49, &quot;If we took the bones out, it wouldn&#39;t be
+ crunchy, now would it?&quot;
+ &quot;Gannet Ripple&quot;, 1.99, &quot;On a stick!&quot;
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id18">
+<caption><span class="caption-text">Example Table</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Treat</th>
+<th class="head">Quantity</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="row-odd"><td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn’t be
+crunchy, now would it?</td>
+</tr>
+<tr class="row-even"><td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+<p>Some of the options recognized are:</p>
+<dl class="role">
+<dt id="role-widths">
+<code class="descname">:widths:</code><a class="headerlink" href="#role-widths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a comma or space-separated list of relative column widths. The default is equal-width columns.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The special value <em>auto</em> may be used by writers to decide whether to delegate the determination of column widths to the backend.</p>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-header">
+<code class="descname">:header:</code><a class="headerlink" href="#role-header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains column titles. It must use the same CSV format as the main CSV data.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-delim">
+<code class="descname">:delim:</code><a class="headerlink" href="#role-delim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a one character string used to separate fields. Default value is comma. It must be a single character or Unicode code.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Table using # as delimiter
+  <span class="nc">:header:</span> <span class="nf">&quot;Name&quot;, &quot;Grade&quot;</span>
+  <span class="nc">:widths:</span> <span class="nf">auto</span>
+  <span class="nc">:delim:</span> <span class="nf">#</span>
+
+  &quot;Peter&quot;#&quot;A&quot;
+  &quot;Paul&quot;#&quot;B&quot;
+
+<span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Table using # as delimiter
+  <span class="nc">:header:</span> <span class="nf">&quot;Name&quot;, &quot;Grade&quot;</span>
+  <span class="nc">:widths:</span> <span class="nf">auto</span>
+  <span class="nc">:delim:</span> <span class="nf">#</span>
+
+  &quot;Peter&quot;#&quot;A&quot;
+  &quot;Paul&quot;#&quot;B&quot;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-align">
+<code class="descname">:align:</code><a class="headerlink" href="#role-align" title="Permalink to this definition">¶</a></dt>
+<dd><p>It specifies the horizontal alignment of the table. It can be <cite>left</cite> ,`right` or <cite>center</cite>.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Table aligned to right
+  <span class="nc">:header:</span> <span class="nf">&quot;Name&quot;, &quot;Grade&quot;</span>
+  <span class="nc">:align:</span> <span class="nf">right</span>
+
+  &quot;Peter&quot;, &quot;A&quot;
+  &quot;Paul&quot;, &quot;B&quot;
+
+<span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Table aligned to right
+  <span class="nc">:header:</span> <span class="nf">&quot;Name&quot;, &quot;Grade&quot;</span>
+  <span class="nc">:align:</span> <span class="nf">right</span>
+
+  &quot;Peter&quot;, &quot;A&quot;
+  &quot;Paul&quot;, &quot;B&quot;
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-file">
+<code class="descname">:file:</code><a class="headerlink" href="#role-file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains the local filesystem path to a CSV data file.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-url">
+<code class="descname">:url:</code><a class="headerlink" href="#role-url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains an Internet URL reference to a CSV data file.</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul>
+<li><p class="first">There is no support for checking that the number of columns in each row is the same. However, this directive supports CSV generators that do not insert “empty” entries at the end of short rows, by automatically adding empty entries.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Table with different number of columns in each row
+   <span class="nc">:header:</span> <span class="nf">&quot;Name&quot;, &quot;Grade&quot;</span>
+
+   &quot;Peter&quot;
+   &quot;Paul&quot;, &quot;B&quot;
+</pre></div>
+</div>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils" id="id19">
+<caption><span class="caption-text">Table with different number of columns in each row</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Grade</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Peter</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Paul</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="last simple">
+<li>Whitespace delimiters are supported only for external CSV files.</li>
+</ul>
+</div>
+<p>For more details, refer this <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#id4">guide on CSV Tables</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sphinx-specific-markup">
+<span id="id13"></span><h3>Sphinx-specific Markup<a class="headerlink" href="#sphinx-specific-markup" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="roles-and-directives">
+<h4>Roles and directives<a class="headerlink" href="#roles-and-directives" title="Permalink to this headline">¶</a></h4>
+<p>A <em>role</em> is an inline markup construct that wraps some text, similar to an HTML or XML tag. They look like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>:rolename:`some text`
+</pre></div>
+</div>
+<p>A directive is a block-level markup construct. They look like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">directivename</span><span class="p">::</span> <span class="n">additional</span> <span class="n">info</span> <span class="ow">or</span> <span class="n">options</span> <span class="n">here</span>
+  <span class="p">:</span><span class="n">option</span><span class="p">:</span> <span class="n">optional</span><span class="o">-</span><span class="n">value</span>
+  <span class="p">:</span><span class="n">option</span><span class="p">:</span> <span class="n">optional</span><span class="o">-</span><span class="n">value</span>
+
+  <span class="n">Content</span> <span class="n">of</span> <span class="n">block</span> <span class="n">here</span><span class="p">,</span> <span class="n">indented</span><span class="o">.</span>
+
+<span class="n">This</span> <span class="ow">is</span> <span class="n">no</span> <span class="n">longer</span> <span class="n">part</span> <span class="n">of</span> <span class="n">the</span> <span class="n">block</span> <span class="n">controlled</span> <span class="n">by</span> <span class="n">the</span> <span class="n">directive</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Most of the Sphinx-specific and NEMO-specific markup will use one or both of these constructs.</p>
+</div>
+<div class="section" id="cross-referencing">
+<span id="id14"></span><h4>Cross referencing<a class="headerlink" href="#cross-referencing" title="Permalink to this headline">¶</a></h4>
+<p>Cross referencing is linking internally, from one place in the documentation to another. This is <strong>not</strong> done using the <a class="reference internal" href="#hyperlinks"><span class="std std-ref">Hyperlinks</span></a> syntax, but with one of the several roles:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="na">:role:</span><span class="nv">`target`</span>
+  becomes...
+    &lt;a href=&quot;target&quot;&gt;reference title&lt;/a&gt;
+
+<span class="na">:role:</span><span class="nv">`anchor text &lt;target&gt;`</span>
+  becomes...
+    &lt;a href=&quot;target&quot;&gt;anchor text&lt;/a&gt;
+</pre></div>
+</div>
+<dl class="role">
+<dt id="role-doc">
+<code class="descname">:doc:</code><a class="headerlink" href="#role-doc" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li>Links to documents (pages)</li>
+<li><em>target</em> is the file name, without the <code class="docutils literal"><span class="pre">.rst</span></code> extension</li>
+<li><em>title</em> is the first <a class="reference internal" href="#doc-files"><span class="std std-ref">headline</span></a> ( <code class="docutils literal"><span class="pre">&lt;h1&gt;</span></code> ) of the page</li>
+</ul>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ref">
+<code class="descname">:ref:</code><a class="headerlink" href="#role-ref" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li>Links to <a class="reference internal" href="#sections-titles"><span class="std std-ref">sections</span></a></li>
+<li><em>target</em> is the <a class="reference internal" href="#section-labels"><span class="std std-ref">Section labels</span></a></li>
+<li><em>title</em> is the <a class="reference internal" href="#sections-titles"><span class="std std-ref">section title (headline)</span></a></li>
+</ul>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-term">
+<code class="descname">:term:</code><a class="headerlink" href="#role-term" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li>Links to items in the <span class="xref std std-doc">glossary</span></li>
+<li><em>target</em> is the term, in the glossary</li>
+<li><em>title</em> is the term itself</li>
+</ul>
+</dd></dl>
+
+<p><strong>To recap:</strong> If you do not include an explicit <code class="docutils literal"><span class="pre">&lt;target&gt;</span></code>, the text inside the role will be understood as the target, and the anchor text for the link in the output will be the title of the target.</p>
+<p>For example:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">-</span> Link to this document:
+
+  <span class="m">-</span> <span class="na">:doc:</span><span class="nv">`contributing`</span>
+  <span class="m">-</span> <span class="na">:doc:</span><span class="nv">`anchor text &lt;contributing&gt;`</span>
+
+<span class="m">-</span> Link to this section:
+
+  <span class="m">-</span> <span class="na">:ref:</span><span class="nv">`cross-referencing`</span>
+  <span class="m">-</span> <span class="na">:ref:</span><span class="nv">`anchor text &lt;cross-referencing&gt;`</span>
+
+<span class="m">-</span> Link to a term:
+
+  <span class="m">-</span> <span class="na">:term:</span><span class="nv">`participant`</span>
+  <span class="m">-</span> <span class="na">:term:</span><span class="nv">`anchor text &lt;participant&gt;`</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Link to this document:<ul>
+<li><a class="reference internal" href="#"><span class="doc">Contributing to NEMO Docs</span></a></li>
+<li><a class="reference internal" href="#"><span class="doc">anchor text</span></a></li>
+</ul>
+</li>
+<li>Link to this section:<ul>
+<li><a class="reference internal" href="#cross-referencing"><span class="std std-ref">Cross referencing</span></a></li>
+<li><a class="reference internal" href="#cross-referencing"><span class="std std-ref">anchor text</span></a></li>
+</ul>
+</li>
+<li>Link to a term:<ul>
+<li><span class="xref std std-term">participant</span></li>
+<li><span class="xref std std-term">anchor text</span></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="writing-about-user-interface">
+<span id="interface-writing"></span><h4>Writing about User Interface<a class="headerlink" href="#writing-about-user-interface" title="Permalink to this headline">¶</a></h4>
+<p>Several roles are used when describing user interactions.</p>
+<dl class="role">
+<dt id="role-guilabel">
+<code class="descname">:guilabel:</code><a class="headerlink" href="#role-guilabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks up <em>actual UI text</em> of form labels or buttons.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Press the <span class="na">:guilabel:</span><span class="nv">`Submit`</span> button.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-menuselection">
+<code class="descname">:menuselection:</code><a class="headerlink" href="#role-menuselection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks up the <em>actual UI text</em> of a navigation menu or form select element.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>Select <span class="na">:menuselection:</span><span class="nv">`Help`</span> from menu.
+</pre></div>
+</div>
+<p>When writing about multi-level menus, use a single <code class="docutils literal"><span class="pre">:menuselection:</span></code> role, and separate menu choices with <code class="docutils literal"><span class="pre">--&gt;</span></code>.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>To save your file, go to <span class="na">:menuselection:</span><span class="nv">`File --&gt; Save`</span> in the Main Menu.
+</pre></div>
+</div>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>In some situations you might not be clear about which option to use from <code class="docutils literal"><span class="pre">:menuselection:</span></code> and <code class="docutils literal"><span class="pre">:guilabel:</span></code>, in which case you should refer to the following rule that we observe in our writing.</p>
+<ul class="last simple">
+<li>Actual UI text will always receive <code class="docutils literal"><span class="pre">:guilabel:</span></code> role unless the text could reasonably be understood to be part of a menu.</li>
+<li>If the actual UI text could be understood as a menu, <code class="docutils literal"><span class="pre">:menuselection:</span></code> should be used.</li>
+</ul>
+</div>
+<dl class="role">
+<dt id="role-kbd">
+<code class="descname">:kbd:</code><a class="headerlink" href="#role-kbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks up a sequence of literal keyboard strokes.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>To stop the local server, type <span class="na">:kbd:</span><span class="nv">`CTRL C`</span>.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-command">
+<code class="descname">:command:</code><a class="headerlink" href="#role-command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks up a terminal command.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>To build the documentation, use <span class="na">:command:</span><span class="nv">`sphinx-build`</span>.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-option">
+<code class="descname">:option:</code><a class="headerlink" href="#role-option" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks up a terminal command option.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>The <span class="na">:option:</span><span class="nv">`-b html`</span> option specifies the HTML builder.
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="custom-text-roles">
+<span id="id15"></span><h4>Custom Text Roles<a class="headerlink" href="#custom-text-roles" title="Permalink to this headline">¶</a></h4>
+<p><strong>Custom Text Roles</strong> signify that the enclosed text should be interpreted in a specific way.</p>
+<p>Custom text roles used in NEMO documentation are:</p>
+<dl class="role">
+<dt id="role-th">
+<code class="descname">:th:</code><a class="headerlink" href="#role-th" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stands for table head and refers to a table header cell in the body of text.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-tc">
+<code class="descname">:tc:</code><a class="headerlink" href="#role-tc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stands for table cell and describes the table cells in the body of text.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="gh">External App String Widget</span>
+<span class="gh">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+The external app widget is displayed when the <span class="na">:th:</span><span class="nv">`appearance`</span> attribute begins with <span class="na">:tc:</span><span class="nv">`ex:`</span>.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-formstate">
+<code class="descname">:formstate:</code><a class="headerlink" href="#role-formstate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the state of the form which could be one of the following:</p>
+<ul class="simple">
+<li>Blank</li>
+<li>Finalized</li>
+<li>Saved</li>
+<li>Sent</li>
+<li>Deleted</li>
+</ul>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="na">:formstate:</span><span class="nv">`Sent`</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-gesture">
+<code class="descname">:gesture:</code><a class="headerlink" href="#role-gesture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Describes a touch screen gesture.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="na">:gesture:</span><span class="nv">`Swipe Left`</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="other-semantic-markup">
+<span id="misc-markup"></span><h4>Other Semantic Markup<a class="headerlink" href="#other-semantic-markup" title="Permalink to this headline">¶</a></h4>
+<dl class="role">
+<dt id="role-abbr">
+<code class="descname">:abbr:</code><a class="headerlink" href="#role-abbr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks up an abbreviation. If the role content contains a parenthesized explanation, it will be treated specially: it will be shown in a tool-tip in HTML.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="na">:abbr:</span><span class="nv">`ELMO (Election Monitoring)`</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-dfn">
+<code class="descname">:dfn:</code><a class="headerlink" href="#role-dfn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks the defining instance of a term outside the glossary.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="na">:dfn:</span><span class="nv">`NEMO`</span> (NEMO) is a data collection tool.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt>
+<code class="descname">:file:</code></dt>
+<dd><p>Marks the name of a file or directory. Within the contents, you can use curly braces to indicate a “variable” part.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>is installed in <span class="na">:file:</span><span class="nv">`/usr/lib/python2.{x}/site-packages`</span>
+</pre></div>
+</div>
+<p>In the built documentation, the <code class="docutils literal"><span class="pre">x</span></code> will be displayed differently to indicate that it is variable.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-program">
+<code class="descname">:program:</code><a class="headerlink" href="#role-program" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks the name of an executable program.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>launch the <span class="na">:program:</span><span class="nv">`NEMO Installer`</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="images-and-figures">
+<span id="images"></span><h4>Images and Figures<a class="headerlink" href="#images-and-figures" title="Permalink to this headline">¶</a></h4>
+<p>Image files should be put in the <code class="file docutils literal"><span class="pre">/img/</span></code> directory in the source, and they should be in a subdirectory with the same name as the document in which they appear. (That is, the filename without the <code class="docutils literal"><span class="pre">.rst</span></code> extension.)</p>
+<p>You must perform lossless compression on the source images. Following tools can be used to optimize the images:</p>
+<ul class="simple">
+<li><strong>ImageOptim</strong> is a tool that allows us to optimize the images. It is not format specific which means it can optimize both jpeg as well as png images. You can download it <a class="reference external" href="https://imageoptim.com/howto.html">from here</a> . After launching ImageOptim.app, dragging and dropping images into its window gives you an in-place optimized file.</li>
+<li><strong>Pngout</strong> is another option for optimizing png images. Installation and usage instructions can be found <a class="reference external" href="http://docs.ewww.io/article/13-installing-pngout/">here</a> .</li>
+<li><strong>Mozjpeg</strong> can be used to optimize jpeg images. Installation and related information can be found on <a class="reference external" href="https://nystudio107.com/blog/installing-mozjpeg-on-ubuntu-16-04-forge/">this link</a> .</li>
+</ul>
+<p>To place an image in a document, use the <code class="docutils literal"><span class="pre">image</span></code> directive.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> /img/{document-subdirectory}/{file}.*
+  <span class="nc">:alt:</span> <span class="nf">Alt text. Every image should have descriptive alt text.</span>
+</pre></div>
+</div>
+<p>Note the <em>literal</em> asterisk at the end <em>in place of a file extension</em>. Use the asterisk, and omit the file extension.</p>
+<p>Use the <code class="docutils literal"><span class="pre">figure</span></code> to markup an image with a caption.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> /img/{document-subdirectory}/{file}.*
+  <span class="nc">:alt:</span> <span class="nf">Alt text. Every image should have descriptive alt text.</span>
+
+  The rest of the indented content will be the caption. This can be a short sentence or several paragraphs. Captions can contain any other rst markup.
+</pre></div>
+</div>
+<div class="section" id="substitutions">
+<span id="id16"></span><h5>Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this headline">¶</a></h5>
+<p>Substitutions are a useful way to define a value which is needed in many places. Substitution definitions are indicated by an explicit markup start (“.. “) followed by a vertical bar, the substitution text (which gets substituted), another vertical bar, whitespace, and the definition block. A substitution definition block may contain inline-compatible directives such as <a class="reference internal" href="#images"><span class="std std-ref">image</span></a> or <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#replace">replace</a>. For more information, refer this <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#substitution-definitions">guide</a>.</p>
+<p>You can define the value once like this:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|RST|</span> <span class="ow">replace</span><span class="p">::</span> reStructuredText
+</pre></div>
+</div>
+<p>and then reuse it like this:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>We use |RST| to write documentation source files.
+</pre></div>
+</div>
+<p>Here, <code class="docutils literal"><span class="pre">|RST|</span></code> will be replaced by reStructuredText</p>
+<p>You can also create a reference with styled text:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|slack|</span> <span class="ow">replace</span><span class="p">::</span> <span class="gs">**NEMO Slack**</span>
+<span class="cp">.. slack: https://elmonemo.slack.com</span>
+</pre></div>
+</div>
+<p>You can use the hyperlink reference by appending a “_” at the end of the vertical bars, for example:</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>You can ask about your problem in |slack|_.
+</pre></div>
+</div>
+<p>You can ask about your problem in <a class="reference external" href="https://elmonemo.slack.com"><strong>NEMO Slack</strong></a>.</p>
+<p>The <code class="docutils literal"><span class="pre">rst_epilog</span></code> in <code class="file docutils literal"><span class="pre">conf.py</span></code> contains a list of global substitutions that can be used from any file. The list is given below:</p>
+<ul>
+<li><p class="first">If you want to create a hyperlink reference for NEMO Slack, you can use <code class="docutils literal"><span class="pre">|nemo-slack|_</span></code>.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>You can use |nemo-slack|_ to ask your questions.
+</pre></div>
+</div>
+<p>You can use <a href="#id28"><span class="problematic" id="id29">|nemo-slack|_</span></a> to ask your questions.</p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p class="first">To create a hyperlink reference for docs-related issues, use <code class="docutils literal"><span class="pre">|docs-issue|_</span></code>.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>If you find a problem, file an |docs-issue|_.
+</pre></div>
+</div>
+<p>If you find a problem, file an <a href="#id30"><span class="problematic" id="id31">|docs-issue|_</span></a>.</p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p class="first">To create a hyperlink reference for contributors guide, use <code class="docutils literal"><span class="pre">|contrib-guide|_</span></code>.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>Be sure to read the <a href="#id32"><span class="problematic" id="id33">|contrib-guide|_</span></a>.</p>
+<p>Be sure to read the <a href="#id34"><span class="problematic" id="id35">|contrib-guide|_</span></a>.</p>
+</li>
+</ul>
+<p>You can add inline images in the document using substitutions. The following block of code substitutes arrow in the text with the image specified.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span>The |arrow| icon opens the jump menu.
+
+<span class="p">..</span> <span class="nt">|arrow|</span> <span class="ow">image</span><span class="p">::</span> /img/{document-subdirectory}/{file}.*
+           <span class="nc">:alt:</span> <span class="nf">Alt text.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="image-file-names">
+<span id="image-names"></span><h5>Image File Names<a class="headerlink" href="#image-file-names" title="Permalink to this headline">¶</a></h5>
+<p>Image file names should:</p>
+<ul class="simple">
+<li>be short yet descriptive</li>
+<li>contain only lower case characters</li>
+<li>have no spaces</li>
+<li>use hyphens as the separator</li>
+</ul>
+<p>Good image file names:</p>
+<ul class="simple">
+<li><code class="file docutils literal"><span class="pre">collect-home-screen.png</span></code></li>
+<li><code class="file docutils literal"><span class="pre">build-data-export-menu.png</span></code></li>
+</ul>
+<p>Bad image file names:</p>
+<ul class="simple">
+<li><code class="file docutils literal"><span class="pre">Collect</span> <span class="pre">home</span> <span class="pre">screen.png</span></code></li>
+<li><code class="file docutils literal"><span class="pre">collect_home_screen.png</span></code></li>
+<li><code class="file docutils literal"><span class="pre">3987948p2983768ohl84692p094.jpg-large</span></code></li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Be sure to obscure any personally-identifiable information from screen shots. Crop to the smallest relevant screen area. Annotate screen shots with arrows or circles to indicate relevant information.</p>
+</div>
+</div>
+</div>
+<div class="section" id="code-samples">
+<span id="id17"></span><h4>Code Samples<a class="headerlink" href="#code-samples" title="Permalink to this headline">¶</a></h4>
+<p>Use the <code class="docutils literal"><span class="pre">code-block</span></code> directive to markup code samples. Specify the language on the same line as the directive for syntax highlighting.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">rst</span>
+
+  Use the <span class="s">``code-block``</span> directive to markup code samples.
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello NEMO!&quot;</span><span class="p">)</span>
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">console</span>
+
+  <span class="gp">$</span> python --version
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">java</span>
+
+  <span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+
+      <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+          <span class="c1">// Prints &quot;Hello, World&quot; to the terminal window.</span>
+          <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Hello, World&quot;</span><span class="o">);</span>
+      <span class="o">}</span>
+
+  <span class="o">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>rst</strong> code-blocks wrap overflow lines by default. To unwrap overflow lines, use <strong>unwrap</strong> class with <strong>rst</strong> code-blocks.</p>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> rst
+  <span class="nc">:class:</span> <span class="nf">unwrap</span>
+</pre></div>
+</div>
+<p>Code-blocks for other languages don’t wrap overflow lines. Instead of wrapping, you need to scroll side-ways. To wrap overflow lines with other code-blocks, use <strong>wrap</strong> class with them.</p>
+<div class="last highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> python
+  <span class="nc">:class:</span> <span class="nf">wrap</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This document is a derivative of the original <a class="reference external" href="https://docs.opendatakit.org/contributing/">Contributing to ODK Docs</a> licensed under a Creative Commons Attribution 4.0 International License.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../styleguide/styleguide.html" class="btn btn-neutral" title="Documentation Style Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, The Carter Center.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
