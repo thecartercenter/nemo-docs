@@ -4,10 +4,10 @@
    contain the root `toctree` directive.
 
 Welcome to ELMO and NEMO's documentation!
-================================
+=========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    content/getstarted/getstarted
@@ -25,3 +25,9 @@ Welcome to ELMO and NEMO's documentation!
    content/admin/admin
    content/licenses/licenses
    
+.. toctree::
+   :maxdepth: 1
+   :caption: Contributing:
+
+   content/styleguide/styleguide
+   content/contributing/contributing  
