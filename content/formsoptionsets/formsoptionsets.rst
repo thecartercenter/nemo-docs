@@ -64,13 +64,7 @@ To create a Multilevel Option Set:
 3. Type the name of the level and click **Save**
 4. Repeat step 3 until all levels have been created
 5. Click and drag levels so that the first level is at the top and the
-   last level is at the bottom. Do not indent levels:
-
-   .. image:: levels-WRONG.png
-      :alt: levels WRONG
-
-   .. image:: levels-RIGHT.png
-      :alt: levels RIGHT
+   last level is at the bottom.
 6. Add options
 7. Click and drag options so that options of any level below the first
    are beneath and indented to the right of the options of the level
@@ -202,6 +196,4 @@ translating questions. To translate an option:
 6. Click **Save**
 
 .. |new option set edited| image:: new-option-set-edited.png
-.. |levels WRONG| image:: levels-WRONG.png
-.. |levels RIGHT| image:: levels-RIGHT.png
 .. |excel option set| image:: excel-option-set.png

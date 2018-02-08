@@ -54,7 +54,7 @@ An example of the guide is shown below:
 .. figure:: SMS-guide-example.png
    :alt: SMS guide example
 
-New to Version 5.8 is the ability to submit an SMS response that can
+SMS responses can
 be relayed out to a selected group of people. The feature allows users
 to be placed into groups that can be alerted that a submission has been
 made to ELMO. This ability is called SMS Forwarding. If the \ **SMS
