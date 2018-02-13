@@ -1,4 +1,4 @@
-3. Settings
+Settings
 ~~~~~~~~~~~
 
 Settings are where you can define language preferences and SMS
@@ -10,12 +10,12 @@ information for each mission.
    top right corner, right of the Admin Mode selection
 2. Select the **Settings** menu
 
-3.1. Time Zone
+Time Zone
 ^^^^^^^^^^^^^^
 
 3. Set the appropriate time zone
 
-3.2. Preferred Languages
+Preferred Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 4. Set the language(s) for the mission. This allows questions and forms
@@ -33,7 +33,7 @@ information for each mission.
    3. In this example, the mission’s primary language will be Arabic;
       Chinese will be used where Arabic is not available
 
-3.3. Override Code
+Override Code
 ^^^^^^^^^^^^^^^^^^
 
 5. Generate an Override Code
@@ -51,7 +51,7 @@ information for each mission.
 
 6. Choose whether to allow unauthenticated submissions.
 
-3.4. Shared SMS settings
+Shared SMS settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Indepth information about SMS setup is available in the `section for

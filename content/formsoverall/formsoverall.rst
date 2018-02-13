@@ -1,7 +1,7 @@
-4. Forms: Overall
+Forms
 ~~~~~~~~~~~~~~~~~
 
-4.1. Overall structure of Forms
+Overall structure of Forms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forms, Questions, and Option Sets can all be standardized in ELMO.
@@ -48,7 +48,7 @@ questions, and option sets can be reused both within a mission and
 across missions, depending on whether they are created in Mission Mode
 or Admin Mode. They can also be edited at any time.
 
-4.2. Forms menu
+Forms menu
 ^^^^^^^^^^^^^^^
 
 The **Forms** menu lists all the available forms for a mission. These
@@ -111,7 +111,7 @@ components:
 9.  The **Clone** icon
 10. The **Print** icon
 
-4.3. Importing Standard Forms
+Importing Standard Forms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forms used on different missions often contain similar or even identical
@@ -138,7 +138,7 @@ To import a Standard Form:
     sets with the same actions used for general forms, questions, and
     option sets, but these actions must be performed in Admin Mode.
 
-4.4. Creating a General Form
+Creating a General Form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forms are composed of *questions*. Some questions require users to
@@ -181,7 +181,7 @@ can be done in any order.
 
     4. Click **Save** when finished editing
 
-4.5. Creating Groups and Grids
+Creating Groups and Grids
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A new feature in ELMO 5.x is the ability to create and sort groups of
@@ -257,7 +257,7 @@ To create a grid:
 4. Click **Save** to save the form, or click **Save and Publish** if
    the form is ready to be used.
 
-4.6. Creating a Standard Form
+Creating a Standard Form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The process of creating a Standard Form is similar to that of creating a
@@ -274,7 +274,7 @@ General Form. To create a Standard Form:
 8. Click **Save**
     |standard form add questions edited|
 
-4.7. Publishing a Form
+Publishing a Form
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Once a form has been created, it must be published before it can be
@@ -288,7 +288,7 @@ accessed by observers, completed, and submitted. To publish a form:
 .. figure:: publish-forms-edited.png
    :alt: publish forms edited
 
-4.8. Printing Forms
+Printing Forms
 ^^^^^^^^^^^^^^^^^^^
 
 ELMO allows for forms and data to be printed. In the field, a hardcopy

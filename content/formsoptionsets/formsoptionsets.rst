@@ -1,4 +1,4 @@
-6. Forms: Option Sets
+Option Sets
 ~~~~~~~~~~~~~~~~~~~~~
 
 The Option Sets page is where the answers for Select One (ex. “What
@@ -6,7 +6,7 @@ color is your shirt?”) and Select Multiple (ex. “What kinds of food do
 you like?”) question types can be created. Click the **Option Sets**
 menu on the main menu bar to create or edit existing Option Sets.
 
-6.1. Create New Option Set
+Create New Option Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click **Create New Option** **Set** link available from the
@@ -99,7 +99,7 @@ and uploaded directly into ELMO:
    the upload continues in the background. You can also click on the
    **Operations** link to check if your upload was successful
 
-6.2. Edit existing Option Set
+Edit existing Option Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click the **Option Sets** menu
@@ -117,14 +117,14 @@ edited option set should be imported under the name LOS #2 or something
 similar, because naming it LOS will result in a second option set named
 LOS being created, not the replacement of the first one.
 
-6.3. Import Standard Option Set
+Import Standard Option Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click **Import Standard Option Sets**
 2. Click the boxes next to the option sets to be imported
 3. Click **Import**
 
-6.4. Importing large option sets
+Importing large option sets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click **Import New Option Set**
@@ -133,7 +133,7 @@ LOS being created, not the replacement of the first one.
 4. Select an XLS or CSV file
 5. Click **Import**
 
-6.5. Upload a Large Geographic Option Set
+Upload a Large Geographic Option Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To upload a large geographic option set:
@@ -175,7 +175,7 @@ USA        \| GA     \| Atlanta  \| 33.747082, -84.380101
    the upload continues in the background. You can also click on the
    **Operations** link to check if your upload was successful.
 
-6.6. Language translations
+Language translations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Options within an Option Set can be translated in a manner similar to

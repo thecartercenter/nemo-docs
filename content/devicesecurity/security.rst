@@ -1,50 +1,5 @@
-12. Additional features and information
+Device Security
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-12.1. Broadcast messages
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Coordinators may want to broadcast messages to observer teams in the
-field in the instance of a change of polling location, schedule, or
-another event. Administrators and coordinators can send Broadcasts via
-email or SMS to individual users or all active users on a mission.
-
-Please note that you need an ELMO SMS gateway with SMS credit
-established before messages can be sent.
-
-To send a Broadcast Message:
-
-1. Click the **Users** menu
-2. Select the user(s) to receive a message by marking the boxes next to
-   their name(s)
-
-       **NOTE:** Observers **do NOT** have the ability to reply to
-       broadcast messages – instruct observers to contact the observer
-       coordinator directly if they need to discuss a broadcast message
-       or other issue.
-
-3. Click **Send Broadcast**—this action will direct to a page where
-   the medium of the broadcast can be selected, and the subject and its
-   content can be entered into a text field
-   |broadcast selection edited|
-4. Select a medium from the drop down list:
-
-   1. **SMS preferred**: will try to send a SMS and then an email, if
-      unsuccessful
-   2. **Email preferred**: will try to send an email and then an SMS
-      if unsuccessful
-   3. **SMS only**: will send only SMS
-   4. **Email only**: will send only email
-   5. **Both SMS and Email**: will send both SMS and email
-
-5. Type a subject in the Subject line
-6. Type your broadcast message in the Message box
-7. | Click **Send**
-   |  |broadcasts edited|
-
-
-12.2. Device Security
-^^^^^^^^^^^^^^^^^^^^^
 
 Data sent to ELMO should be set up securely using HTTPS
 (**Administrators take note!**). In addition, each physical device
@@ -65,8 +20,8 @@ here <https://play.google.com/books/reader?id=dnzVBAAAQBAJ&printsec=frontcover&o
 if it is on 6.x, `click
 here <https://play.google.com/books/reader?id=tu6bCgAAQBAJ&printsec=frontcover&output=reader&hl=en&pg=GBS.PP1>`__.
 
-12.2.1. Use a Screen Lock
-'''''''''''''''''''''''''
+Use a Screen Lock
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Think of a screen lock as a password to unlock a phone. Using a screen
 lock is important for security. If someone is in physical possession of
@@ -108,8 +63,8 @@ use. You will be guided through how to change the screen lock. The
 screen lock options available depend on each device, its operating
 system (OS), and the version of the OS on the device.
 
-12.2.2. Encrypt Device with SD Card Encryption
-''''''''''''''''''''''''''''''''''''''''''''''
+Encrypt Device with SD Card Encryption
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If a device is lost, stolen, or in someone else’s possession, they may
 be able to gain access to the data on the device by physically accessing
@@ -150,8 +105,8 @@ Some devices require a screen lock if encryption is enabled. Some
 devices only allow certain types of screen locks to be used, such as a
 pin or password, when encryption is enabled.
 
-12.2.3. Turn off Developer Options
-''''''''''''''''''''''''''''''''''
+Turn off Developer Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Developer options are settings within the Android system that allow a
 device to be used to develop and debug an application. If you are not
@@ -192,8 +147,8 @@ On the top bar inside *Developer Options*, switch the toggle from *On*
 to *Off*. You will know *Developer Options* are turned off when the
 options on the screen are grayed out.
 
-12.2.4. Protection from Harmful Applications
-''''''''''''''''''''''''''''''''''''''''''''
+Protection from Harmful Applications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each time an application is installed, it has the potential to access
 data and media, information about other apps, geolocation, and a great
@@ -263,8 +218,8 @@ If questionable apps have been installed on a device or there are
 applications that are no longer needed on the device, it is recommended
 that these applications be uninstalled for added security.
 
-12.2.5. ODK Collect: Delete after sending forms
-'''''''''''''''''''''''''''''''''''''''''''''''
+ODK Collect: Delete after sending forms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In case you are worried about sensitive information you’ve collected and
 “what if I lose my device,” you may want to also consider removing any
@@ -273,6 +228,3 @@ and received by ELMO.
 
 The “Delete After Send” option is available through ODK Collect
 settings. For more information, please visit https://opendatakit.org/.
-
-.. |broadcast selection edited| image:: broadcast-selection-edited.png
-.. |broadcasts edited| image:: broadcasts-edited.png

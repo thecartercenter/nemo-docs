@@ -1,11 +1,6 @@
-7. Submitting data: Online
+Web
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Forms can be submitted to ELMO through three different platforms:
-
-1. Online (Via the ELMO website)
-2. Via a tablet
-3. Via SMS
 
 To submit a form online:
 

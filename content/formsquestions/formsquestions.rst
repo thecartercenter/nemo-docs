@@ -1,4 +1,4 @@
-5. Forms: Questions
+Questions
 ===================
 
 To create and import questions to a mission, navigate to the Questions
@@ -16,7 +16,7 @@ page by clicking on the **Questions** menu on the main menu bar.
     -  *Required: it must be answered in order to submit the completed
        form, unless an override code is provided*
 
-5.1. Create a Question
+Create a Question
 ----------------------
 
 .. figure:: create-new-question-edited.png
@@ -32,7 +32,7 @@ To create a question that will be used for the current mission:
 -  3: Select the Type of response needed for the question from the
    following options:
 
-5.2. Types of questions
+Types of questions
 -----------------------
 
 +------------+---------------------------------------------------------------+
@@ -83,7 +83,7 @@ A note on image, video, or audio submissions: those files can be big!
 Big files may also mean a lot of data costs as well. Consult with your
 ELMO or database administrator on best practices for your project.
 
-5.3. Creating Hints
+Creating Hints
 -------------------
 
 -  5: Add further instructions in the **Hint** box below the
@@ -103,8 +103,8 @@ ELMO or database administrator on best practices for your project.
 -  8: To edit the question, return to the Questions page and select the
    corresponding **Pencil icon**
 
-5.4. Language translations
---------------------------
+Language translations
+-------------------------
 
 Question titles and hints can be translated into any language that has
 been set for the mission. To add a language to a mission, go to the
@@ -132,7 +132,7 @@ that have been translated into the selected language will appear
 translated once that language is selected. For example, the French
 translation of an English question will appear once French is selected.
 
-5.5. Tags
+Tags
 ---------
 
 Tags are an easy way to organize information around a common keyword or

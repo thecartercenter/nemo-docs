@@ -1,4 +1,4 @@
-13. Information for Administrators
+Connecting FrontlineSMS to NEMO
 ==================================
 
 | More in-depth information on the following topics is provided in this
@@ -6,7 +6,7 @@
 | \* SMS Gateways (FrontlineSMS/Twilio)
 | \* Standards and Data Integrity
 
-13.1. FrontlineSMS gateway setup
+FrontlineSMS gateway setup
 --------------------------------
 
 You can turn your Android smartphone or tablet into a gateway using the

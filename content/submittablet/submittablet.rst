@@ -1,4 +1,4 @@
-8. Submitting data: Tablet
+Android Devices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Forms can be submitted via tablet. Any Android-based tablet with an
@@ -12,7 +12,7 @@ is necessary:
 2. Internet or mobile connection
 3. ODK Collect app (via the Play store)
 
-8.1. Setup of Android tablet/phone
+Setup of Android tablet/phone
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forms are downloaded, filled out, and submitted in a program called ODK
@@ -53,7 +53,7 @@ Collect:
 12. Type the password
 13. Press **OK**
 
-8.2. Downloading forms
+Downloading forms
 ^^^^^^^^^^^^^^^^^^^^^^
 
 A form must be downloaded to a tablet in ODK Collect before it can be
@@ -76,7 +76,7 @@ submitted. To download a form:
     delete previous versions to prevent confusion. Good team
     communication is critical!
 
-8.3. Submitting forms
+Submitting forms
 ^^^^^^^^^^^^^^^^^^^^^
 
 To fill out and submit a form:
@@ -94,7 +94,7 @@ To fill out and submit a form:
 6. Mark the box next to the form
 7. Press **Send Selected**
 
-8.4. Editing forms before submission
+Editing forms before submission
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To edit any answers to a form before submission, unmark the box on the
@@ -108,7 +108,7 @@ Form and Exit**. Then:
 4. When finished with editing, mark the box next to **Mark form as
    finalized** before pressing **Save Form and Exit**
 
-8.5. Override Code
+Override Code
 ^^^^^^^^^^^^^^^^^^
 
 ELMO does not typically allow the observer to finalize and send in forms

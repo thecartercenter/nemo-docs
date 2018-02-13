@@ -1,5 +1,18 @@
-14. About ELMO licenses
-~~~~~~~~~~~~~~~~~~~~~~~
+Cloud
+~~~~~~~
+
+.. _set-up-cloud:
+
+Set up an ELMO instance on the cloud
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+https://github.com/thecartercenter/elmo/blob/master/docs/development-setup.md
+
+
+
+
+About ELMO licenses
+^^^^^^^^^^^^^^^^^^^^
 
 The open source license for ELMO code is `Apache
 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`__. Our code is

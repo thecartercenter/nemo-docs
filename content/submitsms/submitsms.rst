@@ -1,4 +1,4 @@
-9. Submitting data: SMS
+SMS
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Forms can also be submitted via SMS. Any mobile phone with SMS
@@ -14,7 +14,7 @@ coverage. It also can be cheaper per observer, and may suit certain
 monitoring and evaluation purposes, quantitative inquiries, or simple
 surveys.
 
-9.1. SMS Form Creation
+SMS Form Creation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Creating an “SMS-able” form is similar to creating online and tablet
@@ -71,7 +71,7 @@ reported, it is important to alert an entire group of responders that
 something is going on. Thus SMS Forwarding should be enabled for this
 form.
 
-9.2. SMS Authentication
+SMS Authentication
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 SMS Authentication is a feature that adds an extra measure of protection
@@ -103,7 +103,7 @@ that the registered phone number and the authentication code belong to
 the same user. All SMS submissions that do not meet both these
 conditions are rejected.
 
-9.3. Submitting SMS responses
+Submitting SMS responses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To submit forms to ELMO via SMS, the following is required:

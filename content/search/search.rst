@@ -1,10 +1,10 @@
-10. Search
+Search
 ==========
 
 Searching is a critical aspect of being able to find the information you
 need. This function is available on many parts of ELMO.
 
-10.1. Operators
+Operators
 ---------------
 
 Keywords are just the words you use in your search. Combining Keywords
@@ -41,7 +41,7 @@ operator (parentheses), and **phrase** operator (“”).
 |          | outside the center and down the street“                             |
 +----------+---------------------------------------------------------------------+
 
-10.2. Qualifiers
+Qualifiers
 ----------------
 
 A qualifier is a word you add to an expression to specify where to

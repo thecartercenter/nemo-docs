@@ -1,4 +1,4 @@
-11. Reports and Data Analysis
+Reporting and Data Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ELMO stores and aggregates incoming data so that field and headquarters
@@ -8,7 +8,7 @@ timely manner. However, other tools may be more useful for more detailed
 analysis. For this, data can be exported from ELMO for further review in
 other analytical software.
 
-11.1. Internal report building
+Internal report building
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Submitted data can be visualized in the Reports section of ELMO. Click
@@ -96,7 +96,7 @@ If selected, the following prompts/options are available:
        or not show any text responses
     7. A title for the report
 
-11.2. Exporting to Spreadsheets (.csv)
+Exporting to Spreadsheets (.csv)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | If the options available within the Reports section do not meet
@@ -114,7 +114,7 @@ Tally and List Reports can also be exported to a CSV file:
 2. Click the report to be exported
 3. Click **Export Data To CSV Format**
 
-11.3. External connections - Tableau
+External connections - Tableau
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tableau is a data visualization software that allows to present ELMO
