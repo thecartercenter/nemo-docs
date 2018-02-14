@@ -24,7 +24,7 @@ Create a New Form
 1. Exit admin mode and tap on the **Forms** tab
 2. Click **Create New Form** to create your first form
 
-.. image:: create-form.png
+.. image:: createform.png
 
 
 Add Questions to Form
@@ -32,7 +32,7 @@ Add Questions to Form
 
 Click on **+ Add Question**
 
-.. image:: add-question.png
+.. image:: addquestion.png
 
 
 Publish Form
@@ -40,7 +40,7 @@ Publish Form
 
 After adding questions to your form, you need to **publish** the form in order to allow users to submit form responses. To do so Click on **Publish Form**
 
-.. image:: publish-form.png
+.. image:: publishform.png
 
 
 
@@ -52,4 +52,4 @@ Now you are ready to submit form responses:
 1. Click on the **Submit** tab
 2. Select a form from the list
 
-.. image:: submit-response.png
+.. image:: submitresponse.png
