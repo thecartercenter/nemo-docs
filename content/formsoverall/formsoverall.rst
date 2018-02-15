@@ -1,7 +1,7 @@
 Forms
 ~~~~~~~~~~~~~~~~~
 
-Overall structure of Forms
+Overall Structure of Forms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forms, Questions, and Option Sets can all be standardized in ELMO.
@@ -48,7 +48,7 @@ questions, and option sets can be reused both within a mission and
 across missions, depending on whether they are created in Mission Mode
 or Admin Mode. They can also be edited at any time.
 
-Forms menu
+Forms Menu
 ^^^^^^^^^^^^^^^
 
 The **Forms** menu lists all the available forms for a mission. These

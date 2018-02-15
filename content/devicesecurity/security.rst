@@ -218,7 +218,7 @@ If questionable apps have been installed on a device or there are
 applications that are no longer needed on the device, it is recommended
 that these applications be uninstalled for added security.
 
-ODK Collect: Delete after sending forms
+ODK Collect: Delete After Sending Forms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In case you are worried about sensitive information you’ve collected and

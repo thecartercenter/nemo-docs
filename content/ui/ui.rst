@@ -1,25 +1,5 @@
-Introduction
-~~~~~~~~~~~~~~~~~~
-
-
-ELMO is The Carter Center’s open-source ELection MOnitoring data
-collection and reporting system, built specifically with election
-monitoring in mind. Equipped with ELMO, observers can submit evaluations
-of a process – via tablets (utilizing Open Data Kit), SMS, or directly
-online – in real-time to field or *mission* headquarters. ELMO’s
-reporting system organizes observer findings, and is relied upon by The
-Carter Center missions around the globe to analyze data and to assess
-elections as well as broader political processes.
-
-The open source license for ELMO is Apache 2.0. ELMO can be hosted on
-personal servers and users can control who has access to the data.
-
-
-
-Set up an ELMO instance
-^^^^^^^^^^^^^^^^^^^^^^^
-:ref:`set-up-cloud`
-
+Menu Bar & Home Screen
+~~~~~~~~~~~~~~~~~~~~~~
 
 
 Viewing the Header

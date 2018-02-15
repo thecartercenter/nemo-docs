@@ -6,7 +6,7 @@ Connecting FrontlineSMS to NEMO
 | \* SMS Gateways (FrontlineSMS/Twilio)
 | \* Standards and Data Integrity
 
-FrontlineSMS gateway setup
+FrontlineSMS Gateway Setup
 --------------------------------
 
 You can turn your Android smartphone or tablet into a gateway using the

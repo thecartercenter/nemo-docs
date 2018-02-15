@@ -103,7 +103,7 @@ that the registered phone number and the authentication code belong to
 the same user. All SMS submissions that do not meet both these
 conditions are rejected.
 
-Submitting SMS responses
+Submitting SMS Responses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To submit forms to ELMO via SMS, the following is required:

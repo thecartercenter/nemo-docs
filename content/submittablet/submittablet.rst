@@ -12,7 +12,7 @@ is necessary:
 2. Internet or mobile connection
 3. ODK Collect app (via the Play store)
 
-Setup of Android tablet/phone
+Setup of Android Tablet/Phone
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forms are downloaded, filled out, and submitted in a program called ODK
@@ -53,7 +53,7 @@ Collect:
 12. Type the password
 13. Press **OK**
 
-Downloading forms
+Downloading Forms
 ^^^^^^^^^^^^^^^^^^^^^^
 
 A form must be downloaded to a tablet in ODK Collect before it can be
@@ -76,7 +76,7 @@ submitted. To download a form:
     delete previous versions to prevent confusion. Good team
     communication is critical!
 
-Submitting forms
+Submitting Forms
 ^^^^^^^^^^^^^^^^^^^^^
 
 To fill out and submit a form:
@@ -94,7 +94,7 @@ To fill out and submit a form:
 6. Mark the box next to the form
 7. Press **Send Selected**
 
-Editing forms before submission
+Editing Forms Before Submission
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To edit any answers to a form before submission, unmark the box on the

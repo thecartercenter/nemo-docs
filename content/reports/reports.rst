@@ -8,7 +8,7 @@ timely manner. However, other tools may be more useful for more detailed
 analysis. For this, data can be exported from ELMO for further review in
 other analytical software.
 
-Internal report building
+Internal Report Building
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Submitted data can be visualized in the Reports section of ELMO. Click
@@ -114,7 +114,7 @@ Tally and List Reports can also be exported to a CSV file:
 2. Click the report to be exported
 3. Click **Export Data To CSV Format**
 
-External connections - Tableau
+External Csonnections - Tableau
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tableau is a data visualization software that allows to present ELMO

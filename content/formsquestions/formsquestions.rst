@@ -32,7 +32,9 @@ To create a question that will be used for the current mission:
 -  3: Select the Type of response needed for the question from the
    following options:
 
-Types of questions
+.. _question-types:
+
+Types of Questions
 -----------------------
 
 +------------+---------------------------------------------------------------+
@@ -103,7 +105,7 @@ Creating Hints
 -  8: To edit the question, return to the Questions page and select the
    corresponding **Pencil icon**
 
-Language translations
+Language Translations
 -------------------------
 
 Question titles and hints can be translated into any language that has

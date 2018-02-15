@@ -99,7 +99,7 @@ and uploaded directly into ELMO:
    the upload continues in the background. You can also click on the
    **Operations** link to check if your upload was successful
 
-Edit existing Option Set
+Edit Existing Option Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click the **Option Sets** menu
@@ -124,7 +124,7 @@ Import Standard Option Set
 2. Click the boxes next to the option sets to be imported
 3. Click **Import**
 
-Importing large option sets
+Importing Large Option Sets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click **Import New Option Set**
@@ -175,7 +175,7 @@ USA        \| GA     \| Atlanta  \| 33.747082, -84.380101
    the upload continues in the background. You can also click on the
    **Operations** link to check if your upload was successful.
 
-Language translations
+Language Translations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Options within an Option Set can be translated in a manner similar to

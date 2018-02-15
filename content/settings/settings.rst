@@ -51,7 +51,7 @@ Override Code
 
 6. Choose whether to allow unauthenticated submissions.
 
-Shared SMS settings
+Shared SMS Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Indepth information about SMS setup is available in the `section for

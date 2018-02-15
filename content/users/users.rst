@@ -46,7 +46,7 @@ To create new users:
 
 5. Click **Save.**
 
-Create multiple users (ideal for adding a large number of users)
+Create Multiple Users (ideal for adding a large number of users)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Click Create Multiple Users
@@ -64,7 +64,7 @@ Create multiple users (ideal for adding a large number of users)
 
 3. Click Import.
 
-Manage existing users
+Manage Existing Users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. To edit existing user information:
