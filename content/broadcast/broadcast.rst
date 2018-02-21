@@ -1,3 +1,5 @@
+.. _broadcast:
+
 Broadcast Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

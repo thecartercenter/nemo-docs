@@ -1,3 +1,5 @@
+.. _option-sets:
+
 Option Sets
 ~~~~~~~~~~~~~~~~~~~~~
 

@@ -1,12 +1,12 @@
 Getting Started
-~~~~~~~~~~~~~~~
+===============
 
 
 Below are the steps required to create a new mission (Admin access required), create a new form, add question to the form, then deploy the form.
 
 
 Create a Mission
-"""""""""""""""""
+----------------
 
 .. note::
   Only Admin users can create missions
@@ -25,7 +25,7 @@ Create a Mission
 
 
 Create a New Form
-"""""""""""""""""
+-----------------
 
 1. Exit admin mode and tap on the **Forms** tab
 2. Click **Create New Form** to create your first form
@@ -34,7 +34,7 @@ Create a New Form
 
 
 Add Questions to Form
-"""""""""""""""""""""
+---------------------
 
 Click on **+ Add Question**
 
@@ -46,7 +46,7 @@ Click on **+ Add Question**
 
 
 Publish Form
-"""""""""""""""""
+------------
 
 After adding questions to your form, you need to **publish** the form in order to allow users to submit form responses. To do so Click on **Publish Form**
 
@@ -55,7 +55,7 @@ After adding questions to your form, you need to **publish** the form in order t
 
 
 Submit Response
-"""""""""""""""""
+---------------
 
 Now you are ready to submit form responses:
 

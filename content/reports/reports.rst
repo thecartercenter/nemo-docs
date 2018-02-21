@@ -1,3 +1,5 @@
+.. _reports:
+
 Reporting and Data Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -1,61 +1,48 @@
 Menu Bar & Home Screen
-~~~~~~~~~~~~~~~~~~~~~~
+======================
 
 
 Viewing the Header
-^^^^^^^^^^^^^^^^^^^^^^^
+------------------
 
 .. figure:: Top-Header-edited.png
    :alt: 
 
 The header is the top section of the screen. Here are its components:
 
-1.  The **Home** icon. Click this to return to the home page of the
-    selected field project or *mission*.
-2.  The mission selection box. Click this to display all missions that
+1.  The **ELMO/NEMO** icon. Click to return to the home page of the
+    selected field project or mission.
+2.  The mission selection box. Click to display all missions that
     can be accessed by the user. Click on a mission to go to its home
-    page, or click the box again to hide the list.
-3.  The **Admin Mode** icon (Admins only). Click this to enter Admin
+    page.
+3.  The **Admin Mode** icon (Admins only). Click to enter Admin
     Mode. The header in this mode looks different, but the function of
-    each icon is the same. There are only two new icons, the functions
-    of which will be discussed later.
-4.  The edit profile icon. The icon shows your username and role. Click
-    this to edit your profile.
-5.  The **Logout** icon. Click this to log out of ELMO.
-6.  The **Submit** menu. Click this to display a list of all published
+    each icon is the same.
+4.  The edit profile icon. The icon shows your username and role. Click to edit your profile.
+5.  The **Logout** icon. Click to log out of ELMO.
+6.  The **Submit** menu. Click to display a list of all published
     forms within the current mission. Click a form to fill it out and
-    submit it, or click the menu again to hide the list.
-7.  The **Responses** menu. Click this to go to the Responses page,
+    submit it.
+7.  The **Responses** menu. Click to go to the Responses page,
     which shows all responses that have been submitted to all forms
     within the mission.
-8.  The **Reports** menu. Click this to go to the Reports page, where
+8.  The **Reports** menu. Click to go to the Reports page, where
     you can generate reports and see all of the reports that have
-    already been generated within the mission.
-9.  The **Forms** menu. Click this to go to the Forms page, where you
-    can create and import forms and see all of the forms that have
-    already been created in or imported to the mission.
-10. The **Questions** menu. Click this to go to the Questions page,
-    where you can create and import questions and see all of the
-    questions that have already been created in or imported to the
-    mission.
-11. The **Option Sets** menu. Click this to go to the Option Sets page,
-    where you can create or import option sets and see all of the
-    reports that have already been created in or imported to the
-    mission.
-12. The **Users** menu. Click this to go to the Users page, where you
-    can:
+    already been generated within the mission. More info on the :ref:`reports` section
+9.  The **Forms** menu. Click to go to the Forms page, where you
+    can create and import forms and see the list of available :ref:`forms`.
+10. The **Questions** menu. Click to go to the Questions page,
+    where you can create and import questions and see the list of available :ref:`questions`.
+11. The **Option Sets** menu. Click to go to the Option Sets page,
+    where you can create or import option sets and see list of available :ref:`option-sets`.
+12. The **Users** menu. Click to go to Users page. See :ref:`users` section for more details.
 
-    1. Create new users.
-    2. See information on all users that have already been created.
-    3. Export user information as a vCard.
-    4. Send a broadcast to one or more users.
-
-13. The **Broadcasts** menu. Click this to go to the Broadcasts page,
+13. The :ref:`broadcast` menu. Click to go to the Broadcasts page,
     where you can send a broadcast to users and view broadcasts that
     have already been sent.
-14. The **SMS** menu. Click this to view all SMSes that have been sent
+14. The **SMS** menu. Click to view all SMSes that have been sent
     and received by ELMO.
-15. The **Settings** menu. Click this to view and change your personal
+15. The :ref:`settings` menu. Click to view and change your personal
     settings.
 
 This is the version that Admins will see in Admin Mode:
@@ -73,14 +60,14 @@ There are only two new components:
 
 
 Viewing the Footer
-^^^^^^^^^^^^^^^^^^^^^^^
+------------------
 
 .. figure:: viewing_footer.png
    :alt: Bottom header edited
 
 The footer is the bottom section of the screen. Here are its components:
 
-1. The Language menu. Click **Change Language** to reveal a list of
+1. Click **Change Language** to reveal a list of
    all languages available. Click a different language to access that
    language’s online version of ELMO, or click the current language to
    close the list. **Change Language** will not return, but you can
@@ -88,24 +75,23 @@ The footer is the bottom section of the screen. Here are its components:
 2. The time zone the user has selected. This can be changed in the
    Settings menu.
 3. The outgoing SMS provider for the current mission (not shown in Admin
-   mode).
-4. The current version number of ELMO being used.
-5. The About ELMO icon. Click this to go to getelmo.org.
+   mode). See :ref:`sms-setup`.
+4. The current version number of ELMO.
+5. Click on **About ELMO** to go to getelmo.org.
 
 
 .. note::
 
   ELMO online languages are slowly being built and
-  increasing through volunteer efforts. Although the languages
-  available of these are limited, ELMO is multilingual ready (ISO
-  639-2 standard) for questions and forms. The list of available
+  increasing through volunteer efforts. It both supports Right to Left and Left to Right languages.
+  ELMO is multilingual ready (ISO 639-2 standard) for questions and forms. The list of available
   languages is
   `here <https://www.loc.gov/standards/iso639-2/php/code_list.php>`__.
 
 
 
 Viewing the Dashboard
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 .. figure:: ELMO-101-dashboard.png
    :alt: ELMO-101-dashboard
