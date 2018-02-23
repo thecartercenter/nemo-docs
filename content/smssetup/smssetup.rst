@@ -1,5 +1,3 @@
-.. _sms-setup:
-
 Connecting FrontlineSMS to NEMO
 ==================================
 

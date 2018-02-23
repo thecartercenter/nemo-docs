@@ -5,61 +5,60 @@ Getting Started
 Below are the steps required to create a new mission (Admin access required), create a new form, add question to the form, then deploy the form.
 
 
-Create a Mission
+Create a mission
 ----------------
 
 .. note::
-  Only Admin users can create missions
+  Only Admin users can create missions.
 
 
-1. Click **admin mode** on the top right
-2. Enter **Missions** tab
-3. Click on **Create New Mission**
+1. Click :guilabel:`Admin Mode` on the top right.
+2. Click on :guilabel:`Missions` tab.
+3. Click on :guilabel:`Create New Mission`.
 
 .. image:: mission.png
 
 
 .. tip::
-  * Mission names usually include the country name and the year (i.e. Kenya 2013)
-  * Administrators have the option to lock a mission. When a mission is locked, Responses and Forms cannot be created or edited, and users cannot be added or deleted. To lock a mission, click the box labeled **Locked?**
+  - Mission names usually include the country name and the year (i.e. Kenya 2013).
+  - Administrators have the option to lock a mission. When a mission is locked, responses and forms cannot be created or edited, and users cannot be added or deleted. To lock a mission, edit the mission and check the box labeled :guilabel:`Locked`.
 
 
-Create a New Form
+Create a new form
 -----------------
 
-1. Exit admin mode and tap on the **Forms** tab
-2. Click **Create New Form** to create your first form
+1. Exit Admin Mode and click on the :guilabel:`Forms` tab.
+2. Click :guilabel:`Create New Form` to create your first form.
 
 .. image:: createform.png
 
 
-Add Questions to Form
+Add questions to form
 ---------------------
 
-Click on **+ Add Question**
+Click on :guilabel:`+ Add Question`.
 
 .. image:: addquestion.png
 
 .. tip::
-  For more details on question types go to :ref:`question-types` section
+  For more details on question types go to :ref:`question-types` section.
   
 
 
-Publish Form
+Publish form
 ------------
 
-After adding questions to your form, you need to **publish** the form in order to allow users to submit form responses. To do so Click on **Publish Form**
+After adding questions to your form, you need to **publish** the form in order to allow users to submit form responses. To do so click on :guilabel:`Publish Form`.
 
 .. image:: publishform.png
 
 
 
-Submit Response
+Submit response
 ---------------
 
-Now you are ready to submit form responses:
+Form responses can be submitted in three different ways:
 
-1. Click on the **Submit** tab
-2. Select a form from the list
-
-.. image:: submitresponse.png
+- On the :doc:`../submitonline/submitonline`.
+- Using the mobile application with :doc:`../submittablet/submittablet`.
+- Via :doc:`../submitsms/submitsms`.
