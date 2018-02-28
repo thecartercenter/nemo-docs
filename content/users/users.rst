@@ -21,7 +21,7 @@ on the functions they are expected to perform during ELMO missions.
    * - Role
      - Responsibility
      - Privileges
-   * - Observer
+   * - Enumerator
      - Collects and submits data from the field.
      - 
          * Fill form responses via android |br| devices, via SMS, or ELMO online |br| platform.
