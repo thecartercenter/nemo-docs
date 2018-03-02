@@ -1223,7 +1223,7 @@ Other Semantic Markup
 Images and Figures
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Image files should be put in the :file:`/img/` directory in the source, and they should be in a subdirectory with the same name as the document in which they appear. (That is, the filename without the ``.rst`` extension.)
+Image files should be put in the same directory as the :file:`.rst` source file.
 
 You must perform lossless compression on the source images. Following tools can be used to optimize the images:
 

@@ -1,46 +1,44 @@
 Questions
-===================
+=========
 
-To create and import questions to a mission, navigate to the Questions
-page by clicking on the **Questions** menu on the main menu bar.
+Create a question
+-----------------
 
-    **Note:** When creating a new question within the form, there are
-    three options for questions available: conditional, hidden and
-    required. Each of these options affects how the form is filled out
-    by the user in the field. A question can be:
+To create a question:
 
-    -  *Conditional: whether or not it appears in the form is dependent
-       upon how a previous question is answered*
-    -  *Hidden: it is not shown on the form – only to be used if it
-       cannot be deleted*
-    -  *Required: it must be answered in order to submit the completed
-       form, unless an override code is provided*
+1. Click on :guilabel:`Questions` in the menu bar.
+2. Click on :guilabel:`Create New Question`.
 
-Create a Question
-----------------------
+.. image:: create-question.png
+  :alt: create question
 
-.. figure:: create-new-question-edited.png
-   :alt: create new question edited
+:guilabel:`Code`
+   A unique name for the question. Observers will not see this box.
 
+:guilabel:`Type`
+  Type of the question, more details can be found in :ref:`question-types` section.
 
-To create a question that will be used for the current mission:
+:guilabel:`Title`
+  Title of the question.
 
--  1: Click on the **Create Question** link (in orange text)
--  2: Provide a unique name for the question in the box labeled
-   **Code**. Normal users (in this case, users with the title of
-   Observer) will not see this box
--  3: Select the Type of response needed for the question from the
-   following options:
+:guilabel:`Hint`
+  Further instructions for the question. more details can be found in :ref:`hints` section.
+
+:guilabel:`Is Key Question`
+  Answers to key questions help summarize responses and appear in the response listing. If this box is marked, a column showing these answers will be added in the Responses tab.
+
+:guilabel:`Tags`
+  Add :ref:`tags` to this question.
 
 .. _question-types:
 
-Types of Questions
------------------------
+Types of questions
+------------------
 
 +------------+---------------------------------------------------------------+
 | Text       | Text designed with a shorter character limit, specifically    |
 |            | used for SMS                                                  |
-+============+===============================================================+
++------------+---------------------------------------------------------------+
 | Long Text  | Text designed for paragraphs rather than simple               |
 |            | phrases/sentences                                             |
 +------------+---------------------------------------------------------------+
@@ -78,67 +76,45 @@ Types of Questions
 | Video      | Record or choose a video                                      |
 +------------+---------------------------------------------------------------+
 
--  4: After selecting the type of question (and option set if
-   applicable), enter the main text of the question in the title box
+.. _hints:
 
-A note on image, video, or audio submissions: those files can be big!
-Big files may also mean a lot of data costs as well. Consult with your
-ELMO or database administrator on best practices for your project.
+Hints
+-----
 
-Creating Hints
--------------------
+Hints are optional help texts used to provide additional instructions on the question.
 
--  5: Add further instructions in the **Hint** box below the
-   **Title** box (i.e.: for a Select Multiple question, add “Select
-   all that apply” in the **Hint** box)
+- On ELMO desktop, hint can be seen when clicking on :guilabel:`i` icon on the right of the question.
+- On ODK Collect (ELMO Android app), the hint will be shown below the question as follows:
 
-.. figure:: hints.png
-   :alt: hints
+.. image:: hint-android.png
+  :alt: hint Android 
 
-
--  6: Below the Hint box, there is an option to make the question a
-   **Key Question**. This option allows responses to the form to be
-   organized based on the response to the question. If this box is
-   marked, a column showing these answers will be added in the Responses
-   tab.
--  7: Click **Save** to generate the question
--  8: To edit the question, return to the Questions page and select the
-   corresponding **Pencil icon**
-
-Language Translations
--------------------------
+Language translations
+---------------------
 
 Question titles and hints can be translated into any language that has
-been set for the mission. To add a language to a mission, go to the
-**Preferred Languages** box in the **Settings** menu. When
-creating or editing questions, the **Title** box will appear for the
-first language in **Preferred Languages**, followed by the **Hint**
-box in that language, then the **Title** and **Hint** boxes for the
-second language, and so on. So, a **Preferred Languages** box that
-looks like this:
+been set for the mission. To add a language to a mission, go to :guilabel:`Settings` menu and edit :guilabel:`Preferred Languages`.
 
-.. figure:: preferred-languages-enfr.png
-   :alt: preferred languages enfr
+.. image:: preferred-languages-enfr.png
+   :alt: preferred languages
 
 
-Results in this:
+When editing a question. Title and Hint will show up for selected languages:
 
-.. figure:: title-hint-enfr.png
-   :alt: title hint enfr
+.. image:: title-hint-enfr.png
+   :alt: title hint
 
+.. note::
 
-To translate a title or a hint, type the translation in the
-corresponding box and click **Save**. To view the translation, change
-the language by clicking **Change Language** in the footer. Questions
-that have been translated into the selected language will appear
-translated once that language is selected. For example, the French
-translation of an English question will appear once French is selected.
+  To view the translation, change the language by clicking :guilabel:`Change Language` in the footer. For example, the French translation of an English question will appear once French is selected.
+
+.. _tags:
 
 Tags
----------
+----
 
 Tags are an easy way to organize information around a common keyword or
-theme. In ELMO, questions may be “tagged” with keywords or descriptors,
+theme. In ELMO, questions may be tagged with keywords or descriptors,
 which may be used to find all of the questions with the same tag. Tags
 are also used in Reports to help sort information assigned to questions.
 
@@ -149,7 +125,56 @@ are also used in Reports to help sort information assigned to questions.
 To tag questions:
 
 1. Open or create the question you wish to tag.
-2. Type in the **Tags** box. (You may add multiple tags.)
-3. Click **Enter** to add a tag.
-4. To delete a tag, click on the **X** next to the tag.
-5. Click **Save** after adding tags to save your changes.
+2. Type in the :guilabel:`Tags` box and click :guilabel:`Enter` to add a tag.
+
+.. note::
+
+  - You can add multiple tags.
+  - To delete a tag, click on the :guilabel:`X` next to the tag.
+
+3. Click :guilabel:`Save` after adding tags to save your changes.
+
+
+Display logic
+-------------
+
+By default all questions are shown in the form. Display logic controls which question to show depending on conditions.
+
+To edit display logic:
+
+1. Click :guilabel:`Forms` menu.
+2. Select a form from the list and click :guilabel:`Edit` icon.
+3. Click on the :guilabel:`Question` you want to edit.
+4. Click on the display logic dropdown and choose between three options:
+
+  - Always display this question.
+  - Display this question if all of these conditions are met.
+  - Display this question if any of these conditions are met.
+
+.. image :: display-logic.png
+  :alt: Display logic
+
+
+.. note::
+
+  - Click on :guilabel:`+ Add Condition` if you want to add another condition for the same question.
+  - Check :guilabel:`hidden` box if you want to hide this question from the form.
+  - Check :guilabel:`required` box to make this question required. Form cannot be submitted if not answered, unless an override code is provided.
+
+
+
+Skip Logic
+----------
+
+On ODK Collect (ELMO Android app), by default when you swipe left or click on next button you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
+
+To edit skip logic:
+
+1. Click :guilabel:`Forms` menu.
+2. Select a form from the list and click :guilabel:`Edit` icon.
+3. Click on the :guilabel:`Question` you want to edit.
+4. Click on skip logic dropdown and select :guilabel:`After this question, skip ...`.
+5. Choose the destination and conditions to be met.
+
+.. image :: skip-logic.png
+  :alt: Skip logic
