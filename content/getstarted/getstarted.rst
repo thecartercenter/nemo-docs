@@ -9,7 +9,7 @@ Create a mission
 ----------------
 
 .. note::
-  Only Admin users can create missions.
+  Only Admins can create missions.
 
 
 1. Click :guilabel:`Admin Mode` on the top right.
@@ -20,8 +20,7 @@ Create a mission
 
 
 .. tip::
-  - Mission names usually include the country name and the year (i.e. Kenya 2013).
-  - Administrators have the option to lock a mission. When a mission is locked, responses and forms cannot be created or edited, and users cannot be added or deleted. To lock a mission, edit the mission and check the box labeled :guilabel:`Locked`.
+  Admins have the option to lock a mission. When a mission is locked, responses and forms cannot be created or edited, and users cannot be added or deleted. To lock a mission, edit the mission and check the box labeled :guilabel:`Locked`.
 
 
 Create a new form
@@ -41,7 +40,7 @@ Click on :guilabel:`+ Add Question`.
 .. image:: addquestion.png
 
 .. tip::
-  For more details on question types go to :ref:`question-types` section.
+  For more details on question types, see:ref:`question-types` section.
   
 
 
@@ -60,5 +59,5 @@ Submit response
 Form responses can be submitted in three different ways:
 
 - On the :doc:`../submitonline/submitonline`.
-- Using the mobile application with :doc:`../submittablet/submittablet`.
+- Using :doc:`../submittablet/submittablet` on an Android device.
 - Via :doc:`../submitsms/submitsms`.

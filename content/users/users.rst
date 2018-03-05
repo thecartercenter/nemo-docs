@@ -9,8 +9,8 @@ User Management
 User permission levels
 ----------------------
 
-ELMO has four kinds of user levels – observer, staffer, coordinator, and
-administrator. Each user level has a different set of permissions based
+ELMO has four user levels – Enumerator, Staffer, Coordinator, and
+Admin. Each user level has a different set of permissions based
 on the functions they are expected to perform during ELMO missions.
 
 .. list-table::
@@ -29,17 +29,20 @@ on the functions they are expected to perform during ELMO missions.
          * Generate reports (only from user's |br| own submitted data).
    * - Staffer
      - Performs real-time analysis and |br| communicates with staff deployed |br| to the field.
-     - Observer privileges plus:
+     - 
+         * All Enumerator privileges.
          * Generate reports from data |br| submitted by users.
          * Broadcast SMS messages to users.
    * - Coordinator
      - Designs forms/checklists, reporting |br| structures, and manages users for a |br| specific mission.
-     - Staffer privileges plus:
+     - 
+         * All Staffer privileges.
          * Create option sets, questions, |br| and forms for the mission.
          * Create, edit and delete users |br| within a mission.
    * - Administrator
      - Designs standardized forms/checklists |br| and manages processes accross |br| several missions.
-     - Coordinator privileges plus:
+     - 
+         * All Coordinator privileges.
          * Create new missions.
          * Create standard option sets, |br| standard questions, and standard |br| forms to be shared/imported |br| across all missions.
 
@@ -55,13 +58,13 @@ Mode. Coordinators can only create new users in Mission Mode.
 To create new users:
 
 1. Determine whether to work in Admin Mode or Mission Mode.
-2. Navigate to the users page by clicking the :guilabel:`Users` menu on the
+2. Navigate to the users page by clicking :guilabel:`Users` on the
    main menu.
 3. Click :guilabel:`Create User`.
 
    |New-user|
 
-4. Enter the new user informations on the **Create User** page.
+4. Enter the new user's information.
 
 .. note::
   User’s phone number must include country code.
@@ -99,12 +102,12 @@ To send an email or SMS broadcast to users:
    1. Check the boxes next to each user to contact.
    2. Click :guilabel:`Send Broadcast`. This redirects to a page where you can define the medium, subject, and content of the broadcast.
 
-Export vCard
-------------
+Export in vCard format
+----------------------
 
-To export users information to a vCard, which is readable in Microsoft Outlook:
+To export users information to a vCard, which is readable by most contact list applications:
 
-1. Find each user whose vCard will be exported.
+1. Check the box next to the name of each user to be exported
 2. Check the box to the left of their names.
 3. Click on :guilabel:`Export as vCard`.
 
@@ -114,18 +117,16 @@ User groups
 Placing users into groups makes it easier to search for users and send
 broadcasts to them. To create a group of users:
 
-1. Add multiple users to a mission.
-2. Click the :guilabel:`Users` tab.
-3. Check the box next to each user to be placed into the group.
-4. Click :guilabel:`Add Users to Group`.
-5. Click :guilabel:`Create New User Group`.
-6. Type the name of the group and click :guilabel:`OK`.
-7. Click the name of the group.
+1. Check the box next to each user to be placed into the group.
+2. Click :guilabel:`Add Users to Group`.
+3. Click :guilabel:`Create New User Group`.
+4. Type the name of the group and click :guilabel:`OK`.
+5. Click the name of the group.
 
 To add users to a preexisting group, follow the same steps as above, but
-skip numbers 5 and 6.
+skip numbers 3 and 4.
 
-To view user groups, go to the :guilabel:`Users` tab and click :guilabel:`List
+To view user groups, go to the :guilabel:`Users` page and click :guilabel:`List
 User Groups`. In the list, you can click:
 
 - :guilabel:`List Members` to view a list of all users in the group.

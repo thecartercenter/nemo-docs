@@ -1,4 +1,4 @@
-Android Devices
+ODK Collect
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Forms can be submitted via tablet. Any Android-based tablet with an
