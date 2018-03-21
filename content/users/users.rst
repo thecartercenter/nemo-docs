@@ -1,8 +1,3 @@
-.. HTML line break definition
-.. |br| raw:: html
-
-   <br />
-
 User Management
 ===============
 
@@ -24,27 +19,27 @@ on the functions they are expected to perform during ELMO missions.
    * - Enumerator
      - Collects and submits data from the field.
      - 
-         * Fill form responses via android |br| devices, via SMS, or ELMO online |br| platform.
+         * Fill form responses via android devices, via SMS, or ELMO online platform.
          * Edit own user information.
-         * Generate reports (only from user's |br| own submitted data).
+         * Generate reports (only from user's own submitted data).
    * - Staffer
-     - Performs real-time analysis and |br| communicates with staff deployed |br| to the field.
+     - Performs real-time analysis and communicates with staff deployed to the field.
      - 
          * All Enumerator privileges.
-         * Generate reports from data |br| submitted by users.
+         * Generate reports from data submitted by users.
          * Broadcast SMS messages to users.
    * - Coordinator
-     - Designs forms/checklists, reporting |br| structures, and manages users for a |br| specific mission.
+     - Designs forms/checklists, reporting structures, and manages users for a specific mission.
      - 
          * All Staffer privileges.
-         * Create option sets, questions, |br| and forms for the mission.
-         * Create, edit and delete users |br| within a mission.
+         * Create option sets, questions, and forms for the mission.
+         * Create, edit and delete users within a mission.
    * - Administrator
-     - Designs standardized forms/checklists |br| and manages processes accross |br| several missions.
+     - Designs standardized forms/checklists and manages processes accross several missions.
      - 
          * All Coordinator privileges.
          * Create new missions.
-         * Create standard option sets, |br| standard questions, and standard |br| forms to be shared/imported |br| across all missions.
+         * Create standard option sets, standard questions, and standard forms to be shared/imported across all missions.
 
 
 Create users

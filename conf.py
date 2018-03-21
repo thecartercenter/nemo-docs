@@ -99,6 +99,11 @@ html_static_path = ['_static']
 
 html_favicon = "_static/img/favicon.png"
 
+# Add custom CSS
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+
+
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #

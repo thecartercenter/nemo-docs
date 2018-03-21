@@ -48,7 +48,7 @@ An example of the guide is shown below:
 
 .. _smsauth:
 
-SMS Authentication
+SMS authentication
 ------------------
 
 ELMO only accepts form submissions from users having phone numbers pre-registered in their profiles. SMS Authentication feature, when enabled, works by requiring users to provide an additional code when submitting forms via SMS.

@@ -4,8 +4,7 @@ Reporting and Data Analysis
 ELMO stores and aggregates incoming data so that field and headquarters
 staff can quickly chart, graph, and analyze information while writing
 reports. These reports allow for preliminary conclusions to be made in a
-timely manner. However, other tools may be more useful for more detailed
-analysis. For this, data can be exported from ELMO for further review in
+timely manner. Data can also be exported from ELMO for further review in
 other analytical software.
 
 Internal Report Building
