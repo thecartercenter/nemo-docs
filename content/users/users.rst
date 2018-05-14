@@ -92,9 +92,8 @@ Export in vCard format
 
 To export users information to a vCard, which is readable by most contact list applications:
 
-1. Check the box next to the name of each user to be exported
-2. Check the box to the left of their names.
-3. Click on :guilabel:`Export as vCard`.
+1. Check the box next to the name of each user to be exported.
+2. Click on :guilabel:`Export as vCard`.
 
 User groups
 -----------
