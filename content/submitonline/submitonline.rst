@@ -18,7 +18,7 @@ Review a response
 -----------------
 
 1. Click on :guilabel:`Responses` menu.
-2. Click the :guilabel:`pencil icon` on the same row as the response to be reviewed.
+2. Click the :fa:`pencil` on the same row as the response to be reviewed.
 
 .. image:: select-response.png
   :alt: Select response

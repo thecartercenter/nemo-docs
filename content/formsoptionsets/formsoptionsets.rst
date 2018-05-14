@@ -45,7 +45,7 @@ Edit existing option set
 ------------------------
 
 1. Click the :guilabel:`Option Sets` menu.
-2. Select the Option Set to edit by clicking the corresponding :guilabel:`Pencil icon`.
+2. Select the Option Set to edit by clicking the corresponding :fa:`pencil`.
 3. Click :guilabel:`Save`.
 
 Import standard option set

@@ -74,19 +74,18 @@ You can import multiple users from an XLSX spreadsheet or CSV file.
    You can download a template spreadsheet with the correct formatting for importing users.
    |Import Users|
 
-
 Manage existing users
 ---------------------
 
 To edit existing user information:
 
    1. Find the user in the list of users.
-   2. Click on the :guilabel:`Pencil icon` located on the same line.
+   2. Click on :fa:`pencil`  located on the same line.
    3. Click :guilabel:`Save`.
 
 To delete existing users:
 
-   - To delete a single user, click the :guilabel:`Trashcan icon`.
+   - To delete a single user, click the :fa:`trash`.
    - To delete multiple users, check the box to the left of their names and click :guilabel:`Delete Multiple Users`.
 
 To send an email or SMS broadcast to users:
@@ -122,7 +121,7 @@ To view user groups, go to the :guilabel:`Users` page and click :guilabel:`Lis
 User Groups`. In the list, you can click:
 
 - :guilabel:`List Members` to view a list of all users in the group.
-- :guilabel:`Pencil icon` to change the name of the user group.
-- :guilabel:`Trashcan icon` to delete the user group.
+- :fa:`pencil` to change the name of the user group.
+- :fa:`trash` to delete the user group.
 
 .. |Import Users| image:: Import-Users.png
