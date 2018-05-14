@@ -80,18 +80,12 @@ Manage existing users
 To edit existing user information:
 
    1. Find the user in the list of users.
-   2. Click on :fa:`pencil`  located on the same line.
-   3. Click :guilabel:`Save`.
+   2. Click on :fa:`pencil` located on the same line.
 
 To delete existing users:
 
-   - To delete a single user, click the :fa:`trash`.
-   - To delete multiple users, check the box to the left of their names and click :guilabel:`Delete Multiple Users`.
-
-To send an email or SMS broadcast to users:
-
-   1. Check the boxes next to each user to contact.
-   2. Click :guilabel:`Send Broadcast`. This redirects to a page where you can define the medium, subject, and content of the broadcast.
+   - To delete a single user, click :fa:`trash`.
+   - To delete multiple users, check the boxes to the left of their names and click :guilabel:`Delete Multiple Users`.
 
 Export in vCard format
 ----------------------
