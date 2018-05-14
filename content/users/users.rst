@@ -79,13 +79,13 @@ Manage existing users
 
 To edit existing user information:
 
-   1. Find the user in the list of users.
-   2. Click on :fa:`pencil` located on the same line.
+1. Find the user in the list of users.
+2. Click on :fa:`pencil` located on the same line.
 
 To delete existing users:
 
-   - To delete a single user, click :fa:`trash`.
-   - To delete multiple users, check the boxes to the left of their names and click :guilabel:`Delete Multiple Users`.
+1. To delete a single user, click :fa:`trash`.
+2. To delete multiple users, check the boxes to the left of their names and click :guilabel:`Delete Multiple Users`.
 
 Export in vCard format
 ----------------------
