@@ -59,16 +59,20 @@ To create new users:
 4. Enter the new user's information.
 5. Click :guilabel:`Save`.
 
-Create multiple users
+Import users
 ---------------------
 
-1. Click :guilabel:`Create Multiple Users`.
-2. Upload a spreadsheet with information for the new users.
-3. Click Import.
+You can import multiple users from an XLSX spreadsheet or CSV file.
+
+1. From the Users page, click :guilabel:`Import Users`.
+2. Click one of the links to download a template CSV or XLSX spreadsheet.
+3. Assemble your user data in the template.
+4. Upload the spreadsheet file.
+5. Click :guilabel:`Import`.
 
 .. note::
-   Click **Spreadsheet template** to download an example spreadsheet with the correct formatting for uploading multiple users.
-   |Create Multiple Users|
+   You can download a template spreadsheet with the correct formatting for importing users.
+   |Import Users|
 
 
 Manage existing users
@@ -121,5 +125,4 @@ User Groups`. In the list, you can click:
 - :guilabel:`Pencil icon` to change the name of the user group.
 - :guilabel:`Trashcan icon` to delete the user group.
 
-.. |New-user| image:: New-user.png
-.. |Create Multiple Users| image:: Create-Multiple-Users.png
+.. |Import Users| image:: Import-Users.png
