@@ -67,7 +67,7 @@ You can import multiple users from an XLSX spreadsheet or CSV file.
 1. From the Users page, click :guilabel:`Import Users`.
 2. Click one of the links to download a template CSV or XLSX spreadsheet.
 3. Assemble your user data in the template.
-4. Upload the spreadsheet file.
+4. In your browser, select the spreadsheet file to upload.
 5. Click :guilabel:`Import`.
 
 .. note::
