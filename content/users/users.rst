@@ -80,7 +80,7 @@ Manage existing users
 To edit existing user information:
 
 1. Find the user in the list of users.
-2. Click on :fa:`pencil` located on the same line.
+2. Click :fa:`pencil` located on the same line.
 
 To delete existing users:
 
@@ -93,6 +93,6 @@ Export in vCard format
 To export users information to a vCard, which is readable by most contact list applications:
 
 1. Check the box next to the name of each user to be exported.
-2. Click on :guilabel:`Export as vCard`.
+2. Click :guilabel:`Export as vCard`.
 
 .. |Import Users| image:: Import-Users.png
