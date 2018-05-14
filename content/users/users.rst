@@ -95,26 +95,4 @@ To export users information to a vCard, which is readable by most contact list a
 1. Check the box next to the name of each user to be exported.
 2. Click on :guilabel:`Export as vCard`.
 
-User groups
------------
-
-Placing users into groups makes it easier to search for users and send
-broadcasts to them. To create a group of users:
-
-1. Check the box next to each user to be placed into the group.
-2. Click :guilabel:`Add Users to Group`.
-3. Click :guilabel:`Create New User Group`.
-4. Type the name of the group and click :guilabel:`OK`.
-5. Click the name of the group.
-
-To add users to a preexisting group, follow the same steps as above, but
-skip numbers 3 and 4.
-
-To view user groups, go to the :guilabel:`Users` page and click :guilabel:`List
-User Groups`. In the list, you can click:
-
-- :guilabel:`List Members` to view a list of all users in the group.
-- :fa:`pencil` to change the name of the user group.
-- :fa:`trash` to delete the user group.
-
 .. |Import Users| image:: Import-Users.png
