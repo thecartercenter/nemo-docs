@@ -18,25 +18,25 @@ on the functions they are expected to perform during ELMO missions.
      - Privileges
    * - Enumerator
      - Collects and submits data from the field.
-     - 
+     -
          * Fill form responses via android devices, via SMS, or ELMO online platform.
          * Edit own user information.
          * Generate reports (only from user's own submitted data).
    * - Staffer
      - Performs real-time analysis and communicates with staff deployed to the field.
-     - 
+     -
          * All Enumerator privileges.
          * Generate reports from data submitted by users.
          * Broadcast SMS messages to users.
    * - Coordinator
      - Designs forms/checklists, reporting structures, and manages users for a specific mission.
-     - 
+     -
          * All Staffer privileges.
          * Create option sets, questions, and forms for the mission.
          * Create, edit and delete users within a mission.
    * - Administrator
      - Designs standardized forms/checklists and manages processes accross several missions.
-     - 
+     -
          * All Coordinator privileges.
          * Create new missions.
          * Create standard option sets, standard questions, and standard forms to be shared/imported across all missions.
@@ -56,15 +56,8 @@ To create new users:
 2. Navigate to the users page by clicking :guilabel:`Users` on the
    main menu.
 3. Click :guilabel:`Create User`.
-
-   |New-user|
-
 4. Enter the new user's information.
-
-.. note::
-  User’s phone number must include country code.
-
-5. Click **Save.**
+5. Click :guilabel:`Save`.
 
 Create multiple users
 ---------------------
