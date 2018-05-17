@@ -1406,6 +1406,44 @@ Use the ``code-block`` directive to markup code samples. Specify the language on
     .. code-block:: python
       :class: wrap
 
+.. _font-awesome:
+
+Font Awesome icons
+--------------------------
+`Font Awesome icons <https://fontawesome.com>`_ are used in this project. For example to render the pencil icon :fa:`pencil`
+the below syntax is used.
+
+.. code-block:: rst
+
+  :fa:`pencil`
+  
+
+
+.. _screenshots:
+
+Screenshots
+--------------------------
+Whenever screenshots are used avoid any editing like adding numbers or arrows to the screenshot.
+Prefer using **guilabel** or **Font Awesome icons**.
+
+.. image:: screenshots.png
+  :alt: Screenshots
+
+.. rst:role:: guilabel
+
+.. code-block:: rst
+
+  Click :guilabel:`Create New User`.
+
+
+.. rst:role:: fa
+
+.. code-block:: rst
+
+  Click :fa:`pencil` to edit user.
+
+
+
 .. note:: 
 
   This document is a derivative of the original `Contributing to ODK Docs <https://docs.opendatakit.org/contributing/>`_ licensed under a Creative Commons Attribution 4.0 International License.
