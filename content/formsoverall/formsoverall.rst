@@ -74,16 +74,6 @@ Forms, questions, and option sets created in **Admin Mode** can be reused in mul
 2. Click the :guilabel:`Forms` menu.
 3. Click :guilabel:`Create New Form`.
 4. Type a name for the form in the text box.
-
-.. note::
-
-  By clicking on :guilabel:`More Settings` you can:
-
-  - Set a **Default Response Name** for the form.
-  - Check the **SMSable** box if you want to be able to receive responses to the form via SMS.
-  - Check the **Allow Incomplete** box to allow forms to be submitted without required questions filled in.
-
-
 5. Click :guilabel:`Save`.
 
     .. image:: create-standard-form.png
@@ -103,12 +93,24 @@ Creating a general form
 **To create a new Form**:
 
 1. Go to the forms page by clicking on the :guilabel:`Forms` menu.
-2. Click the :guilabel:`Create Form` link.
-3. Choose a name for the form.
+2. Click the :guilabel:`Create New Form` link.
+3. Type a name for the form in the text box.
+
+.. note::
+
+  By clicking on :guilabel:`More Settings` you can:
+
+  - Set a **Default Response Name** for the form.
+  - Check the :guilabel:`Allow Incomplete` box to allow forms to be submitted without required questions filled in.
+  - Check the :guilabel:`SMSable` box if you want to be able to receive responses to the form via SMS. If checked you can also:
+
+    - Check :guilabel:`SMS Forwarding?` if you want to forward incoming SMS responses to a user or a group of user.
+    - Check :guilabel:`Authenticate SMS?:` if you want only authenticated users to send SMS responses.
+
 
 **To add questions to the Form**:
 
-1. Click the :guilabel:`Add Questions` icon.
+1. Click :guilabel:`Add Questions`.
 
   - Select from existing questions in the question bank.
   - Or create a new question to add to the Form (see :doc:`../formsquestions/formsquestions` section below for detailed instructions).
@@ -124,9 +126,11 @@ To import a Standard Form:
 
 1. Go to the :guilabel:`Forms` menu in the mission.
 2. Click :guilabel:`Import Standard Forms`.
-3. Choose forms to import to the mission.
+3. Check the boxes next to the forms you want to import.
+4. Click :guilabel:`Import`.
 
-
+.. image:: import-standard-forms.png
+  :alt: Import standard forms
 
 
 Creating groups and grids
@@ -187,8 +191,8 @@ Publishing a form
 
 Once a form has been created, it must be published before users can submit responses. To publish a form:
 
-1. Click the :guilabel:`Forms` menu in the main menu bar.
-2. On the right side of the page, click the :guilabel:`up arrow` located on the same line as the form to publish.
+1. Click :guilabel:`Forms` menu.
+2. On the right side of the page, click :fa:`arrow-up` located on the same line as the form to publish. If the arrow is down :fa:`arrow-down` the form is already published.
 
 .. image:: publish-forms.png
    :alt: publish forms
@@ -196,13 +200,8 @@ Once a form has been created, it must be published before users can submit respo
 Printing forms
 --------------
 
-ELMO allows for forms and data to be printed. In the field, a hardcopy
-of forms, particularly the SMS Composition Guide, are required by
-observers in order to report. Note that you may have to turn on
-background printing in your browser.
+To print a hardcopy of a form:
 
-To print:
-
-1. Click the :guilabel:`Forms` menu.
+1. Click :guilabel:`Forms` menu.
 2. Select a form from the list.
 3. Click :guilabel:`Print Form`.
