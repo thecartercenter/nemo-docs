@@ -1,33 +1,25 @@
 Option Sets
 ===========
 
-The Option Sets page is where the answers for Select One and Select Multiple question types can be created. Click :guilabel:`Option Sets` on the menu bar to create or edit existing Option Sets.
+The Option Sets page is where the answers for **Select One** and **Select Multiple** question types can be created. Click :guilabel:`Option Sets` on the menu bar to create or edit existing Option Sets.
 
 Create new option set
 ---------------------
 
-1. Click :guilabel:`Create New Option Set`.
+1. Click :guilabel:`Option Sets` menu.
+2. Click :guilabel:`Create New Option Set`.
 
 .. image:: new-option-set.png
   :alt: New Option Set
 
-2. :guilabel:`Name`. A unique name for the Option Set. Observers will not be able to view this name.
+:guilabel:`Name` A unique name for the Option Set.
 
-3. :guilabel:`Is Geographic?`. Example, a set of provinces or regions. Responses that are geographic can also appear on the map in the Dashboard, even if SMS-based.
+:guilabel:`Is Geographic?` Example, a set of provinces or regions. Responses that are geographic will appear on the map in the Dashboard. When checked, a new checkbox :guilabel:`With Coordinates?` is shown. If the options contain coordinates, check this box.
 
-.. note::
-  When :guilabel:`Is Geographic?` is checked, a new checkbox :guilabel:`With Coordinates?` is shown. If the options contain coordinates, check this box.
+:guilabel:`Is Multilevel?` Check this box if you have :ref:`Multilevel`.
 
-4. :guilabel:`Is Multilevel?`. If the option set is :ref:`multilevel <Multilevel>` check this box then:
+:guilabel:`Options` Click :guilabel:`Add Option` to add a new option.
 
-   a. Click :guilabel:`add level`.
-   b. Type the name of the level.
-   c. Click :guilabel:`Save`.
-
-5. In the Options box, add existing options by typing them. If the option does not exist, add it by clicking :guilabel:`Create New Option`.
-6. Click :guilabel:`Add` to validate. 
-
-7. Click :guilabel:`Save`.
 
 .. _multilevel:
 
@@ -44,8 +36,8 @@ Below is a classic example of countries and cities. Level 1 is **Country** and l
 Edit existing option set
 ------------------------
 
-1. Click the :guilabel:`Option Sets` menu.
-2. Select the Option Set to edit by clicking the corresponding :fa:`pencil`.
+1. Click :guilabel:`Option Sets` menu.
+2. Select the Option Set to edit by clicking :fa:`pencil`.
 3. Click :guilabel:`Save`.
 
 Import standard option set
@@ -69,7 +61,7 @@ Option Sets can be created with spreadsheet software like Excel, and uploaded di
 .. image:: excel-option-set.png
   :alt: Excel option set import
 
-4. In ELMO, click on the :guilabel:`Option Set` menu.
+4. In ELMO, click :guilabel:`Option Set` menu.
 5. Click :guilabel:`Import New Option Set`.
 6. Choose a name for the option set.
 7. Choose the CSV or XLS file created in steps 1-3.
@@ -105,7 +97,7 @@ Language translations
 Options within an Option Set can be translated in a manner similar to translating questions. To translate an option:
 
 1. Create or edit an existing option set.
-2. Click the :guilabel:`Edit` icon adjacent to the option to be translated.
+2. Click :fa:`pencil` next to the option to be translated.
 3. Type the translation.
 4. Click :guilabel:`Save`.
 

@@ -71,7 +71,7 @@ Creating a standard form
 Forms, questions, and option sets created in **Admin Mode** can be reused in multiple missions. If the Admin Mode link does not appear on the screen, permission is not granted to create standard forms.
 
 1. Click :guilabel:`Admin Mode`.
-2. Click the :guilabel:`Forms` menu.
+2. Click :guilabel:`Forms` menu.
 3. Click :guilabel:`Create New Form`.
 4. Type a name for the form in the text box.
 5. Click :guilabel:`Save`.
@@ -79,7 +79,7 @@ Forms, questions, and option sets created in **Admin Mode** can be reused in mul
     .. image:: create-standard-form.png
       :alt: Create standard form 
 
-6. Click :guilabel:`Add Questions` to add questions to the form.
+6. Click :guilabel:`+ Add Questions` to add questions to the form.
 7. To create a group of questions, click :guilabel:`Add Group`.
 8. Click :guilabel:`Save`.
 
@@ -92,8 +92,8 @@ Creating a general form
 
 **To create a new Form**:
 
-1. Go to the forms page by clicking on the :guilabel:`Forms` menu.
-2. Click the :guilabel:`Create New Form` link.
+1. Click :guilabel:`Forms` menu.
+2. Click :guilabel:`Create New Form`.
 3. Type a name for the form in the text box.
 
 .. note::
@@ -110,7 +110,7 @@ Creating a general form
 
 **To add questions to the Form**:
 
-1. Click :guilabel:`Add Questions`.
+1. Click :guilabel:`+ Add Questions`.
 
   - Select from existing questions in the question bank.
   - Or create a new question to add to the Form (see :doc:`../formsquestions/formsquestions` section below for detailed instructions).
@@ -124,7 +124,7 @@ Importing standard forms
 
 To import a Standard Form:
 
-1. Go to the :guilabel:`Forms` menu in the mission.
+1. Click :guilabel:`Forms` menu.
 2. Click :guilabel:`Import Standard Forms`.
 3. Check the boxes next to the forms you want to import.
 4. Click :guilabel:`Import`.

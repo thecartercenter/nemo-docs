@@ -6,23 +6,23 @@ Create a question
 
 To create a question:
 
-1. Click on :guilabel:`Questions` in the menu bar.
-2. Click on :guilabel:`Create New Question`.
+1. Click :guilabel:`Questions` in the menu bar.
+2. Click :guilabel:`Create New Question`.
 
 .. image:: create-question.png
   :alt: create question
 
 :guilabel:`Code`
-   A unique name for the question. Observers will not see this box.
+   A unique name for the question.
 
 :guilabel:`Type`
-  Type of the question, more details can be found in :ref:`question-types` section.
+  Type of the question. More details can be found in :ref:`question-types` section.
 
 :guilabel:`Title`
   Title of the question.
 
 :guilabel:`Hint`
-  Further instructions for the question. more details can be found in :ref:`hints` section.
+  Further instructions for the question. More details can be found in :ref:`hints` section.
 
 :guilabel:`Is Key Question`
   Answers to key questions help summarize responses and appear in the response listing. If this box is marked, a column showing these answers will be added in the Responses tab.
@@ -35,46 +35,47 @@ To create a question:
 Types of questions
 ------------------
 
-+------------+---------------------------------------------------------------+
-| Text       | Text designed with a shorter character limit, specifically    |
-|            | used for SMS                                                  |
-+------------+---------------------------------------------------------------+
-| Long Text  | Text designed for paragraphs rather than simple               |
-|            | phrases/sentences                                             |
-+------------+---------------------------------------------------------------+
-| Integer    | This is a numeric answer that must be a whole number without  |
-|            | decimals                                                      |
-+------------+---------------------------------------------------------------+
-| Decimal    | This is numeric answer that allows for decimals               |
-+------------+---------------------------------------------------------------+
-| Location   | This question may be answered with a GPS coordinate derived   |
-|            | from the user’s device (e.g. tablet with GPS)                 |
-+------------+---------------------------------------------------------------+
-| Select One | Only one answer may be selected from a multiple choice Option |
-|            | Set                                                           |
-+------------+---------------------------------------------------------------+
-| Select     | Multiple answers may be selected from a multiple choice       |
-| Multiple   | Option Set                                                    |
-+------------+---------------------------------------------------------------+
-| Date/Time  | Enter both the date and the time                              |
-+------------+---------------------------------------------------------------+
-| Date       | Enter the date                                                |
-+------------+---------------------------------------------------------------+
-| Time       | Enter the time                                                |
-+------------+---------------------------------------------------------------+
-| Image      | Take a picture or choose a jpg orpngimage                     |
-+------------+---------------------------------------------------------------+
-| Annotated  | Take or choose a picture and annotate it                      |
-| Image      |                                                               |
-+------------+---------------------------------------------------------------+
-| Signature  | Sign with a finger                                            |
-+------------+---------------------------------------------------------------+
-| Sketch     | Sketch an image with a finger                                 |
-+------------+---------------------------------------------------------------+
-| Audio      | Record or choose a sound                                      |
-+------------+---------------------------------------------------------------+
-| Video      | Record or choose a video                                      |
-+------------+---------------------------------------------------------------+
+.. list-table::
+   :widths: auto
+   :header-rows: 1
+
+   * - Type
+     - Description
+   * - Text
+     - Short text that shows in a single line of input.
+   * - Long Text
+     - Long text that shows in multiple lines of input.
+   * - Integer
+     - Numeric answer that must be a whole number without decimals.
+   * - Decimal
+     - Numeric answer that allows for decimals.
+   * - Location
+     - GPS location of the user.
+   * - Select One
+     - Only one answer can be selected from a multiple choice option set.
+   * - Select Multiple
+     - Multiple answers can be selected from a multiple choice option set.
+   * - Date/Time
+     - Enter both date and time.
+   * - Date
+     - Date only field.
+   * - Time
+     - Time only field.
+   * - Image
+     - The image should be at most 5MB. Accepted formats are: jpg, png.
+   * - Annotated Image
+     - The image should be at most 5MB. Accepted formats are: jpg, png. You can add markup to the image.
+   * - Signature
+     - Sign with a finger in ODK Collect or upload a signature image in ELMO.
+   * - Sketch
+     - Sketch an image with a finger.
+   * - Barcode
+     - Scan a barcode with ODK Collect.
+   * - Audio
+     - Record or select a sound from your device. File size should be at most 10MB. Accepted formats are: mp3, ogg, webm, wav.
+   * - Video
+     - Record or select a video from your device. File size should be at most 10MB. Accepted formats are: 3gp, mp4, webm, mpg, wmv, avi.
+
 
 .. _hints:
 
@@ -83,7 +84,7 @@ Hints
 
 Hints are optional help texts used to provide additional instructions on the question.
 
-- On ELMO desktop, hint can be seen when clicking on :guilabel:`i` icon on the right of the question.
+- On ELMO desktop, click :fa:`info-circle` on the right of the question to see the hint.
 - On ODK Collect (ELMO Android app), the hint will be shown below the question as follows:
 
 .. image:: hint-android.png
@@ -118,10 +119,6 @@ theme. In ELMO, questions may be tagged with keywords or descriptors,
 which may be used to find all of the questions with the same tag. Tags
 are also used in Reports to help sort information assigned to questions.
 
-.. figure:: tags.png
-   :alt: tags
-
-
 To tag questions:
 
 1. Open or create the question you wish to tag.
@@ -130,7 +127,7 @@ To tag questions:
 .. note::
 
   - You can add multiple tags.
-  - To delete a tag, click on the :guilabel:`X` next to the tag.
+  - To delete a tag, click :fa:`times` next to the tag.
 
 3. Click :guilabel:`Save` after adding tags to save your changes.
 
@@ -143,9 +140,9 @@ By default all questions are shown in the form. Display logic controls which que
 To edit display logic:
 
 1. Click :guilabel:`Forms` menu.
-2. Select a form from the list and click :guilabel:`Edit` icon.
+2. Click :fa:`pencil` next to the form you want to edit.
 3. Click on the :guilabel:`Question` you want to edit.
-4. Click on the display logic dropdown and choose between three options:
+4. Click on the display logic dropdown :fa:`caret-down` and choose between three options:
 
   - Always display this question.
   - Display this question if all of these conditions are met.
@@ -157,7 +154,7 @@ To edit display logic:
 
 .. note::
 
-  - Click on :guilabel:`+ Add Condition` if you want to add another condition for the same question.
+  - Click :guilabel:`+ Add Condition` if you want to add another condition for the same question.
   - Check :guilabel:`hidden` box if you want to hide this question from the form.
   - Check :guilabel:`required` box to make this question required. Form cannot be submitted if not answered, unless an override code is provided.
 
@@ -166,14 +163,14 @@ To edit display logic:
 Skip Logic
 ----------
 
-On ODK Collect (ELMO Android app), by default when you swipe left or click on next button you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
+On ODK Collect (ELMO Android app), by default when you swipe left or click :fa:`arrow-right` you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
 
 To edit skip logic:
 
 1. Click :guilabel:`Forms` menu.
-2. Select a form from the list and click :guilabel:`Edit` icon.
+2. Select a form from the list and click :fa:`pencil`.
 3. Click on the :guilabel:`Question` you want to edit.
-4. Click on skip logic dropdown and select :guilabel:`After this question, skip ...`.
+4. Click on skip logic dropdown :fa:`caret-down` and select :guilabel:`After this question, skip ...`.
 5. Choose the destination and conditions to be met.
 
 .. image :: skip-logic.png
