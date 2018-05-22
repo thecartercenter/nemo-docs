@@ -13,7 +13,7 @@ SMSable form
 
 By default, SMS form submission is not activated, to do so you need to:
 
-1. Click the :guilabel:`Forms` menu.
+1. Click :guilabel:`Forms` menu.
 2. Create or edit an existing form.
 3. Click :guilabel:`More settings`.
 
@@ -36,7 +36,7 @@ SMS submission guide
 
 An SMS submission guide is generated for all **SMSable** forms, to access the instructions:
 
-1. Click on the :guilabel:`Forms` menu.
+1. Click :guilabel:`Forms` menu.
 2. Select the form from the list.
 3. Click on :guilabel:`View SMS Guide`.
 
@@ -53,7 +53,7 @@ SMS authentication
 
 ELMO only accepts form submissions from users having phone numbers pre-registered in their profiles. SMS Authentication feature, when enabled, works by requiring users to provide an additional code when submitting forms via SMS.
 
-This four-character code is randomly assigned and unique to each user. It is generated when an user is created. The code can be found by clicking on the :guilabel:`Users` menu and then on the name of the user.
+This four-character code is randomly assigned and unique to each user. It is generated when a user is created. The code can be found by clicking on the :guilabel:`Users` menu and then on the name of the user.
 
 .. image:: viewing-auth-code.png
    :alt: viewing auth code
@@ -63,8 +63,6 @@ To generate a new authentication code:
 1. Click :guilabel:`Edit User`.
 2. Click :guilabel:`Regenerate`.
 3. Click :guilabel:`Save`.
-
-Ideally, authentication codes should never be written down. Users should memorize their codes. If a user forgets their code, an administrator should generate a new one for them.
 
 Activating SMS authentication adds extra security to ELMO by ensuring that the registered phone number and the authentication code belong to the same user. All SMS submissions that do not meet both these conditions are rejected.
 

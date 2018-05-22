@@ -8,13 +8,13 @@ Setup ODK Collect
 -----------------
 
 1.  Open :guilabel:`ODK Collect` app from your Android device.
-2.  From the Action Button (:guilabel:`⋮`), select :guilabel:`General Settings`.
+2.  From the action button (:guilabel:`⋮`), select :guilabel:`General Settings`.
 
 .. image:: ODK-menu.png
   :alt: ODK menu
 
 3.  Select :guilabel:`Server`.
-4.  Select :guilabel:`Type`, and set it to :guilabel:`ODK Aggregate`.
+4.  Make sure :guilabel:`Type` is set to :guilabel:`ODK Aggregate`.
 5.  Type the :guilabel:`URL` of the mission, example https://example.getelmo.org/m/missionname.
 
 .. note::
@@ -73,7 +73,7 @@ If you need to finalize and send forms having required questions not answered, y
 
 To generate an Override code:
 
-1. Click the :guilabel:`Settings` menu.
+1. Click :guilabel:`Settings` menu.
 2. If the :guilabel:`Override Code` is :guilabel:`None`, click :guilabel:`Generate` to generate a new code.
 
 .. image:: override-code.png

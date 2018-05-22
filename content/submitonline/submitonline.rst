@@ -6,7 +6,7 @@ Submit form
 
 To submit a form online:
 
-1. Click on :guilabel:`Submit` in the menu bar.
+1. Click :guilabel:`Submit` in the menu bar.
 2. Select a form from the drop down list.
 3. Fill the form.
 4. Click :guilabel:`Save`.
@@ -17,8 +17,8 @@ To submit a form online:
 Review a response
 -----------------
 
-1. Click on :guilabel:`Responses` menu.
-2. Click the :fa:`pencil` on the same row as the response to be reviewed.
+1. Click :guilabel:`Responses` menu.
+2. Click :fa:`pencil` on the same row as the response to be reviewed.
 
 .. image:: select-response.png
   :alt: Select response
