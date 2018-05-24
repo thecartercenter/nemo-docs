@@ -1,3 +1,8 @@
+.. HTML line break definition
+.. |br| raw:: html
+
+   <br />
+
 Forms
 =====
 
@@ -31,20 +36,18 @@ menu:
    :alt: forms tab inset
 
 
-13. **Edit** icon: click this to edit the form in this row.
-14. **Delete** icon: click this to delete the form in this row. This can only be done for forms that are unpublished.
-15. **Publish** icon: click this to publish the form in this row. This can only be done for forms that are unpublished.
-16. **Unpublish** icon: click this to unpublish the form in this row. This can only be done for forms that are published.
-17. **Clone** icon: click this to create an identical copy of the form in this row.
-18. **Print** icon: click this to print the form in this row.
+:fa:`pencil` Click to edit the form. |br|
+:fa:`trash` Click to delete the form. This can only be done for forms that are unpublished. |br|
+:fa:`arrow-up` Click to publish the form. |br|
+:fa:`arrow-down` Click to unpublish the form. |br|
+:fa:`copy` Click to create an identical copy of the form. |br|
+:fa:`print` Click to print the form. |br|
+:fa:`comment` Click to see the SMS guide of the form. |br|
 
 In Admin Mode, the **Forms** menu only contains the following components:
 
 - **Create New Form**
 - **Name**
-- **Questions**
-- **Copies**: this column shows the number of missions each form has been imported to.
-- **Copy Responses**: this column shows the number of responses to each form that have been submitted across all.
 - **Last Modified**
 - **Edit** icon
 - **Delete** icon
@@ -172,11 +175,13 @@ Groups can be used to create grids, an example of which is shown below.
 .. figure:: Screenshot_2016-03-15-10-23-18.png
    :alt: Screenshot\_2016-03-15-10-23-18
 
-Grids can only be created under certain conditions:
+.. note::
 
-- Questions must be in the same group.
-- Questions must be of **Select One** type.
-- Questions must have the same option set.
+  Grids can only be created under certain conditions:
+
+  - Questions must be in the same group.
+  - Questions must be of **Select One** type.
+  - Questions must have the same option set.
 
 **To create a grid**:
 
