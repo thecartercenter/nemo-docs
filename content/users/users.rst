@@ -22,12 +22,18 @@ on the functions they are expected to perform during ELMO missions.
          * Fill form responses via android devices, via SMS, or ELMO online platform.
          * Edit own user information.
          * Generate reports (only from user's own submitted data).
-   * - Staffer
-     - Performs real-time analysis and communicates with staff deployed to the field.
+   * - Reviewer
+     - Review collected data and performs real-time analysis.
      -
          * All Enumerator privileges.
+         * Review responses submitted by users.
          * Generate reports from data submitted by users.
+   * - Staffer
+     - Communicates with staff deployed to the field.
+     -
+         * All Reviewer privileges.
          * Broadcast SMS messages to users.
+         * Delete responses.
    * - Coordinator
      - Designs forms/checklists, reporting structures, and manages users for a specific mission.
      -
