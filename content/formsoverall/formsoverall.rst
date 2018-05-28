@@ -15,22 +15,11 @@ The **Forms** menu lists all the available forms for a mission. These are the co
   :alt: Forms tab
 
 
-1. **Create New Form**: click to create a new form.
-2. **SMS Test Console**: click to test form submission via SMS.
-3. **Import Standard Forms**: click to import standard forms to the mission. These forms can be edited within the mission.
+:guilabel:`Create New Form` Click to :ref:`create-general-form`. |br|
+:guilabel:`SMS Test Console` Click to test form submission via SMS. |br|
+:guilabel:`Import Standard Forms` Click to :ref:`import-standard-forms` to the mission. These forms can be edited within the mission.
 
-Once a form has been created, these components appear on the **Forms**
-menu:
-
-4.  **Version**: this column shows the version numbers of the forms that have been published.
-5.  **Name**: this column shows the name of each form.
-6.  **Questions**: this column shows the number of questions in each form.
-7.  **Published?**: this column displays **Yes** if a form has been published, otherwise **No**.
-8.  **Downloads**: this column shows the number of times each form has been downloaded.
-9. **Responses**: this column shows the number of responses to each form that have been submitted.
-10. **SMSable**?: this column displays **Yes** if a form can be submitted via SMS, otherwise **No**.
-11. **Allow Incomplete?**: this column displays a **Yes** if a form allows incomplete submissions, otherwise **No**.
-12. **Last Modified**: this column shows the date and the time that each form was last edited.
+For every form in the list, action icons are in the right and works as follows:
 
 .. image:: forms-tab-inset.png
    :alt: forms tab inset
@@ -44,53 +33,9 @@ menu:
 :fa:`print` Click to print the form. |br|
 :fa:`comment` Click to see the SMS guide of the form. |br|
 
-In Admin Mode, the **Forms** menu only contains the following components:
+.. _create-general-form:
 
-- **Create New Form**
-- **Name**
-- **Last Modified**
-- **Edit** icon
-- **Delete** icon
-- **Clone** icon
-- **Print** icon
-
-
-Overall structure of forms
---------------------------
-
-Building a new form involves the following steps:
-
-- Create a new form or import a standard form.
-- Create new questions or add existing questions to the form.
-- If the question has options, create option sets for those question.
-
-.. image:: form-flowchart.png
-   :alt: Form flowchart
-
-
-Creating a standard form
-------------------------
-
-Forms, questions, and option sets created in **Admin Mode** can be reused in multiple missions. If the Admin Mode link does not appear on the screen, permission is not granted to create standard forms.
-
-1. Click :guilabel:`Admin Mode`.
-2. Click :guilabel:`Forms` menu.
-3. Click :guilabel:`Create New Form`.
-4. Type a name for the form in the text box.
-5. Click :guilabel:`Save`.
-
-    .. image:: create-standard-form.png
-      :alt: Create standard form 
-
-6. Click :guilabel:`+ Add Questions` to add questions to the form.
-7. To create a group of questions, click :guilabel:`Add Group`.
-8. Click :guilabel:`Save`.
-
-.. image:: standard-form-add-questions.png
-  :alt: Standard form add questions
-
-
-Creating a general form
+Create a general form
 -----------------------
 
 **To create a new Form**:
@@ -121,8 +66,31 @@ Creating a general form
 2. Click :guilabel:`Save` when finished editing.
 
 
+Create a standard form
+------------------------
 
-Importing standard forms
+Forms, questions, and option sets created in **Admin Mode** can be reused in multiple missions. If the Admin Mode link does not appear on the screen, permission is not granted to create standard forms.
+
+1. Click :guilabel:`Admin Mode`.
+2. Click :guilabel:`Forms` menu.
+3. Click :guilabel:`Create New Form`.
+4. Type a name for the form in the text box.
+5. Click :guilabel:`Save`.
+
+    .. image:: create-standard-form.png
+      :alt: Create standard form 
+
+6. Click :guilabel:`+ Add Questions` to add questions to the form.
+7. To create a group of questions, click :guilabel:`Add Group`.
+8. Click :guilabel:`Save`.
+
+.. image:: standard-form-add-questions.png
+  :alt: Standard form add questions
+
+
+.. _import-standard-forms:
+
+Import standard forms
 ------------------------
 
 To import a Standard Form:
@@ -136,18 +104,13 @@ To import a Standard Form:
   :alt: Import standard forms
 
 
-Creating groups and grids
+Create groups and grids
 -------------------------
 
 Groups
 ~~~~~~
 
-Grouping questions by context makes it easier for users to fill forms. On **ODK Collect** (Elmo Android app) group questions will show on the same page.
-
-.. note::
-
-  - Groups cannot be placed within questions or other groups.
-  - Groups cannot be made conditional or hold both `conditional questions <../formsquestions/formsquestions.html>`__ and the questions that trigger them.
+Grouping questions by context makes it easier for users to fill forms. Groups cannot be placed within questions or other groups.
 
 **To create a group**:
 
@@ -155,17 +118,24 @@ Grouping questions by context makes it easier for users to fill forms. On **ODK 
 2. Create or add questions to the form.
 3. Create at least one group.
 
-   a. Click :guilabel:`Add Group`.
-   b. Give the group a unique name.
-   c. Click :guilabel:`Save`.
+  a. Click :guilabel:`Add Group`.
+  b. Give the group a unique name.
+  c. If needed, check the box 'Repeatable?'.
+  d. Choose the Display Logic.
+
+    - Always display this group.
+    - Display this group if all of these conditions are met.
+    - Display this group if any of these conditions are met.
+   
+  f. Click :guilabel:`Save`.
 
 4. Click and drag the questions in the desired order of appearance.
 5. Click and drag groups in the desired order of appearance.
 6. Drag questions intended for groups to the right so that they appear indented in relation to the group.
 7. Click :guilabel:`Save` to save the form, or click :guilabel:`Save and Publish` if the form is ready to be used.
 
-.. image:: create-group.png
-   :alt: Create group
+.. image:: drag-and-drop.gif
+   :alt: Drag and drop
 
 Grids
 ~~~~~
@@ -191,7 +161,7 @@ Groups can be used to create grids, an example of which is shown below.
 4. Click :guilabel:`Save` to save the form, or click :guilabel:`Save and Publish` if the form is ready to be used.
 
 
-Publishing a form
+Publish a form
 -----------------
 
 Once a form has been created, it must be published before users can submit responses. To publish a form:
@@ -202,7 +172,7 @@ Once a form has been created, it must be published before users can submit respo
 .. image:: publish-forms.png
    :alt: publish forms
 
-Printing forms
+Print form
 --------------
 
 To print a hardcopy of a form:
