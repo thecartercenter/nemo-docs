@@ -108,7 +108,7 @@ Available qualifiers depends on the menu you are in. They are listed below:
    * - group:
      - The user group that the user belongs to.
 
-**SMS Menu**
+**SMS menu**
 
 .. list-table::
    :widths: auto

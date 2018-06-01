@@ -52,7 +52,7 @@ Create a general form
   - Check the :guilabel:`Allow Incomplete` box to allow forms to be submitted without required questions filled in.
   - Check the :guilabel:`SMSable` box if you want to be able to receive responses to the form via SMS. If checked you can also:
 
-    - Check :guilabel:`SMS Forwarding?` if you want to forward incoming SMS responses to a user or a group of user.
+    - Check :guilabel:`SMS Forwarding?` if you want to forward incoming SMS responses to a user or a group of users.
     - Check :guilabel:`Authenticate SMS?:` if you want only authenticated users to send SMS responses.
 
 
