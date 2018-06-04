@@ -109,12 +109,11 @@ Placing users into groups makes it easier to search for users and send broadcast
 1. Click :guilabel:`Users` menu.
 2. Click :fa:`pencil` to edit a user.
 3. In :guilabel:`Groups` input, select an existing group from the list or type the name of a new one then click **Enter**.
-4. Click :guilabel:`Save`.
 
 .. image:: add-group.png
   :alt: Add group
 
-
+4. Click :guilabel:`Save` when finished editing.
 
 To add multiple users to an existing group:
 

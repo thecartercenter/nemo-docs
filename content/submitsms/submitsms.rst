@@ -16,18 +16,21 @@ By default, SMS form submission is not activated, to do so you need to:
 1. Click :guilabel:`Forms` menu.
 2. Create or edit an existing form.
 3. Click :guilabel:`More settings`.
-4. Check the box :guilabel:`SMSable?`.
 
 .. image:: more-settings.png
   :alt: More settings
+
+4. Check the box :guilabel:`SMSable?`.
+
+.. image:: sms-options.png
+  :alt: SMS options
 
 When checking :guilabel:`SMSable?`, two new options are available:
 
 - :guilabel:`SMS Forwarding?` check this box if you want to forward all incoming SMS to a user or a group of users.
 - :guilabel:`Authenticate SMS?` if checked, incoming SMS needs to contain users authentication code. More information can be found :ref:`below <smsauth>`.
 
-.. image:: sms-options.png
-  :alt: SMS options
+
 
 
 
