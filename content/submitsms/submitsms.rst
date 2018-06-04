@@ -16,11 +16,11 @@ By default, SMS form submission is not activated, to do so you need to:
 1. Click :guilabel:`Forms` menu.
 2. Create or edit an existing form.
 3. Click :guilabel:`More settings`.
+4. Check the box :guilabel:`SMSable?`.
 
 .. image:: More-settings.png
   :alt: More settings
 
-4. Check the box :guilabel:`SMSable?`.
 
 .. note::
 

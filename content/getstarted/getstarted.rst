@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 
-Below are the steps required to create a new mission (Admin access required), create a new form, add question to the form, then deploy the form.
+Below are the steps required to create a new mission (Admin access required), create a new form, add questions to the form, then deploy the form.
 
 
 Create a mission
@@ -40,7 +40,7 @@ Click on :guilabel:`+ Add Question`.
 .. image:: addquestion.png
 
 .. tip::
-  For more details on question types, see:ref:`question-types` section.
+  For more details on question types, see :ref:`question-types` section.
   
 
 
