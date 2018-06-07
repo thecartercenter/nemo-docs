@@ -72,7 +72,6 @@ personal servers and users can control who has access to the data.
    content/settings/settings
    content/broadcast/broadcast 
    content/smssetup/smssetup
-   content/devicesecurity/security  
 
 .. toctree::
    :hidden:

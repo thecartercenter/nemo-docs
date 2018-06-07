@@ -1,42 +1,64 @@
-Connecting FrontlineSMS to NEMO
+.. _sms-provider:
+
+SMS Provider Setup
 ==================================
 
-| More in-depth information on the following topics is provided in this
-  section:
-| \* SMS Gateways (FrontlineSMS/Twilio)
-| \* Standards and Data Integrity
+Elmo needs to be synced with an SMS provider in order to use the SMS feature. Three options are available:
 
-FrontlineSMS Gateway Setup
---------------------------------
+- FrontlineSMS
+- Twilio
+- Generic SMS adapter
 
-You can turn your Android smartphone or tablet into a gateway using the
-FrontlineSync app and a FrontlineCloud account. Check out Frontline’s
-documentation for the full details (http://www.frontlinesms.com/).
+FrontlineSMS
+-------------
 
-Before entering your settings on ELMO, you will need to set things up on
-FrontlineCloud in order to obtain the Frontline API key.
+You can turn your Android smartphone or tablet into a gateway using FrontlineSMS. For this you need to sign up for a `FrontlineCloud <https://www.frontlinesms.com/>`_ account.
 
-| **I. FrontlineCloud**
-| Logging into your FrontlineCloud account, establish the following
-  settings:
+Synchronize FrontlineSMS with your Android device
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Choose **Connect to a Mobile Network**
-2. Select **FrontlineSync**
-3. Select the **Activity** menu
-4. Create a **New Activity**
-5. Select **Forward to URL**
+1. Download `FrontlineSync <https://play.google.com/store/apps/details?id=com.simlab.frontlinesync&hl=en>`_ from the Play Store.
+2. Open FrontlineSync app from your Android device.
+3. Enter your FrontlineCloud email and password and press :guilabel:`CONNECT`.
+4. Make sure :guilabel:`Send messages using this Androis` and :guilabel:`Upload incoming messages from FrontlineSync` are checked :fa:`check-square` then press :guilabel:`UPDATE`.
+5. Then press :guilabel:`DONE! START USING FRONTLINESYNC`.
 
-   1. Name your Activity: *this can be your mission name or whatever you
-      want*
-   2. Select **“All inbound SMS”** from the toggle choices
-   3. Target URL is the URL generated the Incoming SMS Token in the
-      Settings panel of the ELMO Mission
-   4. HTTP Method: POST
-   5. Create Keys:
+To test your setup:
+
+1. Open your `FrontlineCloud account <https://cloud.frontlinesms.com>`_.
+2. Click settings :fa:`cog` on the top right then click :guilabel:`Connections to mobile networks`.
+
+You should now be able to see the device you have previously set up.
+
+.. image:: configure-connections.png
+  :alt: Configure connections
+
+.. note ::
+  
+  For more details check `Frontline documentation <https://frontlinecloud.zendesk.com/hc/en-us/articles/208115663-Creating-a-FrontlineSync-Connection-to-FrontlineCloud>`_.
+
+
+Synchronize FrontlineSMS with Elmo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now that you have synchronized your Android device with FrontlineCloud, you will need to synchronize FrontlineCloud with Elmo.
+
+**Set up a new activity**
+
+1. On FrontlineCloud click :guilabel:`Activities`.
+2. Click :guilabel:`Create an Activity`.
+3. Select :guilabel:`Forward to URL`.
+4. Type a name for your activity.
+5. Select :guilabel:`All inbound SMS`.
+6. To get the :guilabel:`Target URL`, get back to your Elmo mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
+7. Make sure :guilabel:`HTTP Method` is set to **POST**.
+8. Now set the following key-value pairs:
 
 +------------------+-------------------------------+
-| **from**         | **${trigger.sourceNumber}**   |
+|   Key            |   Value                       |
 +==================+===============================+
+|   from           |   ${trigger.sourceNumber}     |
++------------------+-------------------------------+
 | frontlinecloud   | 1                             |
 +------------------+-------------------------------+
 | sent\_at         | ${trigger.date.time}          |
@@ -44,74 +66,57 @@ FrontlineCloud in order to obtain the Frontline API key.
 | body             | ${trigger.text}               |
 +------------------+-------------------------------+
 
-.. figure:: frontline-fwd-to-url-edited-with-numbers.png
-   :alt: frontline fwd to url edited with numbers
+9. Click :guilabel:`Save`.
+
+.. image:: frontline-elmo-config.png
+   :alt: Frontline Elmo config
 
 
-If an API is automatically generated for you, terrific! But if not, here
-are the steps you need to take in order to set up an API:
+**Generate an API Key**
 
-1. Choose the Settings gear in the upper right of the screen
-2. Select **API web services and integrations**
-3. Click the **Connect a web service** button
-4. Select “Connect an external web service to your workspace”
-5. Name it something meaningful (e.g. “ELMO API”)
-
-A new row will appear on the screen with an API key in the details,
-beginning with “API Key:” Everything after the “:” is the API key,
-remember that information for the next steps.
-
-| **II. ELMO:**
-| In ELMO, you can establish multiple incoming and outgoing SMS numbers
-  on different gateway services such as Twilio or Frontline. We will
-  deal with the simplest case first, a single number for SMSes. In
-  settings,
-
-1. Add the SIM card number to the **Incoming Number** field. (if adding
-   more than one number, separate the numbers with a comma)
-2. Then add the API code from Frontline into the **Frontline Cloud
-   Settings** field
-3. Set the **Default Outgoing Provider** to **FrontlineCloud**
-4. Save the settings
-
-.. figure:: frontline-on-elmo-edited.png
-   :alt: frontline on elmo edited
+1. Click settings :fa:`cog` on the top right then click :guilabel:`API web services and Integrations`.
+2. Click :guilabel:`Connect a web service`.
+3. Select :guilabel:`Connect an external web service to your workspace`.
+4. Enter a name for the web service.
 
 
-| **III. Android Device:**
-| To make a Android phone or tablet into a gateway, you need to download
-  and install FrontlineSync App from the Google Play store. Then, enter
-  the following settings:
+A new row will appear on the screen with an API Key in the :guilabel:`Details`. We will need this API Key for the next step.
 
-1. Tap on Settings in the FrontlineSync app
-2. Tap **Configure Connection**
-3. Enter the credentials for the FrontlineCloud activity you set up
-   earlier
-4. Tap the **Connect** button
-5. New options will appear, now click the first two checkboxes:
+**Elmo setup**
 
-   -  *Send messages using this Android*
-   -  *Upload incoming messages from FrontlineSync*
+1. Click :guilabel:`Settings` menu.
+2. Add the SIM card number to the :guilabel:`Incoming Number(s)` field. If adding more than one number, separate the numbers with a comma.
+3. Set :guilabel:`Default Outgoing Provider` to **FrontlineCloud**.
+4. In :guilabel:`FrontlineCloud Settings` click :guilabel:`Change API Key`.
+5. Paste the :guilabel:`API Key` that you previously generated in FrontlineCloud.
 
-6. Use the slider to set a check for outgoing messages “\ **Every 1
-   minute**\ ”
-7. Click the **Update** button
 
-A message should appear declaring success, with one more button to tap
-“\ **Done! Start Using FrontlineSync**.”
+Twilio
+------
 
-    **Note:** MAKE SURE TO USE THE DEFAULT MESSENGER APP ON THE PHONE
-    —- ENCRYPTED SMS, such as What’s App, DOES NOT WORK. Look up Android
-    settings help for how to make sure that your using the default
-    messenger app.
+If you are using `Twilio <https://www.twilio.com>`_ as your SMS provider you need to set the following settings in Elmo:
 
-| **Some additional (troubleshooting) notes, maybe:**
-| If you change settings on your FrontlineCloud after having set up your
-  Android Device, you may need to enter your credentials to configure
-  your connection, and make sure everything is up to date.
+1. Click :guilabel:`Settings`.
+2. Make sure the :guilabel:`Default Outgoing Provider:` is set to :guilabel:`Twilio`.
+3. In :guilabel:`Twilio Settings` section, set the :guilabel:`Outgoing Number` which is the phone number registered with Twilio. Outgoing SMS broadcasts won’t work unless this number is owned by your Twilio account. This number must include the country code. Example: +25680344523.
+4. Set the :guilabel:`Account SID` for your twilio account.
+5. If needed, click :guilabel:`Change Auth Token` to change the auth token for the Twilio account.
 
-Also, if you set up more than one device or phone to a FrontlineCloud
-account, please pay attention to the “connections to mobile networks”
-settings, which is available off the gear menu located on the upper
-right corner of the screen. Check with FrontlineSMS for more information
-on these parameters.
+Generic SMS Adapter Settings
+----------------------------
+
+If you are using a provider other than Twilio and FrontlineSMS you will need to set up a Generic SMS Adapter.
+
+1. Click :guilabel:`Settings` on your Elmo mission.
+2. Make sure the :guilabel:`Default Outgoing Provider:` is set to :guilabel:`none`.
+3. In :guilabel:`Generic SMS Adapter Settings` set a JSON formatted configuration string for the generic adapter. Example :
+
+.. code-block:: javascript
+
+  {
+    "params": {
+      "from": "num",
+      "body": "msg"
+    },
+    "response": "<message>%{reply}</message>"
+  }

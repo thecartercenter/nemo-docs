@@ -11,7 +11,7 @@ https://github.com/thecartercenter/elmo/blob/master/docs/development-setup.md
 
 
 
-About ELMO Licenses
+About Elmo Licenses
 --------------------
 
 The open source license for ELMO code is `Apache
