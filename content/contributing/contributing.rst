@@ -1,6 +1,6 @@
-***************************
-Contributing to NEMO/ELMODocs
-***************************
+*******************************
+Contributing to NEMO/ELMO Docs
+*******************************
 
 .. docs-tech-guide:
 

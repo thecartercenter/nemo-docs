@@ -41,7 +41,7 @@ Choose a theme for the application. If you want to create a custom theme check t
 Override code
 ~~~~~~~~~~~~~~
 
-Click :guilabel:`Generate` to set an override code. This code should be given to observers if the ability to send incomplete responses with ODK is needed. Check :ref:`override-code` for more details.
+Click :guilabel:`Generate` to set an override code. This code should be given to enumerators if the ability to send incomplete responses with ODK is needed. Check :ref:`override-code` for more details.
 
 Click :guilabel:`Regenerate` to create a new override code. If generating a new code, please record the old code if there are previous live forms. The new code will only work for forms downloaded after the code is regenerated.
 
