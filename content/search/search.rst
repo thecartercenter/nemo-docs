@@ -16,7 +16,7 @@ Operators
 
 You can combine search terms with operators for a more accurate search.
 
-Operators in ELMO are: **AND, OR, NOT**\ ( ! or -), **grouping** operator (parentheses), and **phrase** operator (“”).
+Operators in NEMO/ELMO are: **AND, OR, NOT**\ ( ! or -), **grouping** operator (parentheses), and **phrase** operator (“”).
 
 .. list-table::
    :widths: auto

@@ -1,7 +1,7 @@
 ODK Collect
 ===========
 
-ELMO forms can be submitted via Android devices with **ODK Collect**.
+NEMO/ELMO forms can be submitted via Android devices with **ODK Collect**.
 `The ODK Collect App is available in the Google Play store <https://play.google.com/store/apps/details?id=org.odk.collect.android&hl=en>`_.
 
 Setup ODK Collect
@@ -21,7 +21,7 @@ Setup ODK Collect
   Make sure to remove the language designation (en/, fr/, ar/, es/) from the URL.
   Example: https://example.getelmo.org/en/m/missionname becomes https://example.getelmo.org/m/missionname.
 
-6. Type your ELMO :guilabel:`Username` and :guilabel:`Password`.
+6. Type your NEMO/ELMO :guilabel:`Username` and :guilabel:`Password`.
 
 Download forms
 --------------

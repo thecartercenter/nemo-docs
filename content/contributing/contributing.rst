@@ -1,5 +1,5 @@
 ***************************
-Contributing to NEMO Docs
+Contributing to NEMO/ELMODocs
 ***************************
 
 .. docs-tech-guide:
@@ -16,7 +16,7 @@ Authoring Tools and Environment
 Docs as code
 ----------------
 
-NEMO Documentation follows (as much as possible) the `Docs like Code <http://www.writethedocs.org/guide/docs-as-code/>`_ philosophy. This means:
+NEMO/ELMO Documentation follows (as much as possible) the `Docs like Code <http://www.writethedocs.org/guide/docs-as-code/>`_ philosophy. This means:
 
 - Documentation source files are written in a plain text format. (We use `reStructuredText <http://docutils.sourceforge.net/rst.html>`_.)
 - Documentation source files are kept under version control. (We use git and `Github <https://github.com/thecartercenter/nemo-doc>`_.)
@@ -137,7 +137,7 @@ Getting ready to work
 Clone the docs
 ~~~~~~~~~~~~~~
 
-Go to the `NEMO Doc repo on Github <https://github.com/thecartercenter/nemo-doc>`_, select the :guilabel:`Clone or download` button. Copy the URI from the text box that opens up. It will be something like: ``https://github.com/your-gh-username/docs.git``
+Go to the `NEMO/ELMO Doc repo on Github <https://github.com/thecartercenter/nemo-doc>`_, select the :guilabel:`Clone or download` button. Copy the URI from the text box that opens up. It will be something like: ``https://github.com/your-gh-username/docs.git``
 
 Open your terminal, and `cd` to your preferred directory. Then `git clone` the repo:
 
@@ -293,7 +293,7 @@ After that, you can just:
 Issue a pull request
 ~~~~~~~~~~~~~~~~~~~~~~
 
-A pull request (or PR) is a request from you to the NEMO Docs maintainers, for us to pull in your changes to the main repo.
+A pull request (or PR) is a request from you to the NEMO/ELMO Docs maintainers, for us to pull in your changes to the main repo.
 
 Go the `main docs repo on GitHub <https://github.com/thecartercenter/nemo-docs>`_. You'll see a message there referencing your recently pushed branches. Select :guilabel:`Compare & pull request` to start a pull request.
 
@@ -345,7 +345,7 @@ Now you can find a new issue to work on, create a new branch, and get to work...
 Writing in Sphinx
 ====================
 
-The NEMO documentation is built using `Sphinx <http://sphinx-doc.org>`_, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, a semantic, extensible markup syntax similar to Markdown.
+The NEMO/ELMO documentation is built using `Sphinx <http://sphinx-doc.org>`_, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, a semantic, extensible markup syntax similar to Markdown.
 
 - `reStructuredText Primer <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_ — Introduction to reStructuredText
 
@@ -507,7 +507,7 @@ In either case, the underline of characters needs to be *longer than* the line o
 
 .. note::
 
-  The exact order of underline characters is flexible in reStructuredText. However, this specific ordering should be used throughout the NEMO documentation.
+  The exact order of underline characters is flexible in reStructuredText. However, this specific ordering should be used throughout the documentation.
 
 .. _section-labels:
 
@@ -999,7 +999,7 @@ A directive is a block-level markup construct. They look like this::
 
   This is no longer part of the block controlled by the directive.
 
-Most of the Sphinx-specific and NEMO-specific markup will use one or both of these constructs.
+Most of the Sphinx-specific and NEMO/ELMO-specific markup will use one or both of these constructs.
 
 .. _cross-referencing:
 

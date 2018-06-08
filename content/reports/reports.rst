@@ -4,7 +4,7 @@ Reporting and Data Analysis
 Internal report building
 ------------------------
 
-Submitted data can be visualized in the reports section of ELMO. Enumerators are only able to generate reports
+Submitted data can be visualized in the reports section of NEMO/ELMO. Enumerators are only able to generate reports
 from their own submitted responses. Reviewers, staffers, coordinators and admins can generate reports from data submitted by all users.
 
 To create a new report:

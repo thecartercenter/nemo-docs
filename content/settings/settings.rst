@@ -1,7 +1,7 @@
 Settings
 ========
 
-Settings are where you can define Elmo interface preferences and SMS information for each mission.
+Settings are where you can define NEMO/ELMO interface preferences and SMS information for each mission.
 
 .. image:: settings.png
   :alt: Settings
@@ -23,7 +23,7 @@ Set the language(s) for the mission. This settings determines:
 - The default language for SMS replies.
 - The languages for questions and options.
 
-Enter the two-letter language code for the language (example: Arabic = ar; Chinese = zh). A list of ELMO compatible language 
+Enter the two-letter language code for the language (example: Arabic = ar; Chinese = zh). A list of compatible language 
 codes can be found `here <http://www.loc.gov/standards/iso639-2/php/code_list.php>`_.
 If multiple codes exist, type them in the preferred order of use and separate them with a comma (example: ar, zh).
 

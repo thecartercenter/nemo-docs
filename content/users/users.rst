@@ -4,9 +4,9 @@ User Management
 User permission levels
 ----------------------
 
-ELMO has four user levels – Enumerator, Staffer, Coordinator, and
+NEMO/ELMO has four user levels – Enumerator, Staffer, Coordinator, and
 Admin. Each user level has a different set of permissions based
-on the functions they are expected to perform during ELMO missions.
+on the functions they are expected to perform during the missions.
 
 .. list-table::
    :header-rows: 1
@@ -19,7 +19,7 @@ on the functions they are expected to perform during ELMO missions.
    * - Enumerator
      - Collects and submits data from the field.
      -
-         * Fill form responses via android devices, via SMS, or ELMO online platform.
+         * Fill form responses via android devices, via SMS, or NEMO/ELMO online platform.
          * Edit own user information.
          * Generate reports (only from user's own submitted data).
    * - Reviewer

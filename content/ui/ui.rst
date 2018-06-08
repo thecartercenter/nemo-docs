@@ -10,7 +10,7 @@ Viewing the header
 
 The header is the top section of the screen. Here are its components:
 
-1.  **ELMO/NEMO Logo**. Return to the dashboard for the current mission.
+1.  **NEMO/ELMO Logo**. Return to the dashboard for the current mission.
 2.  **Mission Dropdown**. Change to a different mission.
 3.  **Admin Mode** (Admins only). Manage standard forms, manage users, create missions, and change system-wide settings.
 4.  **Edit profile**. Shows your username and role. Click to edit your profile.
@@ -53,8 +53,8 @@ The footer is the bottom section of the screen. Here are its components:
    settings page.
 3. The outgoing SMS provider for the current mission (not shown in Admin
    mode). See :doc:`Settings <../smssetup/smssetup>`.
-4. The current version number of ELMO.
-5. Click on **About ELMO** to learn more about the software.
+4. The current version number of NEMO/ELMO.
+5. Click on **About NEMO/ELMO** to learn more about the software.
 
 
 .. note::
@@ -75,7 +75,7 @@ The dashboard is the home screen for a mission. It gives an overview of collecte
 1. A listing of the latest responses to arrive.
 2. A map of response locations.
 3. Overview statistics on response activity.
-4. A custom report created with ELMO's :doc:`Report <../reports/reports>` system.
+4. A custom report created with NEMO/ELMO's :doc:`Report <../reports/reports>` system.
 
 .. note::
   The report with the most views will be initially selected in the dashboard. You can change the selected report using the dropdown menu.

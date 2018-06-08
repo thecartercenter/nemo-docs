@@ -5,7 +5,7 @@ Broadcast Messages
 Staffers, coordinators, and admins can send broadcast messages to a list of users. Broadcast messages can be sent via email and/or SMS.
 
 .. note::
-  For SMS broadcast messages you need an Elmo SMS gateway with SMS credit established before messages can be sent.
+  For SMS broadcast messages you need an SMS gateway with SMS credit established before messages can be sent.
 
 To send a Broadcast Message:
 

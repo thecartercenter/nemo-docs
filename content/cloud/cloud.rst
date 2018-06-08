@@ -3,7 +3,7 @@ Cloud
 
 .. _set-up-cloud:
 
-Set up an Elmo instance on the cloud
+Set up a NEMO/ELMO instance on the cloud
 ----------------------------------------
 
 https://github.com/thecartercenter/elmo/blob/master/docs/development-setup.md
@@ -11,16 +11,16 @@ https://github.com/thecartercenter/elmo/blob/master/docs/development-setup.md
 
 
 
-About Elmo Licenses
+About NEMO/ELMO Licenses
 --------------------
 
-The open source license for ELMO code is `Apache
+The open source license for NEMO/ELMO code is `Apache
 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`__. Our code is
-located at `GitHub <https://github.com/thecartercenter/elmo>`__. ELMO
+located at `GitHub <https://github.com/thecartercenter/elmo>`__. NEMO/ELMO
 can be hosted on personal servers and users can control who has access
 to the data.
 
-ELMO Documentation and Training unless otherwise specified is licensed
+NEMO/ELMO Documentation and Training unless otherwise specified is licensed
 under a `Creative Commons Attribution 4.0 International
 License <http://creativecommons.org/licenses/by/4.0/>`__. |Creative
 Commons License|

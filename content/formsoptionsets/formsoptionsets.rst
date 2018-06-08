@@ -51,9 +51,9 @@ Import standard option set
 Import new option set
 ---------------------
 
-Option Sets can be created with spreadsheet software like Excel, and uploaded directly into ELMO:
+Option Sets can be created with spreadsheet software like Excel, and uploaded directly into NEMO/ELMO:
 
-1. Outside of ELMO, create a CSV or XLS file.
+1. Outside of NEMO/ELMO, create a CSV or XLS file.
 2. In the first row, include the name for each level as an individual column header (example Company \| Department \| Name ).
 
 3. Add the names of the options.
@@ -61,7 +61,7 @@ Option Sets can be created with spreadsheet software like Excel, and uploaded di
 .. image:: excel-option-set.png
   :alt: Excel option set import
 
-4. In ELMO, click :guilabel:`Option Set` menu.
+4. In NEMO/ELMO, click :guilabel:`Option Set` menu.
 5. Click :guilabel:`Import New Option Set`.
 6. Choose a name for the option set.
 7. Choose the CSV or XLS file created in steps 1-3.
@@ -76,7 +76,7 @@ Import option set with coordinates
 
 To upload an option set with coordinates:
 
-1. Outside of ELMO, create a CSV or XLS file.
+1. Outside of NEMO/ELMO, create a CSV or XLS file.
 2. In the first row, include the name for each level as an individual column header with **Coordinates** as the last column (example: Province \| City \| District \| Coordinates ).
 3. Add the names of the options.
 4. In the column for **Coordinates**, include both latitude and longitude in decimal format separated by a comma (example 0.054396, 18.259688).
