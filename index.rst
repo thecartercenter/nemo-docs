@@ -3,31 +3,80 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ELMO and NEMO's documentation!
+
+NEMO/ELMO Documentation
 =========================================
 
+ELMO is The Carter Center’s open-source ELection MOnitoring data
+collection and reporting system, built specifically with election
+monitoring in mind. Equipped with ELMO, observers can submit evaluations
+of a process – via tablets (utilizing Open Data Kit), SMS, or directly
+online – in real-time to field or *mission* headquarters. ELMO’s
+reporting system organizes observer findings, and is relied upon by The
+Carter Center missions around the globe to analyze data and to assess
+elections as well as broader political processes.
+
+The open source license for ELMO is Apache 2.0. ELMO can be hosted on
+personal servers and users can control who has access to the data.
+
+
 .. toctree::
+   :hidden:
    :maxdepth: 1
-   :caption: Contents:
 
    content/getstarted/getstarted
-   content/missionsetup/missionsetup
-   content/settings/settings
+   content/ui/ui
+   content/users/users
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Form Building
+
    content/formsoverall/formsoverall
    content/formsquestions/formsquestions
-   content/formsoptionsets/formsoptionsets
+   content/formsoptionsets/formsoptionsets 
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Data Submission
+
    content/submitonline/submitonline
    content/submittablet/submittablet
    content/submitsms/submitsms
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Data Review and Reporting
+  
    content/search/search
-   content/reports/reports
-   content/features/features
-   content/admin/admin
-   content/licenses/licenses
+   content/reports/reports    
    
 .. toctree::
+   :hidden:
    :maxdepth: 1
-   :caption: Contributing:
+   :caption: Deploying an Instance
+
+   content/cloud/cloud
+   content/fieldserver/fieldserver
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Other
+   
+   content/settings/settings
+   content/broadcast/broadcast 
+   content/smssetup/smssetup
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Contributing
 
    content/styleguide/styleguide
-   content/contributing/contributing  
+   content/contributing/contributing

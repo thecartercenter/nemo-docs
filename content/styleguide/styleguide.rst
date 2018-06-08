@@ -73,6 +73,26 @@ Straight quotes
 
 Any time that you *do* need to use quotation marks, use straight (or *plain*) quotes. Sphinx and Docutils will output the typographically correct quote style.
 
+.. _click:
+
+Click instructions
+------------------
+
+When giving user interface click instructions always use **Click** rather than **Click on**.
+
+.. rubric:: Wrong
+
+.. code-block:: rst
+
+  Click on :guilabel:`Create user`.
+  
+.. rubric:: Right
+
+.. code-block:: rst
+
+  Click :guilabel:`Create user`.
+
+
 .. _serial-comma:
 
 Serial comma

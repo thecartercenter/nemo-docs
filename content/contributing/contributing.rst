@@ -1,5 +1,5 @@
 ***************************
-Contributing to NEMO Docs
+Contributing to NEMO/ELMODocs
 ***************************
 
 .. docs-tech-guide:
@@ -13,10 +13,10 @@ Authoring Tools and Environment
 
 .. _docs-as-code:
 
-Docs as Code
+Docs as code
 ----------------
 
-NEMO Documentation follows (as much as possible) the `Docs like Code <http://www.writethedocs.org/guide/docs-as-code/>`_ philosophy. This means:
+NEMO/ELMO Documentation follows (as much as possible) the `Docs like Code <http://www.writethedocs.org/guide/docs-as-code/>`_ philosophy. This means:
 
 - Documentation source files are written in a plain text format. (We use `reStructuredText <http://docutils.sourceforge.net/rst.html>`_.)
 - Documentation source files are kept under version control. (We use git and `Github <https://github.com/thecartercenter/nemo-doc>`_.)
@@ -28,7 +28,7 @@ This section of the Contributor Guide walks through our authoring and publishing
 
 .. _docs-workflow-overview:
 
-Overview of Workflow
+Overview of workflow
 -----------------------
 
 When you first get started you'll need to:
@@ -50,7 +50,7 @@ And then each time you work you will:
 
 .. _docs-dev-setup:
 
-Setting up your Environment
+Setting up your environment
 ----------------------------
 
 .. _docs-terminal:
@@ -69,7 +69,7 @@ Terminal (Command Line)
   - use the `Linux subsystem (Windows 10) <https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/>`_
   - use a bash terminal emulator, such as
 
-    - :doc:`Cygwin <cygwin>`
+    - Cygwin
     - `gitbash <https://git-for-windows.github.io/>`_
 
   The lead maintainers of this docs repo are not Windows users, so we rely on our contributor community to keep Windows-specific information complete and accurate. Contributions to this guide with explanations and help for Windows users are greatly appreciated.
@@ -129,15 +129,15 @@ You will need to:
 
 .. _docs-workflow-setup:
 
-Getting Ready to Work
+Getting ready to work
 -----------------------
 
 .. _fork-the-docs:
 
-Clone the Docs
+Clone the docs
 ~~~~~~~~~~~~~~
 
-Go to the `NEMO Doc repo on Github <https://github.com/thecartercenter/nemo-doc>`_, select the :guilabel:`Clone or download` button. Copy the URI from the text box that opens up. It will be something like: ``https://github.com/your-gh-username/docs.git``
+Go to the `NEMO/ELMO Doc repo on Github <https://github.com/thecartercenter/nemo-doc>`_, select the :guilabel:`Clone or download` button. Copy the URI from the text box that opens up. It will be something like: ``https://github.com/your-gh-username/docs.git``
 
 Open your terminal, and `cd` to your preferred directory. Then `git clone` the repo:
 
@@ -154,7 +154,7 @@ The rest of the documentation assumes you are in the directory for the repo (the
 
 .. _install-doc-dependencies:
 
-Install Dependencies
+Install dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The first time you clone down the repo, you'll need to install the dependencies. Make sure you have your Python 3 virtual environment set up and activated in the docs repo and then:
@@ -173,12 +173,12 @@ The first time you clone down the repo, you'll need to install the dependencies.
 
 .. _docs-workflow-details:
 
-Workflow Details
+Workflow details
 -------------------
 
 .. _git-branch-the-docs:
 
-Make a New Branch
+Make a new branch
 ~~~~~~~~~~~~~~~~~~~
 
 Create a new branch in which you will work on a specific issue. The branch name should briefly describe what you are doing. For example, the original author of this contributor guide worked in a branch he called ``contributing``. Also, make sure that all the branches are derived from the ``master`` branch to avoid intermixing of commits.
@@ -206,7 +206,7 @@ Create a new branch in which you will work on a specific issue. The branch name 
 
 .. _write-the-docs:
 
-Work on the Docs
+Work on the docs
 ~~~~~~~~~~~~~~~~~~~
 
 Write and edit files in your favorite editor.
@@ -215,7 +215,7 @@ Write and edit files in your favorite editor.
 
 .. _build-the-docs:
 
-Build, View, and Debug
+Build, view, and debug
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 To build the documentation into a viewable website:
@@ -265,7 +265,7 @@ It's a good idea to delete the ``build`` directory before each rebuild.
 
 .. _push-the-docs:
 
-Push Your Branch
+Push your branch
 ~~~~~~~~~~~~~~~~~~
 
 Once your work on the issue is completed, add the files you've changed or created additionally, and write a relevant commit message describing the changes.
@@ -290,10 +290,10 @@ After that, you can just:
 
 .. _pr-the-docs:
 
-Issue a Pull Request
+Issue a pull request
 ~~~~~~~~~~~~~~~~~~~~~~
 
-A pull request (or PR) is a request from you to the NEMO Docs maintainers, for us to pull in your changes to the main repo.
+A pull request (or PR) is a request from you to the NEMO/ELMO Docs maintainers, for us to pull in your changes to the main repo.
 
 Go the `main docs repo on GitHub <https://github.com/thecartercenter/nemo-docs>`_. You'll see a message there referencing your recently pushed branches. Select :guilabel:`Compare & pull request` to start a pull request.
 
@@ -327,7 +327,7 @@ Complete the pull request. The maintainers will review it as quickly as possible
 
 .. _keep-working-the-docs:
 
-Keep Going
+Keep going
 ~~~~~~~~~~~
 
 Once the PR is merged, you'll need to pull in the changes from the main repo into your local copy.
@@ -345,7 +345,7 @@ Now you can find a new issue to work on, create a new branch, and get to work...
 Writing in Sphinx
 ====================
 
-The NEMO documentation is built using `Sphinx <http://sphinx-doc.org>`_, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, a semantic, extensible markup syntax similar to Markdown.
+The NEMO/ELMO documentation is built using `Sphinx <http://sphinx-doc.org>`_, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, a semantic, extensible markup syntax similar to Markdown.
 
 - `reStructuredText Primer <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_ — Introduction to reStructuredText
 
@@ -371,7 +371,7 @@ Indentation is meaningful in Sphinx and reStructured text.
 
 .. _doc-files:
 
-Documentation Files
+Documentation files
 ----------------------
 
 Sphinx document files have the ``.rst`` extension. File names should be all lowercase and use hyphens (not underscores or spaces) as word separators.
@@ -441,7 +441,7 @@ For example:
 
 .. _about-toc:
 
-Table of Contents
+Table of contents
 --------------------
 
 The ``index.rst`` file serves as a front-page to the documentation and contains the table of contents. The table of contents controls the documentation navigation menu. To add a new document to the table of contents, add the file new (without the ``.rst`` extension) to the list of file names in ``index.rst``.
@@ -449,7 +449,7 @@ The ``index.rst`` file serves as a front-page to the documentation and contains 
 
 .. _sections-titles:
 
-Sections and Titles
+Sections and titles
 -----------------------
 
 Headlines require two lines: the text of the headline, followed by a line filled with a single character. Each level in a headline hierarchy uses a different character:
@@ -507,7 +507,7 @@ In either case, the underline of characters needs to be *longer than* the line o
 
 .. note::
 
-  The exact order of underline characters is flexible in reStructuredText. However, this specific ordering should be used throughout the NEMO documentation.
+  The exact order of underline characters is flexible in reStructuredText. However, this specific ordering should be used throughout the documentation.
 
 .. _section-labels:
 
@@ -552,7 +552,7 @@ Section titles must be unique throughout the entire documentation set. Therefore
 
 .. _basic-markup:
 
-Basic Markup
+Basic markup
 -------------
 
 
@@ -572,7 +572,7 @@ Basic Markup
 
 .. _inline-markup:
 
-Emphasis and Inline Literal
+Emphasis and inline literal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
@@ -691,7 +691,7 @@ Numbered lists ( ``<ol>`` ):
 
 .. _dl:
 
-Definition Lists
+Definition lists
 """""""""""""""""""
 
 .. code-block:: rst
@@ -724,7 +724,7 @@ Line spacing
 
 .. _paragraph-markup:
 
-Paragraph-level Markup
+Paragraph-level markup
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: rst
@@ -755,7 +755,7 @@ Please do not do this.
 
 There is **no reason** to put a limit on line length in source files for documentation, since this is prose and not code. Therefore, please do not put arbitrary line breaks in your files.
 
-Block Quotes
+Block quotes
 """"""""""""""
 
 .. code-block:: rst
@@ -772,7 +772,7 @@ This is not a block quote. Block quotes are indented, and otherwise unadorned.
   — Adam Michael Wood
 
 
-Line Blocks
+Line blocks
 """"""""""""
 
 .. code-block:: rst
@@ -979,7 +979,7 @@ For more details, refer this `guide on CSV Tables <http://docutils.sourceforge.n
 
 .. _sphinx-markup:
 
-Sphinx-specific Markup
+Sphinx-specific markup
 --------------------------
 
 Roles and directives
@@ -999,7 +999,7 @@ A directive is a block-level markup construct. They look like this::
 
   This is no longer part of the block controlled by the directive.
 
-Most of the Sphinx-specific and NEMO-specific markup will use one or both of these constructs.
+Most of the Sphinx-specific and NEMO/ELMO-specific markup will use one or both of these constructs.
 
 .. _cross-referencing:
 
@@ -1076,7 +1076,7 @@ For example:
 
 .. _interface-writing:
 
-Writing about User Interface
+Writing about user interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Several roles are used when describing user interactions.
@@ -1134,54 +1134,10 @@ Several roles are used when describing user interactions.
 
     The :option:`-b html` option specifies the HTML builder.
 
-.. _custom-text-roles:
-
-Custom Text Roles
-~~~~~~~~~~~~~~~~~~~
-
-**Custom Text Roles** signify that the enclosed text should be interpreted in a specific way.
-
-Custom text roles used in NEMO documentation are:
-
-.. rst:role:: th
-
-  Stands for table head and refers to a table header cell in the body of text.
-
-.. rst:role:: tc
-
-  Stands for table cell and describes the table cells in the body of text.
-
-  .. code-block:: rst
-
-    External App String Widget
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    The external app widget is displayed when the :th:`appearance` attribute begins with :tc:`ex:`.
-
-.. rst:role:: formstate
-
-  Specifies the state of the form which could be one of the following:
-
-  - Blank
-  - Finalized
-  - Saved
-  - Sent
-  - Deleted
-
-  .. code-block:: rst
-
-    :formstate:`Sent`
-
-.. rst:role:: gesture
-
-  Describes a touch screen gesture.
-
-  .. code-block:: rst
-
-    :gesture:`Swipe Left`
 
 .. _misc-markup:
 
-Other Semantic Markup
+Other semantic markup
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. rst:role:: abbr
@@ -1220,10 +1176,10 @@ Other Semantic Markup
 
 .. _images:
 
-Images and Figures
+Images and figures
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Image files should be put in the :file:`/img/` directory in the source, and they should be in a subdirectory with the same name as the document in which they appear. (That is, the filename without the ``.rst`` extension.)
+Image files should be put in the same directory as the :file:`.rst` source file.
 
 You must perform lossless compression on the source images. Following tools can be used to optimize the images:
 
@@ -1332,7 +1288,7 @@ You can add inline images in the document using substitutions. The following blo
        
 .. _image-names:
 
-Image File Names
+Image file names
 """"""""""""""""""
 
 Image file names should:
@@ -1360,7 +1316,7 @@ Bad image file names:
 
 .. _code-samples:
 
-Code Samples
+Code samples
 ~~~~~~~~~~~~~~
 
 Use the ``code-block`` directive to markup code samples. Specify the language on the same line as the directive for syntax highlighting.
@@ -1405,6 +1361,44 @@ Use the ``code-block`` directive to markup code samples. Specify the language on
 
     .. code-block:: python
       :class: wrap
+
+.. _font-awesome:
+
+Font Awesome icons
+--------------------------
+`Font Awesome icons <https://fontawesome.com>`_ are used in this project. For example to render the pencil icon :fa:`pencil`
+the below syntax is used.
+
+.. code-block:: rst
+
+  :fa:`pencil`
+  
+
+
+.. _screenshots:
+
+Screenshots
+--------------------------
+Whenever screenshots are used avoid any editing like adding numbers or arrows to the screenshot.
+Prefer using **guilabel** or **Font Awesome icons**.
+
+.. image:: screenshots.png
+  :alt: Screenshots
+
+.. rst:role:: guilabel
+
+.. code-block:: rst
+
+  Click :guilabel:`Create New User`.
+
+
+.. rst:role:: fa
+
+.. code-block:: rst
+
+  Click :fa:`pencil` to edit user.
+
+
 
 .. note:: 
 

@@ -1,153 +1,177 @@
-5. Forms: Questions
-===================
+Questions
+=========
 
-To create and import questions to a mission, navigate to the Questions
-page by clicking on the **Questions** menu on the main menu bar.
+Create a question
+-----------------
 
-    **Note:** When creating a new question within the form, there are
-    three options for questions available: conditional, hidden and
-    required. Each of these options affects how the form is filled out
-    by the user in the field. A question can be:
+To create a question:
 
-    -  *Conditional: whether or not it appears in the form is dependent
-       upon how a previous question is answered*
-    -  *Hidden: it is not shown on the form – only to be used if it
-       cannot be deleted*
-    -  *Required: it must be answered in order to submit the completed
-       form, unless an override code is provided*
+1. Click :guilabel:`Questions` in the menu bar.
+2. Click :guilabel:`Create New Question`.
 
-5.1. Create a Question
-----------------------
+.. image:: create-question.png
+  :alt: create question
 
-.. figure:: create-new-question-edited.png
-   :alt: create new question edited
+:guilabel:`Code`
+   A unique name for the question.
 
+:guilabel:`Type`
+  Type of the question. More details can be found in :ref:`question-types` section.
 
-To create a question that will be used for the current mission:
+:guilabel:`Title`
+  Title of the question.
 
--  1: Click on the **Create Question** link (in orange text)
--  2: Provide a unique name for the question in the box labeled
-   **Code**. Normal users (in this case, users with the title of
-   Observer) will not see this box
--  3: Select the Type of response needed for the question from the
-   following options:
+:guilabel:`Hint`
+  Further instructions for the question. More details can be found in :ref:`hints` section.
 
-5.2. Types of questions
------------------------
+:guilabel:`Is Key Question`
+  Answers to key questions help summarize responses and appear in the response listing. If this box is marked, a column showing these answers will be added in the Responses tab.
 
-+------------+---------------------------------------------------------------+
-| Text       | Text designed with a shorter character limit, specifically    |
-|            | used for SMS                                                  |
-+============+===============================================================+
-| Long Text  | Text designed for paragraphs rather than simple               |
-|            | phrases/sentences                                             |
-+------------+---------------------------------------------------------------+
-| Integer    | This is a numeric answer that must be a whole number without  |
-|            | decimals                                                      |
-+------------+---------------------------------------------------------------+
-| Decimal    | This is numeric answer that allows for decimals               |
-+------------+---------------------------------------------------------------+
-| Location   | This question may be answered with a GPS coordinate derived   |
-|            | from the user’s device (e.g. tablet with GPS)                 |
-+------------+---------------------------------------------------------------+
-| Select One | Only one answer may be selected from a multiple choice Option |
-|            | Set                                                           |
-+------------+---------------------------------------------------------------+
-| Select     | Multiple answers may be selected from a multiple choice       |
-| Multiple   | Option Set                                                    |
-+------------+---------------------------------------------------------------+
-| Date/Time  | Enter both the date and the time                              |
-+------------+---------------------------------------------------------------+
-| Date       | Enter the date                                                |
-+------------+---------------------------------------------------------------+
-| Time       | Enter the time                                                |
-+------------+---------------------------------------------------------------+
-| Image      | Take a picture or choose a jpg orpngimage                     |
-+------------+---------------------------------------------------------------+
-| Annotated  | Take or choose a picture and annotate it                      |
-| Image      |                                                               |
-+------------+---------------------------------------------------------------+
-| Signature  | Sign with a finger                                            |
-+------------+---------------------------------------------------------------+
-| Sketch     | Sketch an image with a finger                                 |
-+------------+---------------------------------------------------------------+
-| Audio      | Record or choose a sound                                      |
-+------------+---------------------------------------------------------------+
-| Video      | Record or choose a video                                      |
-+------------+---------------------------------------------------------------+
+:guilabel:`Tags`
+  Add :ref:`tags` to this question.
 
--  4: After selecting the type of question (and option set if
-   applicable), enter the main text of the question in the title box
+.. _question-types:
 
-A note on image, video, or audio submissions: those files can be big!
-Big files may also mean a lot of data costs as well. Consult with your
-ELMO or database administrator on best practices for your project.
+Types of questions
+------------------
 
-5.3. Creating Hints
--------------------
+.. list-table::
+   :widths: auto
+   :header-rows: 1
 
--  5: Add further instructions in the **Hint** box below the
-   **Title** box (i.e.: for a Select Multiple question, add “Select
-   all that apply” in the **Hint** box)
-
-.. figure:: hints.png
-   :alt: hints
+   * - Type
+     - Description
+   * - Text
+     - Short text that shows in a single line of input.
+   * - Long Text
+     - Long text that shows in multiple lines of input.
+   * - Integer
+     - Numeric answer that must be a whole number without decimals.
+   * - Decimal
+     - Numeric answer that allows for decimals.
+   * - Location
+     - GPS location of the user.
+   * - Select One
+     - Only one answer can be selected from a multiple choice option set.
+   * - Select Multiple
+     - Multiple answers can be selected from a multiple choice option set.
+   * - Date/Time
+     - Enter both date and time.
+   * - Date
+     - Date only field.
+   * - Time
+     - Time only field.
+   * - Image
+     - The image should be at most 5MB. Accepted formats are: jpg, png.
+   * - Annotated Image
+     - The image should be at most 5MB. Accepted formats are: jpg, png. You can add markup to the image.
+   * - Signature
+     - Sign with a finger in ODK Collect or upload a signature image in NEMO/ELMO.
+   * - Sketch
+     - Sketch an image with a finger.
+   * - Barcode
+     - Scan a barcode with ODK Collect.
+   * - Audio
+     - Record or select a sound from your device. File size should be at most 10MB. Accepted formats are: mp3, ogg, webm, wav.
+   * - Video
+     - Record or select a video from your device. File size should be at most 10MB. Accepted formats are: 3gp, mp4, webm, mpg, wmv, avi.
 
 
--  6: Below the Hint box, there is an option to make the question a
-   **Key Question**. This option allows responses to the form to be
-   organized based on the response to the question. If this box is
-   marked, a column showing these answers will be added in the Responses
-   tab.
--  7: Click **Save** to generate the question
--  8: To edit the question, return to the Questions page and select the
-   corresponding **Pencil icon**
+.. _hints:
 
-5.4. Language translations
---------------------------
+Hints
+-----
+
+Hints are optional help texts used to provide additional instructions on the question.
+
+- On NEMO/ELMO desktop, click :fa:`info-circle` on the right of the question to see the hint.
+- On ODK Collect (NEMO/ELMO Android app), the hint will be shown below the question as follows:
+
+.. image:: hint-android.png
+  :alt: hint Android 
+
+Language translations
+---------------------
 
 Question titles and hints can be translated into any language that has
-been set for the mission. To add a language to a mission, go to the
-**Preferred Languages** box in the **Settings** menu. When
-creating or editing questions, the **Title** box will appear for the
-first language in **Preferred Languages**, followed by the **Hint**
-box in that language, then the **Title** and **Hint** boxes for the
-second language, and so on. So, a **Preferred Languages** box that
-looks like this:
+been set for the mission. To add a language to a mission, go to :guilabel:`Settings` menu and edit :guilabel:`Preferred Languages`.
 
-.. figure:: preferred-languages-enfr.png
-   :alt: preferred languages enfr
+.. image:: preferred-languages-enfr.png
+   :alt: preferred languages
 
 
-Results in this:
+When editing a question. Title and Hint will show up for selected languages:
 
-.. figure:: title-hint-enfr.png
-   :alt: title hint enfr
+.. image:: title-hint-enfr.png
+   :alt: title hint
 
+.. note::
 
-To translate a title or a hint, type the translation in the
-corresponding box and click **Save**. To view the translation, change
-the language by clicking **Change Language** in the footer. Questions
-that have been translated into the selected language will appear
-translated once that language is selected. For example, the French
-translation of an English question will appear once French is selected.
+  To view the translation, change the language by clicking :guilabel:`Change Language` in the footer. For example, the French translation of an English question will appear once French is selected.
 
-5.5. Tags
----------
+.. _tags:
+
+Tags
+----
 
 Tags are an easy way to organize information around a common keyword or
-theme. In ELMO, questions may be “tagged” with keywords or descriptors,
+theme. In NEMO/ELMO, questions may be tagged with keywords or descriptors,
 which may be used to find all of the questions with the same tag. Tags
 are also used in Reports to help sort information assigned to questions.
-
-.. figure:: tags.png
-   :alt: tags
-
 
 To tag questions:
 
 1. Open or create the question you wish to tag.
-2. Type in the **Tags** box. (You may add multiple tags.)
-3. Click **Enter** to add a tag.
-4. To delete a tag, click on the **X** next to the tag.
-5. Click **Save** after adding tags to save your changes.
+2. Type in the :guilabel:`Tags` box and click :guilabel:`Enter` to add a tag.
+
+.. note::
+
+  - You can add multiple tags.
+  - To delete a tag, click :fa:`times` next to the tag.
+
+3. Click :guilabel:`Save` after adding tags to save your changes.
+
+
+Display logic
+-------------
+
+By default all questions are shown in the form. Display logic controls which question to show depending on conditions.
+
+To edit display logic:
+
+1. Click :guilabel:`Forms` menu.
+2. Click :fa:`pencil` next to the form you want to edit.
+3. Click on the :guilabel:`Question` you want to edit.
+4. Click on the display logic dropdown :fa:`caret-down` and choose between three options:
+
+  - Always display this question.
+  - Display this question if all of these conditions are met.
+  - Display this question if any of these conditions are met.
+
+.. image :: display-logic.png
+  :alt: Display logic
+
+
+.. note::
+
+  - Click :guilabel:`+ Add Condition` if you want to add another condition for the same question.
+  - Check :guilabel:`hidden` box if you want to hide this question from the form.
+  - Check :guilabel:`required` box to make this question required. Form cannot be submitted if not answered, unless an override code is provided.
+
+
+
+Skip Logic
+----------
+
+On ODK Collect (NEMO/ELMO Android app), by default when you swipe left or click :fa:`arrow-right` you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
+
+To edit skip logic:
+
+1. Click :guilabel:`Forms` menu.
+2. Select a form from the list and click :fa:`pencil`.
+3. Click on the :guilabel:`Question` you want to edit.
+4. Click on skip logic dropdown :fa:`caret-down` and select :guilabel:`After this question, skip ...`.
+5. Choose the destination and conditions to be met.
+
+.. image :: skip-logic.png
+  :alt: Skip logic
