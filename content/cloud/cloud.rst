@@ -6,13 +6,13 @@ Cloud
 Set up a NEMO/ELMO instance on the cloud
 ----------------------------------------
 
-https://github.com/thecartercenter/elmo/blob/master/docs/development-setup.md
+https://github.com/thecartercenter/elmo/blob/master/docs/production-setup.md
 
 
 
 
 About NEMO/ELMO Licenses
---------------------
+-------------------------
 
 The open source license for NEMO/ELMO code is `Apache
 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`__. Our code is
