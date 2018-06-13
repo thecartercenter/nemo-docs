@@ -15,12 +15,7 @@ Setup ODK Collect
 
 3.  Select :guilabel:`Server`.
 4.  Make sure :guilabel:`Type` is set to :guilabel:`ODK Aggregate`.
-5.  Type the :guilabel:`URL` of the mission, example https://example.getelmo.org/m/missionname.
-
-.. note::
-  Make sure to remove the language designation (en/, fr/, ar/, es/) from the URL.
-  Example: https://example.getelmo.org/en/m/missionname becomes https://example.getelmo.org/m/missionname.
-
+5.  Type the :guilabel:`URL` of the mission, example https://example.getelmo.org/en/m/missionname.
 6. Type your NEMO/ELMO :guilabel:`Username` and :guilabel:`Password`.
 
 Download forms
