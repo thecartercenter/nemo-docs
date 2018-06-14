@@ -29,7 +29,8 @@ The open source license for NEMO/ELMO is Apache 2.0. NEMO/ELMO can be hosted on 
 
    content/formsoverall/formsoverall
    content/formsquestions/formsquestions
-   content/formsoptionsets/formsoptionsets 
+   content/formsoptionsets/formsoptionsets
+   content/formstyling/formstyling
 
 .. toctree::
    :hidden:
