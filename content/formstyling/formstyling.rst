@@ -30,7 +30,7 @@ This is an example of how an H1 Header is set in NEMO/ELMO:
   :alt: Set an H1 title in Markdown
 
 
-And this is how it looks like in ODK Collect
+And the result in ODK Collect:
 
 .. image:: h1-title.png
   :alt: H1 Markdown title in ODK Collect
