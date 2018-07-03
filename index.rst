@@ -4,6 +4,8 @@
    contain the root `toctree` directive.
 
 
+.. image:: _static/img/nemo-elmo-dark.png
+
 NEMO/ELMO Documentation
 =========================================
 
