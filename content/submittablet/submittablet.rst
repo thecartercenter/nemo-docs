@@ -88,3 +88,52 @@ When submitting a form that allows incomplete responses a question will show up 
 
 .. image:: incomplete-tablet-response.png
    :alt: Incomplete Android response
+
+
+Import/Export settings
+----------------------
+
+It is possible to share ODK Collect settings between multiple devices using QR code configuration. On your reference device:
+
+1. Press the action button (:guilabel:`⋮`).
+2. Select :guilabel:`Admin Settings`.
+3. Select :guilabel:`Import/Export settings`.
+
+.. image:: import-settings.png
+  :alt: QR code to import settings in ODK
+
+
+Scan code from other device
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From the device that need to be configured press :guilabel:`Scan code from other device`. This will show a QR code scanner that you can use to scan the code from the reference device. Once the code is successfully scanned, Collect will return to the landing screen with a message saying settings were successfully loaded.
+
+Share QR Code
+~~~~~~~~~~~~~~
+
+You can share your settings QR code as an image, for this:
+
+1. Tap :fa:`share-alt` on the top right of the screen.
+2. Select an application from the list.
+
+.. note::
+
+  The QR code contains all of the settings including your passwords. If you want to exclude these:
+
+  1. Tap the bottom of the screen.
+  2. Uncheck passwords.
+
+  .. image:: uncheck-passwords.png
+    :alt: Uncheck passwords
+
+Select code from SD card
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you already have the QR code settings as an image:
+
+1. Tap :guilabel:`Select code from SD card`.
+2. Select your QR code image.
+
+.. note::
+  
+  For more details about Import/Export settings see `ODK Collect documentation <https://docs.opendatakit.org/collect-import-export/>`_.
