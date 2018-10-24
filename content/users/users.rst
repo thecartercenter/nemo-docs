@@ -71,13 +71,13 @@ Import users
 You can import multiple users from an XLSX spreadsheet or CSV file.
 
 1. From the Users page, click :guilabel:`Import Users`.
-2. Click one of the links to download a template CSV or XLSX spreadsheet.
+2. Click one of the links to download a template :guilabel:`CSV` or :guilabel:`XLSX` spreadsheet.
 3. Assemble your user data in the template.
 4. In your browser, select the spreadsheet file to upload.
 5. Click :guilabel:`Import`.
 
 .. note::
-   You can download a template spreadsheet with the correct formatting for importing users.
+   Available columns are: Username, Full Name, Main Phone, Alternate Phone, Email, Birth Year, Gender, Nationality, Notes, and Groups. Only the Username and the Full Name are required, the other columns are optional.
    |Import Users|
 
 Manage existing users
