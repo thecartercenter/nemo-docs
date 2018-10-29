@@ -164,7 +164,10 @@ At the end you should have a configuration similar to this one:
 .. image:: sms-conf.png
    :alt: Programmable SMS Configuration
 
-9. Click :guilabel:`Save` to finish.
+9. Click :guilabel:`Save`.
+10. Now you need to add a number to this messaging service, for this, Click :guilabel:`Numbers` on the left menu.
+11. Click :fa:`plus-circle` to add a number.
+
 
 
 NEMO/ELMO setup for Twilio
