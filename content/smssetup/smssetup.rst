@@ -5,9 +5,11 @@ SMS Provider Setup
 
 NEMO/ELMO needs to be synced with an SMS provider in order to use the SMS feature. Three options are available:
 
-- FrontlineSMS
-- Twilio
-- Generic SMS adapter
+- :ref:`frontline-sms`
+- :ref:`twilio-sms`
+- :ref:`Generic SMS adapter <generic-sms>`
+
+.. _frontline-sms:
 
 FrontlineSMS
 -------------
@@ -91,16 +93,98 @@ A new row will appear on the screen with an API Key in the :guilabel:`Details`. 
 5. Paste the :guilabel:`API Key` that you previously generated in FrontlineCloud.
 
 
+.. _twilio-sms:
+
 Twilio
 ------
 
-If you are using `Twilio <https://www.twilio.com>`_ as your SMS provider you need to set the following settings in NEMO/ELMO:
+If you are using `Twilio <https://www.twilio.com>`_ as your SMS provider you need to set the following settings:
+
+Twilio settings
+~~~~~~~~~~~~~~~
+
+Once you have created your Twilio account you will need to:
+
+- :ref:`create-twilio-project`.
+- :ref:`create-phone-number`.
+- :ref:`create-msg-service`.
+
+
+.. _create-twilio-project:
+
+Create a new Twilio project
+"""""""""""""""""""""""""""
+
+To create a new Twilio project:
+
+1. Click on the top left menu :fa:`chevron-down`.
+2. Select :guilabel:`Create New Project`.
+
+.. image:: create-project.png
+   :alt: Create a new Twilio project
+
+3. Select :guilabel:`Products` then choose :guilabel:`Programmable SMS`.
+4. Click :guilabel:`Continue`.
+
+.. _create-phone-number:
+
+Set up a Twilio phone number
+""""""""""""""""""""""""""""
+
+1. Click :fa:`ellipsis-h` on the left navigation to see the list of products and services.
+2. Select :fa:`hashtag` :guilabel:`Phone Numbers`. 
+
+.. image:: phone-number.png
+   :alt: Create a new phone number
+
+3. Once in the Phone Numbers menu, you have three options:
+
+- Get a free number from Twilio by going to :guilabel:`Getting Started` section.
+- Buy a Twilio Number by going to :guilabel:`Buy a Number` section.
+- Use your own Number by going to :guilabel:`Use Your Number` section.
+
+.. _create-msg-service:
+
+Create a new Messaging service
+""""""""""""""""""""""""""""""
+
+You need to create a new messaging service in order to forward all incoming SMSes to NEMO/ELMO, for this:
+
+1. Click :fa:`comment-alt` :guilabel:`Programmable SMS` on the left navigation.
+2. Click :guilabel:`SMS` on the left menu.
+3. Click :fa:`plus-circle` to create a new messaging service.
+4. Choose a name for the service and set the :guilabel:`use case` to Mixed.
+5. Click :guilabel:`Create`.
+6. Under Inbound Settings, check :guilabel:`PROCESS INBOUND MESSAGES`.
+7. To get the :guilabel:`REQUEST URL`, get back to your NEMO/ELMO mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
+8. Under Outbound Settings, set :guilabel:`STATUS CALLBACK URL` with the same URL used in the previous step.
+
+At the end you should have a configuration similar to this one:
+
+.. image:: sms-conf.png
+   :alt: Programmable SMS Configuration
+
+9. Click :guilabel:`Save`.
+10. Now you need to add a number to this messaging service, for this, Click :guilabel:`Numbers` on the left menu.
+11. Click :fa:`plus-circle` to add a number.
+
+
+
+NEMO/ELMO setup for Twilio
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In your NEMO/ELMO mission:
 
 1. Click :guilabel:`Settings`.
-2. Make sure the :guilabel:`Default Outgoing Provider:` is set to :guilabel:`Twilio`.
-3. In :guilabel:`Twilio Settings` section, set the :guilabel:`Outgoing Number` which is the phone number registered with Twilio. Outgoing SMS broadcasts won’t work unless this number is owned by your Twilio account. This number must include the country code. Example: +25680344523.
-4. Set the :guilabel:`Account SID` for your twilio account.
-5. If needed, click :guilabel:`Change Auth Token` to change the auth token for the Twilio account.
+2. Add the phone number from which you will receive SMSes to :guilabel:`Incoming Number(s)` field. If adding more than one number, separate the numbers with a comma.
+3. Make sure the :guilabel:`Default Outgoing Provider:` is set to :guilabel:`Twilio`.
+4. Scroll down to :guilabel:`Twilio Settings` section, set the :guilabel:`Outgoing Number` which is the phone number registered with Twilio. SMS replies and Outgoing SMS broadcasts won’t work unless this number is owned by your Twilio account. This number must include the country code. Example: +25680344523.
+5. Set the :guilabel:`Account SID` for your twilio account.
+6. Click :guilabel:`Change Auth Token` to change the auth token for the Twilio account.
+7. Click :guilabel:`Save`.
+
+
+.. _generic-sms:
 
 Generic SMS Adapter Settings
 ----------------------------
