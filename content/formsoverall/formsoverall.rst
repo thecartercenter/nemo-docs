@@ -177,3 +177,4 @@ To print a hardcopy of a form:
 1. Click :guilabel:`Forms` menu.
 2. Select a form from the list.
 3. Click :guilabel:`Print Form`.
+4. A dialog will show up saying that you need to activate background colors and images. Click :guilabel:`OK` then activate these in your system/browser print options.
