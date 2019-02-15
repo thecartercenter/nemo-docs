@@ -36,7 +36,7 @@ You should now be able to see the device you have previously set up.
   :alt: Configure connections
 
 .. note ::
-  
+
   For more details check `Frontline documentation <https://frontlinecloud.zendesk.com/hc/en-us/articles/208115663-Creating-a-FrontlineSync-Connection-to-FrontlineCloud>`_.
 
 
@@ -132,7 +132,7 @@ Set up a Twilio phone number
 """"""""""""""""""""""""""""
 
 1. Click :fa:`ellipsis-h` on the left navigation to see the list of products and services.
-2. Select :fa:`hashtag` :guilabel:`Phone Numbers`. 
+2. Select :fa:`hashtag` :guilabel:`Phone Numbers`.
 
 .. image:: phone-number.png
    :alt: Create a new phone number
@@ -157,7 +157,7 @@ You need to create a new messaging service in order to forward all incoming SMSe
 5. Click :guilabel:`Create`.
 6. Under Inbound Settings, check :guilabel:`PROCESS INBOUND MESSAGES`.
 7. To get the :guilabel:`REQUEST URL`, get back to your NEMO/ELMO mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
-8. Under Outbound Settings, set :guilabel:`STATUS CALLBACK URL` with the same URL used in the previous step.
+8. Outbound Settings should be left blank.
 
 At the end you should have a configuration similar to this one:
 
