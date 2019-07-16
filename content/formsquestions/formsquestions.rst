@@ -160,7 +160,7 @@ To edit display logic:
 
 
 
-Skip Logic
+Skip logic
 ----------
 
 On ODK Collect (NEMO/ELMO Android app), by default when you swipe left or click :fa:`arrow-right` you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
@@ -175,3 +175,35 @@ To edit skip logic:
 
 .. image :: skip-logic.png
   :alt: Skip logic
+
+
+Constraints
+-----------
+
+Constraints are conditions that must be met in order for an answer to be accepted. This feature is only available on the mobile app **ODK Collect**.
+
+To edit constraints:
+
+1. Click :guilabel:`Forms` menu.
+2. Select a form from the list and click :fa:`pencil`.
+3. Click on the :guilabel:`Question` you want to edit.
+4. Click on constraints dropdown :fa:`caret-down` and select :guilabel:`Only accept an answer if ...`.
+5. Select the conditions and rules to be met.
+
+.. image :: constraints.png
+  :alt: Constraints
+
+Metadata type
+-------------
+
+Metadata type is a special value that can be pre-filled into a question. If chosen the question will be automatically hidden and not required, and any conditions will be removed.
+For now the Metadata is only available for Date/Time question type.
+
+1. Create a new Date/Time question.
+2. Click the :guilabel:`Metadata Type` dropdown.
+3. Select the Metadata you want to record.
+
+.. note::
+
+  - Form Start Time: will record the time Enumerator started the form.
+  - From End Time: will record the time Enumerator ended the form.
