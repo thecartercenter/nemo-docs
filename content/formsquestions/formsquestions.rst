@@ -193,6 +193,10 @@ To edit constraints:
 .. image :: constraints.png
   :alt: Constraints
 
+.. note::
+  - Constraints can only be added on previous questions.
+
+
 Metadata type
 -------------
 
