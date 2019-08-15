@@ -195,6 +195,8 @@ To edit constraints:
 
 .. note::
   - Constraints can only be added on previous questions.
+  - When editing an Integer question type you can also add a constraint about the :guilabel:`Minimum` and :guilabel:`Maximum` value.
+
 
 
 Metadata type
