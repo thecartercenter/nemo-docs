@@ -6,10 +6,27 @@
 Search
 ======
 
-Search feature is available on responses, questions, users, and SMS menu. Below is the search box from responses menu.
+Responses filter component
+--------------------------
 
-.. image:: search.png
-  :alt: Search box
+Responses menu have a specific filter component with multiple dropdowns where you can filter by Form name, Question, Reviewed and Submitter.
+
+.. image:: search-responses.png
+  :alt: Search responses
+
+- :guilabel:`Form` Select the name of the form.
+- :guilabel:`Question` Filter by a specific value of a question, click :fa:`plus` :guilabel:`Add Condition` to add another question filter.
+- :guilabel:`Reviewed` Select whether to show only reviewed responses, unreviwed responses, or both.
+- :guilabel:`Submitter` Filter by a specic user or group.
+
+
+Free search box
+--------------- 
+
+The free search box is available on responses, questions, users, and SMS menu. Below is the search box from users menu.
+
+.. image:: search-users.png
+  :alt: Search users
 
 Operators
 ---------
