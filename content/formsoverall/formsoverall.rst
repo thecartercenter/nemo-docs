@@ -9,7 +9,7 @@ Forms
 Forms menu
 ----------
 
-The **Forms** menu lists all the available forms for a mission. These are the components:
+The **Forms** menu lists all the available forms for a mission.
 
 .. image:: forms-tab.png
   :alt: Forms tab
@@ -19,19 +19,28 @@ The **Forms** menu lists all the available forms for a mission. These are the co
 :guilabel:`SMS Test Console` Click to test form submission via SMS. |br|
 :guilabel:`Import Standard Forms` Click to :ref:`import-standard-forms` to the mission. These forms can be edited within the mission.
 
-For every form in the list, action icons are in the right and works as follows:
+Form status
+~~~~~~~~~~~~
+
+Forms have 3 different status:
+
+- **Live**: form is available for enumerators to download and submit responses. Only minor changes to the form are permitted like form name, question title and hints.
+- **Paused**: form is not available for enumerators to download and submit responses. Only minor changes to the form are permitted like form name, question title and hints.
+- **Draft**: form is not available for enumerators to download and all changes are permitted.
+
+Action icons
+~~~~~~~~~~~~
+
+For every form in the list, action icons are in the right and work as follows:
 
 .. image:: forms-tab-inset.png
    :alt: forms tab inset
 
+:fa:`pause` Pause form. Changes the form status to paused. |br|
+:fa:`play` Go live. Changes the form status to live. |br|
+:fa:`copy` Clone. Click to create an identical copy of the form. |br|
+:fa:`print` Print. Click to print the form. |br|
 
-:fa:`pencil` Click to edit the form. |br|
-:fa:`trash` Click to delete the form. This can only be done for forms that are unpublished. |br|
-:fa:`arrow-up` Click to publish the form. |br|
-:fa:`arrow-down` Click to unpublish the form. |br|
-:fa:`copy` Click to create an identical copy of the form. |br|
-:fa:`print` Click to print the form. |br|
-:fa:`comment` Click to see the SMS guide of the form. |br|
 
 .. _create-general-form:
 
@@ -117,8 +126,9 @@ Grouping questions by context makes it easier for users to fill forms. Groups ca
 
   a. Click :guilabel:`Add Group`.
   b. Give the group a unique name.
-  c. If needed, check the box 'Repeatable?'.
-  d. Choose the Display Logic.
+  c. If you want to make the group of questions repeatable, check the box :guilabel:`Repeatable?`. Example: if entering details of multiple family members in a household.
+  d. If you want to show the group of questions in the same screen in ODK Collect, check :guilabel:`Show on One Screen`.
+  e. Choose the Display Logic.
 
     - Always display this group.
     - Display this group if all of these conditions are met.
@@ -129,7 +139,7 @@ Grouping questions by context makes it easier for users to fill forms. Groups ca
 4. Click and drag the questions in the desired order of appearance.
 5. Click and drag groups in the desired order of appearance.
 6. Drag questions intended for groups to the right so that they appear indented in relation to the group.
-7. Click :guilabel:`Save` to save the form, or click :guilabel:`Save and Publish` if the form is ready to be used.
+7. Click :guilabel:`Save` to save the form, or click :guilabel:`Save and Go Live` if the form is ready to be used.
 
 .. image:: drag-and-drop.gif
    :alt: Drag and drop
@@ -137,7 +147,7 @@ Grouping questions by context makes it easier for users to fill forms. Groups ca
 Grids
 ~~~~~
 
-Groups can be used to create grids, an example of which is shown below.
+Groups can be used to create grids in ODK Collect, example:
 
 .. figure:: Screenshot_2016-03-15-10-23-18.png
    :alt: Screenshot\_2016-03-15-10-23-18
@@ -155,19 +165,43 @@ Groups can be used to create grids, an example of which is shown below.
 1. Create or edit an existing form.
 2. Create or edit an existing group.
 3. Place **Select One** questions with the same option set in the group.
-4. Click :guilabel:`Save` to save the form, or click :guilabel:`Save and Publish` if the form is ready to be used.
+4. Click :guilabel:`Save` to save the form, or click :guilabel:`Save and Go Live` if the form is ready to be used.
 
 
-Publish a form
------------------
 
-Once a form has been created, it must be published before users can submit responses. To publish a form:
+²
+Go live
+-------
 
-1. Click :guilabel:`Forms` menu.
-2. On the right side of the page, click :fa:`arrow-up` located on the same line as the form to publish. If the arrow is down :fa:`arrow-down` the form is already published.
+Once a form has been created, it must go live before users can submit responses. you can do so when editing a form by:
 
-.. image:: publish-forms.png
-   :alt: publish forms
+ - Clicking :fa:`play` Go Live on the top of the screen.
+ - Or clicking :guilabel:`Save and Go Live` button.
+
+.. image:: go-live.png
+   :alt: Go live
+
+
+You can also Go Live from the forms list menu by clicking :fa:`play` Go Live:
+
+.. image:: forms-tab.png
+   :alt: Go live from forms menu
+
+Form version
+-------------
+
+Each form version has a 10 digit ID and a 3 letters code (example: 2019092500-oyt). The form versioning system is intended to indicate small changes in the form design so that enumerators can update their copies of the form.
+
+When editing a form, click :guilabel:`Increment Version` to increment the form version.
+
+.. image:: form-version.png
+   :alt: Form version
+
+You can also choose the minimum accepted version of the form, to do so click :guilabel:`More settings` then :guilabel:`Minimum Accepted Version`
+
+.. image:: form-version-extended.png
+   :alt: Form version extended
+
 
 Print form
 --------------
@@ -176,5 +210,5 @@ To print a hardcopy of a form:
 
 1. Click :guilabel:`Forms` menu.
 2. Select a form from the list.
-3. Click :guilabel:`Print Form`.
+3. Click :guilabel:`Print`.
 4. A dialog will show up saying that you need to activate background colors and images. Click :guilabel:`OK` then activate these in your system/browser print options.

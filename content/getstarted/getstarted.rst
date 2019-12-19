@@ -17,6 +17,7 @@ Create a mission
 3. Click on :guilabel:`Create New Mission`.
 
 .. image:: mission.png
+   :alt: Create mission
 
 
 .. tip::
@@ -30,6 +31,7 @@ Create a new form
 2. Click :guilabel:`Create New Form` to create your first form.
 
 .. image:: createform.png
+   :alt: Create Form
 
 
 Add questions to form
@@ -38,18 +40,20 @@ Add questions to form
 Click on :guilabel:`+ Add Question`.
 
 .. image:: addquestion.png
+   :alt: Add Question
 
 .. tip::
   For more details on question types, see :ref:`question-types` section.
   
 
 
-Publish form
+Go Live
 ------------
 
-After adding questions to your form, you need to **publish** the form in order to allow users to submit form responses. To do so click on :guilabel:`Publish Form`.
+After adding questions to your form, you need to **Go Live** in order to allow users to submit form responses. To do so click on :guilabel:`Go Live`.
 
 .. image:: publishform.png
+   :alt: Go Live
 
 
 
