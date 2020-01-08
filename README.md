@@ -6,6 +6,8 @@ Documentation for NEMO/ELMO
 
 To rebuild, just push commits to `master`. Read the Docs will pick them up automatically.
 
+Automatic deploys can be configured [here](https://readthedocs.org/dashboard/elmo-nemo/integrations/).
+
 ## Development
 
 Local testing (verified on OSX with Python 3.7.6):
