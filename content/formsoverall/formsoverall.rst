@@ -25,7 +25,7 @@ Form status
 Forms have 3 different status:
 
 - **Live**: form is available for enumerators to download and submit responses. Only minor changes to the form are permitted like form name, question title and hints.
-- **Paused**: form is not available for enumerators to download and submit responses. Only minor changes to the form are permitted like form name, question title and hints.
+- **Paused**: form is not available for enumerators to download and submit responses. Like live status, minor changes are permitted.
 - **Draft**: form is not available for enumerators to download and all changes are permitted.
 
 Action icons
@@ -84,7 +84,7 @@ Forms, questions, and option sets created in **Admin Mode** can be reused in mul
 5. Click :guilabel:`Save`.
 
     .. image:: create-standard-form.png
-      :alt: Create standard form 
+      :alt: Create standard form
 
 6. Click :guilabel:`+ Add Questions` to add questions to the form.
 7. To create a group of questions, click :guilabel:`Add Group`.
@@ -133,7 +133,7 @@ Grouping questions by context makes it easier for users to fill forms. Groups ca
     - Always display this group.
     - Display this group if all of these conditions are met.
     - Display this group if any of these conditions are met.
-   
+
   f. Click :guilabel:`Save`.
 
 4. Click and drag the questions in the desired order of appearance.
