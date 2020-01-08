@@ -21,7 +21,7 @@ python-slugify==1.2.4
 pytz==2017.3
 PyYAML==3.12
 recommonmark==0.4.0
-requests==2.18.4
+requests==2.20.0
 setuptools==18.2
 singledispatch==3.4.0.3
 six==1.11.0
