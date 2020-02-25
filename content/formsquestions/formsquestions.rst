@@ -88,7 +88,7 @@ Hints are optional help texts used to provide additional instructions on the que
 - On ODK Collect (NEMO/ELMO Android app), the hint will be shown below the question as follows:
 
 .. image:: hint-android.png
-  :alt: hint Android 
+  :alt: hint Android
 
 Language translations
 ---------------------
@@ -132,10 +132,33 @@ To tag questions:
 3. Click :guilabel:`Save` after adding tags to save your changes.
 
 
-Display logic
+Metadata type
 -------------
 
+Metadata type is a special value that can be pre-filled into a question. If chosen the question will be automatically hidden and not required, and any conditions will be removed.
+For now the Metadata is only available for Date/Time question type.
+
+1. Create a new Date/Time question.
+2. Click the :guilabel:`Metadata Type` dropdown.
+3. Select the Metadata you want to record.
+
+.. note::
+
+  - Form Start Time: will record the time Enumerator started the form.
+  - From End Time: will record the time Enumerator ended the form.
+
+
+Advanced options
+----------------
+The following features are only available for questions that are added to form.
+
+Display logic
+^^^^^^^^^^^^^
 By default all questions are shown in the form. Display logic controls which question to show depending on conditions.
+
+.. image :: display-logic.png
+  :alt: Display logic
+
 
 To edit display logic:
 
@@ -148,20 +171,16 @@ To edit display logic:
   - Display this question if all of these conditions are met.
   - Display this question if any of these conditions are met.
 
-.. image :: display-logic.png
-  :alt: Display logic
+
 
 
 .. note::
 
   - Click :guilabel:`+ Add Condition` if you want to add another condition for the same question.
-  - Check :guilabel:`hidden` box if you want to hide this question from the form.
-  - Check :guilabel:`required` box to make this question required. Form cannot be submitted if not answered, unless an override code is provided.
-
 
 
 Skip logic
-----------
+^^^^^^^^^^
 
 On ODK Collect (NEMO/ELMO Android app), by default when you swipe left or click :fa:`arrow-right` you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
 
@@ -178,7 +197,7 @@ To edit skip logic:
 
 
 Constraints
------------
+^^^^^^^^^^^
 
 Constraints are conditions that must be met in order for an answer to be accepted. This feature is only available on the mobile app **ODK Collect**.
 
@@ -198,18 +217,22 @@ To edit constraints:
   - When editing an Integer question type you can also add a constraint about the :guilabel:`Minimum` and :guilabel:`Maximum` value.
 
 
+Default answer
+^^^^^^^^^^^^^^
 
-Metadata type
--------------
+Text entered here will be pre-filled in the answer space (for ODK Collect only). You can enter a ``$QuestionCode`` to include the value of a previous question, and ``$!RepeatNum``
+to include the number of the current item in a repeat group.
 
-Metadata type is a special value that can be pre-filled into a question. If chosen the question will be automatically hidden and not required, and any conditions will be removed.
-For now the Metadata is only available for Date/Time question type.
+For example, entering ID: ``$Household-$!RepeatNum`` would pre-fill the answer with ID: 176-2 for the second person in household 176,
+assuming you have a question with code 'Household'. You can also enter an XPath expression by wrapping it with calc():
+``calc($VillageNum + 100 / 2)``
 
-1. Create a new Date/Time question.
-2. Click the :guilabel:`Metadata Type` dropdown.
-3. Select the Metadata you want to record.
+Required, hidden, and disabled options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
+.. image:: required-hidden-disabled.png
+   :alt: Required
 
-  - Form Start Time: will record the time Enumerator started the form.
-  - From End Time: will record the time Enumerator ended the form.
+- *Required*: Check :guilabel:`Required?` box to make this question required. Form cannot be submitted if not answered, unless an override code is provided.
+- *Hidden*: (ODK Collect Only) Check :guilabel:`Hidden?` to hide question on the form but still collect default answer.
+- *Disabled*: Check :guilabel:`Disabled?` to hide the question and not collect anything.
