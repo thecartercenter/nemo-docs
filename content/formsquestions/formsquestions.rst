@@ -234,5 +234,5 @@ Required, hidden, and disabled options
    :alt: Required
 
 - *Required*: Check :guilabel:`Required?` box to make this question required. Form cannot be submitted if not answered, unless an override code is provided.
-- *Hidden*: (ODK Collect Only) Check :guilabel:`Hidden?` to hide question on the form but still collect default answer.
+- *Hidden*: Check :guilabel:`Hidden?` to hide question on the form but still collect default answer (ODK Collect only). For web and SMS forms, the question will behave as if disabled.
 - *Disabled*: Check :guilabel:`Disabled?` to hide the question and not collect anything.
