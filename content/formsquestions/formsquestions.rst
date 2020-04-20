@@ -90,6 +90,21 @@ Hints are optional help texts used to provide additional instructions on the que
 .. image:: hint-android.png
   :alt: hint Android
 
+Read-Only Text
+--------------
+
+The NEMO/ELMO development team is working on a read-only question type. In the meantime, you can
+still create read-only text on your form (ODK forms only). To create read-only text:
+
+- Create a text question
+- Enter the read-only text in the question's title
+- Enter a default value (value does not matter, as it will be read-only)
+- Select the read-only option. The read-only option will only appear if there is a default value.
+
+.. image:: read-only.png
+   :alt: read-only option
+
+
 Language translations
 ---------------------
 
