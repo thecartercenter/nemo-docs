@@ -10,7 +10,7 @@ NEMO/ELMO Documentation
 =========================================
 
 NEMO/ELMO is The Carter Center’s open-source data collection and reporting system. Equipped with NEMO/ELMO, enumerators can submit evaluations of a process via Android devices, SMS, or directly online in real-time to field or mission headquarters. NEMO/ELMO’s
-reporting system organizes enumerator findings, and is relied upon by The Carter Center missions around the globe to analyze and assess data. 
+reporting system organizes enumerator findings, and is relied upon by The Carter Center missions around the globe to analyze and assess data.
 
 The open source license for NEMO/ELMO is Apache 2.0. NEMO/ELMO can be hosted on personal servers and users can control who has access to the data.
 
@@ -47,10 +47,18 @@ The open source license for NEMO/ELMO is Apache 2.0. NEMO/ELMO can be hosted on 
    :hidden:
    :maxdepth: 1
    :caption: Data Review and Reporting
-  
+
    content/search/search
-   content/reports/reports    
-   
+   content/reports/reports
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Data Export and API
+
+   content/export/csv
+   content/export/api
+
 .. toctree::
    :hidden:
    :maxdepth: 1
@@ -63,9 +71,9 @@ The open source license for NEMO/ELMO is Apache 2.0. NEMO/ELMO can be hosted on 
    :hidden:
    :maxdepth: 1
    :caption: Other
-   
+
    content/settings/settings
-   content/broadcast/broadcast 
+   content/broadcast/broadcast
    content/smssetup/smssetup
 
 .. toctree::
