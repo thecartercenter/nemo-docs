@@ -1,3 +1,4 @@
 # Read the docs files
 *.mo
 _build/
+.DS_Store
