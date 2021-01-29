@@ -26,7 +26,7 @@ Create new option set
 Multilevel options sets
 -----------------------
 
-Checking :guilabel:`Is Multilevel?` box allows the use of hierarchically organized options. Multilevel option sets can only be used for **Select One** questions. 
+Checking :guilabel:`Is Multilevel?` box allows the use of hierarchically organized options. Multilevel option sets can only be used for **Select One** questions.
 Below is a classic example of countries and cities. Level 1 is **Country** and level 2 is **City**. The level 2 options needs to be indented compared to level 1 options. Drag and drop options to achieve the desired result.
 
 .. image:: country-city-example.png
@@ -53,7 +53,7 @@ Import new option set
 
 Option Sets can be created with spreadsheet software like Excel, and uploaded directly into NEMO/ELMO:
 
-1. Outside of NEMO/ELMO, create a CSV or XLS file.
+1. Outside of NEMO/ELMO, create a CSV file (you can export from XLS to CSV from any standard spreadsheet software).
 2. In the first row, include the name for each level as an individual column header (example Company \| Department \| Name ).
 
 3. Add the names of the options.
@@ -64,7 +64,7 @@ Option Sets can be created with spreadsheet software like Excel, and uploaded di
 4. In NEMO/ELMO, click :guilabel:`Option Set` menu.
 5. Click :guilabel:`Import New Option Set`.
 6. Choose a name for the option set.
-7. Choose the CSV or XLS file created in steps 1-3.
+7. Choose the CSV file created in steps 1-3.
 8. Click :guilabel:`Import`.
 
 .. note::
@@ -76,7 +76,7 @@ Import option set with coordinates
 
 To upload an option set with coordinates:
 
-1. Outside of NEMO/ELMO, create a CSV or XLS file.
+1. Outside of NEMO/ELMO, create a CSV file (you can export from XLS to CSV from any standard spreadsheet software).
 2. In the first row, include the name for each level as an individual column header with **Coordinates** as the last column (example: Province \| City \| District \| Coordinates ).
 3. Add the names of the options.
 4. In the column for **Coordinates**, include both latitude and longitude in decimal format separated by a comma (example 0.054396, 18.259688).
@@ -88,7 +88,7 @@ To upload an option set with coordinates:
 5. In the mission you are working on, click on the :guilabel:`Option Set` menu.
 6. Click :guilabel:`Import New Option Set`.
 7. Choose a Name for your option set.
-8. Choose the CSV or XLS file you created.
+8. Choose the CSV file you created.
 9. Click :guilabel:`Import`.
 
 Language translations
