@@ -240,7 +240,7 @@ to include the number of the current item in a repeat group.
 
 For example, entering ID: ``$Household-$!RepeatNum`` would pre-fill the answer with ID: 176-2 for the second person in household 176,
 assuming you have a question with code 'Household'. You can also enter an XPath expression by wrapping it with calc():
-``calc($VillageNum + 100 / 2)``
+``calc($VillageNum + 100 div 2)``
 
 Required, hidden, and disabled options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
