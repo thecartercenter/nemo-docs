@@ -1,6 +1,6 @@
 # nemo-docs
 
-Documentation for NEMO/ELMO
+Documentation for NEMO
 
 ## Publishing
 
