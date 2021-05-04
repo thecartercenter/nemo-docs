@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:4
 msgid ""
-"Every instance of an ELMO database allows administrators to organize "
+"Every instance of an NEMO database allows administrators to organize "
 "field projects into areas called *missions*. For example, if you have a "
 "project going on in two different countries, with different reporters or "
 "observers, you may want to have two different missions: Country 1 and "
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:13
 msgid ""
-"Only administrators are able to work in ELMO in Mission Mode or Admin "
+"Only administrators are able to work in NEMO in Mission Mode or Admin "
 "Mode with an overall view of all missions; everyone else must be assigned"
 " to a unique Mission. To create a mission, the Admin Mode must be "
 "activated. To activate Admin Mode, click the *Admin Mode* menu located in"
@@ -106,9 +106,9 @@ msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:47
 msgid ""
-"ELMO has four kinds of user levels – observer, staffer, coordinator, and "
+"NEMO has four kinds of user levels – observer, staffer, coordinator, and "
 "administrator. Each user level has a different set of permissions based "
-"on the functions they are expected to perform during ELMO missions."
+"on the functions they are expected to perform during NEMO missions."
 msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:55
@@ -213,7 +213,7 @@ msgid ""
 msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:98
-msgid "Outside of ELMO create a CSV or XLS file"
+msgid "Outside of NEMO create a CSV or XLS file"
 msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:99
@@ -318,7 +318,7 @@ msgstr ""
 
 #: ../../content/missionsetup/missionsetup.rst:150
 msgid ""
-"In ELMO versions 5.7 and up, users can be placed into groups. Placing "
+"In NEMO versions 5.7 and up, users can be placed into groups. Placing "
 "users into groups makes it easier to search for users and send broadcasts"
 " to them. To create a group of users:"
 msgstr ""
@@ -374,4 +374,3 @@ msgstr ""
 #: ../../content/missionsetup/missionsetup.rst:172
 msgid "**Trashcan** **icon** : click this to delete the user group"
 msgstr ""
-

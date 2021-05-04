@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: ../../content/search/search.rst:4
 msgid ""
 "Searching is a critical aspect of being able to find the information you "
-"need. This function is available on many parts of ELMO."
+"need. This function is available on many parts of NEMO."
 msgstr ""
 
 #: ../../content/search/search.rst:8
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../content/search/search.rst:14
 msgid ""
-"Operators in ELMO are: **AND, OR, NOT**\\ ( ! or -), **grouping** "
+"Operators in NEMO are: **AND, OR, NOT**\\ ( ! or -), **grouping** "
 "operator (parentheses), and **phrase** operator (“”)."
 msgstr ""
 
@@ -324,4 +324,3 @@ msgid ""
 "The date and time the message was sent or received (use quotation marks "
 "and 24-hr time, e.g. “2015-01-29 14:00”)"
 msgstr ""
-

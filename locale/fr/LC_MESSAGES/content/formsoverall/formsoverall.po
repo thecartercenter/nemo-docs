@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -27,19 +27,19 @@ msgstr ""
 
 #: ../../content/formsoverall/formsoverall.rst:7
 msgid ""
-"Forms, Questions, and Option Sets can all be standardized in ELMO. "
+"Forms, Questions, and Option Sets can all be standardized in NEMO. "
 "Standard Forms, Questions, and Option Sets eliminate the need for "
 "observation groups to remake checklists for every mission, and allows "
 "users to compare findings across missions. While election administration "
 "is largely similar from country to country, specific regulations can vary"
 " by country, and so should the design of the form, the questions in it, "
-"and the answers available. ELMO allows for customized design of forms for"
+"and the answers available. NEMO allows for customized design of forms for"
 " the mission at hand."
 msgstr ""
 
 #: ../../content/formsoverall/formsoverall.rst:16
 msgid ""
-"Standardization in ELMO Forms is a major aspect of The Carter Center’s "
+"Standardization in NEMO Forms is a major aspect of The Carter Center’s "
 "overall `Democratic Election Standards project "
 "<http://electionstandards.cartercenter.org/>`__. The project aims to "
 "build consensus on obligations for democratic elections and on detailed "
@@ -49,7 +49,7 @@ msgid ""
 "project uses a `framework of obligations "
 "<https://eos.cartercenter.org/>`__ derived from public international law,"
 " collaborates with the international elections community, and develops "
-"practical tools – like ELMO – for observers to assess elections. Standard"
+"practical tools – like NEMO – for observers to assess elections. Standard"
 " Forms, Questions, and Option Sets not only allow for ease of mission "
 "development, but also are used by The Carter Center to increase "
 "coordination between the international elections community and human "
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../content/formsoverall/formsoverall.rst:46
 msgid ""
-"In ELMO, these steps can be done in any order. In addition, forms, "
+"In NEMO, these steps can be done in any order. In addition, forms, "
 "questions, and option sets can be reused both within a mission and across"
 " missions, depending on whether they are created in Mission Mode or Admin"
 " Mode. They can also be edited at any time."
@@ -254,8 +254,8 @@ msgstr ""
 #: ../../content/formsoverall/formsoverall.rst:117
 msgid ""
 "Forms used on different missions often contain similar or even identical "
-"questions. In ELMO’s Admin Mode, administrator-level users can create "
-"standard forms, questions, and option sets that remain stored in the ELMO"
+"questions. In NEMO’s Admin Mode, administrator-level users can create "
+"standard forms, questions, and option sets that remain stored in the NEMO"
 " system and can be imported into any mission. The option to import "
 "standard forms eliminates the need to create new forms for every mission."
 " Standard forms also allow for an easier comparison of data across "
@@ -285,7 +285,7 @@ msgstr ""
 msgid ""
 "**NOTE**: Remember to select Admin Mode to create standard forms. If the "
 "Admin Mode link does not appear on the screen, permission is not granted "
-"to create standard forms. ELMO Administrators can create and edit "
+"to create standard forms. NEMO Administrators can create and edit "
 "standard forms, standard questions, and standard option sets with the "
 "same actions used for general forms, questions, and option sets, but "
 "these actions must be performed in Admin Mode."
@@ -302,7 +302,7 @@ msgid ""
 "etc.), while others require the user to enter text or numeric values. "
 "Building a new form involves the following steps: creating a new form; "
 "creating questions for the form; and depending on the user’s needs, "
-"creating option sets for those questions. In ELMO, these steps can be "
+"creating option sets for those questions. In NEMO, these steps can be "
 "done in any order."
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr ""
 
 #: ../../content/formsoverall/formsoverall.rst:187
 msgid ""
-"A new feature in ELMO 5.x is the ability to create and sort groups of "
+"A new feature in NEMO 5.x is the ability to create and sort groups of "
 "questions. Groups, in essence, keep questions together so that they "
 "appear on the same page. This feature serves several purposes, including:"
 msgstr ""
@@ -602,7 +602,7 @@ msgstr ""
 
 #: ../../content/formsoverall/formsoverall.rst:294
 msgid ""
-"ELMO allows for forms and data to be printed. In the field, a hardcopy of"
+"NEMO allows for forms and data to be printed. In the field, a hardcopy of"
 " forms, particularly the SMS Composition Guide, are required by observers"
 " in order to report. Note that you may have to turn on background "
 "printing in your browser."
@@ -627,4 +627,3 @@ msgstr ""
 #: ../../content/formsoverall/formsoverall.rst:304
 msgid "|print form icon|"
 msgstr ""
-

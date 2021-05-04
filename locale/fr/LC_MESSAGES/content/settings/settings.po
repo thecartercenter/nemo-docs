@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -57,14 +57,14 @@ msgstr ""
 msgid ""
 "Set the language(s) for the mission. This allows questions and forms to "
 "be defined in multiple languages for each mission, but it does not change"
-" the entire web interface of ELMO (defined in “Viewing the Footer” "
+" the entire web interface of NEMO (defined in “Viewing the Footer” "
 "section above)."
 msgstr ""
 
 #: ../../content/settings/settings.rst:26
 msgid ""
 "Enter the two-letter language code for the language (example: Arabic = "
-"ar; Chinese = zh). A list of ELMO compatible language codes can be found "
+"ar; Chinese = zh). A list of NEMO compatible language codes can be found "
 "at this website: http://www.loc.gov/standards/iso639-2/php/code_list.php"
 msgstr ""
 
@@ -231,4 +231,3 @@ msgstr ""
 #: ../../content/settings/settings.rst:108
 msgid "Click **Save** to keep any settings."
 msgstr ""
-

@@ -1,12 +1,12 @@
 # nemo-docs
 
-Documentation for NEMO/ELMO
+Documentation for NEMO
 
 ## Publishing
 
 To rebuild, just push commits to `master`. Read the Docs will pick them up automatically.
 
-Automatic deploys can be configured [here](https://readthedocs.org/dashboard/elmo-nemo/integrations/).
+Automatic deploys can be configured [here](https://readthedocs.org/dashboard/nemo/integrations/).
 
 ## Development
 

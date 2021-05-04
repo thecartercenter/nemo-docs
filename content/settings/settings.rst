@@ -1,7 +1,7 @@
 Settings
 ========
 
-Settings are where you can define NEMO/ELMO interface preferences and SMS information for each mission.
+Settings are where you can define NEMO interface preferences and SMS information for each mission.
 
 .. image:: settings.png
   :alt: Settings
@@ -23,7 +23,7 @@ Set the language(s) for the mission. This settings determines:
 - The default language for SMS replies.
 - The languages for questions and options.
 
-Enter the two-letter language code for the language (example: Arabic = ar; Chinese = zh). A list of compatible language 
+Enter the two-letter language code for the language (example: Arabic = ar; Chinese = zh). A list of compatible language
 codes can be found `here <http://www.loc.gov/standards/iso639-2/php/code_list.php>`_.
 If multiple codes exist, type them in the preferred order of use and separate them with a comma (example: ar, zh).
 
@@ -35,7 +35,7 @@ In this example, the mission’s primary language will be Arabic. Chinese will b
 Theme
 ~~~~~~
 
-Choose a theme for the application. If you want to create a custom theme check the `instructions <https://github.com/thecartercenter/elmo/blob/master/docs/production-setup.md#custom-theme>`_. 
+Choose a theme for the application. If you want to create a custom theme check the `instructions <https://github.com/thecartercenter/nemo/blob/master/docs/production-setup.md#custom-theme>`_.
 
 
 Override code

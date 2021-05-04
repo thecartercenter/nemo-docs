@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../content/reports/reports.rst:4
 msgid ""
-"ELMO stores and aggregates incoming data so that field and headquarters "
+"NEMO stores and aggregates incoming data so that field and headquarters "
 "staff can quickly chart, graph, and analyze information while writing "
 "reports. These reports allow for preliminary conclusions to be made in a "
 "timely manner. However, other tools may be more useful for more detailed "
-"analysis. For this, data can be exported from ELMO for further review in "
+"analysis. For this, data can be exported from NEMO for further review in "
 "other analytical software."
 msgstr ""
 
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../content/reports/reports.rst:14
 msgid ""
-"Submitted data can be visualized in the Reports section of ELMO. Click "
+"Submitted data can be visualized in the Reports section of NEMO. Click "
 "the **Reports** menu on the main menu bar to access this section. "
 "Coordinators can generate reports for response submissions from all users"
 " while observers are only able to generate reports from their own "
@@ -189,16 +189,16 @@ msgstr ""
 
 #: ../../content/reports/reports.rst:120
 msgid ""
-"Tableau is a data visualization software that allows to present ELMO data"
+"Tableau is a data visualization software that allows to present NEMO data"
 " in a visually engaging and interactive fashion. If you love to use "
-"Tableau and have a license, this is how to get started with ELMO."
+"Tableau and have a license, this is how to get started with NEMO."
 msgstr ""
 
 #: ../../content/reports/reports.rst:124
 msgid ""
 "Things that you will need are: SERVER credentials, and MySQL DATABASE "
-"credentials. These are different from ELMO accounts or logins. These are "
-"things that your ELMO administrator should have on hand."
+"credentials. These are different from NEMO accounts or logins. These are "
+"things that your NEMO administrator should have on hand."
 msgstr ""
 
 #: ../../content/reports/reports.rst:128
@@ -209,9 +209,9 @@ msgstr ""
 msgid ""
 "In order to connect to Tableau, you will need to establish a “secure "
 "shell tunnel” or encrypted connection between your computer and the "
-"server that hosts ELMO. There are a number of ways that you can do this "
+"server that hosts NEMO. There are a number of ways that you can do this "
 "such as clients such as PuTTY (for Windows) or direct through a terminal."
-" Check with your ELMO administrator for recommendations."
+" Check with your NEMO administrator for recommendations."
 msgstr ""
 
 #: ../../content/reports/reports.rst:136
@@ -241,7 +241,7 @@ msgstr ""
 #: ../../content/reports/reports.rst:148
 msgid ""
 "(so, n.b., if all this doesn’t make sense to you, find your local "
-"friendly ELMO administrator who should be able to make sense of this!)"
+"friendly NEMO administrator who should be able to make sense of this!)"
 msgstr ""
 
 #: ../../content/reports/reports.rst:151
@@ -293,14 +293,14 @@ msgid ""
 "From this point onwards, there are a number of ways that you can examine "
 "the data – if you need help to understand the tables and relationships, "
 "check out the Entity Relationship Diagram on our GitHub at "
-"https://github.com/thecartercenter/elmo/blob/master/docs/erd.pdf (also "
+"https://github.com/thecartercenter/nemo/blob/master/docs/erd.pdf (also "
 "available at the bottom half of the introductory GitHub page)."
 msgstr ""
 
 #: ../../content/reports/reports.rst:174
 msgid ""
 "But, one way to easily get started is to take advantage of the custom SQL"
-" query we provide in ELMO. For each mission, in the settings pane, you "
+" query we provide in NEMO. For each mission, in the settings pane, you "
 "can see a nifty ready query:"
 msgstr ""
 
@@ -313,7 +313,7 @@ msgid "Select **Custom SQL**"
 msgstr ""
 
 #: ../../content/reports/reports.rst:184
-msgid "Copy the Tableau SQL code from ELMO as it appears above."
+msgid "Copy the Tableau SQL code from NEMO as it appears above."
 msgstr ""
 
 #: ../../content/reports/reports.rst:185
@@ -331,4 +331,3 @@ msgstr ""
 #: ../../content/reports/reports.rst:190
 msgid "Click **OK**. The Measures and Dimensions should appear in the left panes."
 msgstr ""
-

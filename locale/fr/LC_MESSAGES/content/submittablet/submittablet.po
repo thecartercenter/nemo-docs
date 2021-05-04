@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,10 +24,10 @@ msgstr ""
 #: ../../content/submittablet/submittablet.rst:4
 msgid ""
 "Forms can be submitted via tablet. Any Android-based tablet with an "
-"Internet or mobile connection can be used to submit data to ELMO. While "
+"Internet or mobile connection can be used to submit data to NEMO. While "
 "this section covers submission of forms via an app designed for form "
 "submissions, users may also use the browser app on the tablet to submit "
-"forms via ELMO Online. To submit forms via the tablet app, the following "
+"forms via NEMO Online. To submit forms via the tablet app, the following "
 "is necessary:"
 msgstr ""
 
@@ -72,8 +72,8 @@ msgstr ""
 
 #: ../../content/submittablet/submittablet.rst:27
 msgid ""
-"Using ELMO via ODK Collect requires an ELMO username and password. To "
-"acquire these, contact an ELMO administrator. To enter these in ODK "
+"Using NEMO via ODK Collect requires an NEMO username and password. To "
+"acquire these, contact an NEMO administrator. To enter these in ODK "
 "Collect:"
 msgstr ""
 
@@ -107,12 +107,12 @@ msgstr ""
 #: ../../content/submittablet/submittablet.rst:39
 msgid ""
 "Type the URL of the mission (ex. "
-"https://example.getelmo.org/m/examplemission)"
+"https://example.getnemo.org/m/examplemission)"
 msgstr ""
 
 #: ../../content/submittablet/submittablet.rst:42
 msgid ""
-"To find the URL of the mission, log in to ELMO Online and go to the "
+"To find the URL of the mission, log in to NEMO Online and go to the "
 "mission’s home page by clicking the **Home** icon"
 msgstr ""
 
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../content/submittablet/submittablet.rst:114
 msgid ""
-"ELMO does not typically allow the observer to finalize and send in forms "
+"NEMO does not typically allow the observer to finalize and send in forms "
 "if there are required questions that haven’t been answered. However, some"
 " situations may arise in which forms need to be submitted without "
 "required questions being answered. For example, an observation may be "
@@ -349,4 +349,3 @@ msgid ""
 "Once the override code has been obtained and successfully entered, the "
 "observer can mark the form as finalized and submit."
 msgstr ""
-

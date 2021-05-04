@@ -1,5 +1,5 @@
 *******************************
-Contributing to NEMO/ELMO Docs
+Contributing to NEMO Docs
 *******************************
 
 .. docs-tech-guide:
@@ -9,14 +9,14 @@ Authoring Tools and Environment
 
 .. note::
 
-  Developer and authoring tools have lots of options and alternatives. Local tools and workflows presented in this guide are what the author feels would be easiest for a non-coding contributor to set up and use. 
+  Developer and authoring tools have lots of options and alternatives. Local tools and workflows presented in this guide are what the author feels would be easiest for a non-coding contributor to set up and use.
 
 .. _docs-as-code:
 
 Docs as code
 ----------------
 
-NEMO/ELMO Documentation follows (as much as possible) the `Docs like Code <http://www.writethedocs.org/guide/docs-as-code/>`_ philosophy. This means:
+NEMO Documentation follows (as much as possible) the `Docs like Code <http://www.writethedocs.org/guide/docs-as-code/>`_ philosophy. This means:
 
 - Documentation source files are written in a plain text format. (We use `reStructuredText <http://docutils.sourceforge.net/rst.html>`_.)
 - Documentation source files are kept under version control. (We use git and `Github <https://github.com/thecartercenter/nemo-doc>`_.)
@@ -137,7 +137,7 @@ Getting ready to work
 Clone the docs
 ~~~~~~~~~~~~~~
 
-Go to the `NEMO/ELMO Doc repo on Github <https://github.com/thecartercenter/nemo-doc>`_, select the :guilabel:`Clone or download` button. Copy the URI from the text box that opens up. It will be something like: ``https://github.com/your-gh-username/docs.git``
+Go to the `NEMO Doc repo on Github <https://github.com/thecartercenter/nemo-doc>`_, select the :guilabel:`Clone or download` button. Copy the URI from the text box that opens up. It will be something like: ``https://github.com/your-gh-username/docs.git``
 
 Open your terminal, and `cd` to your preferred directory. Then `git clone` the repo:
 
@@ -293,7 +293,7 @@ After that, you can just:
 Issue a pull request
 ~~~~~~~~~~~~~~~~~~~~~~
 
-A pull request (or PR) is a request from you to the NEMO/ELMO Docs maintainers, for us to pull in your changes to the main repo.
+A pull request (or PR) is a request from you to the NEMO Docs maintainers, for us to pull in your changes to the main repo.
 
 Go the `main docs repo on GitHub <https://github.com/thecartercenter/nemo-docs>`_. You'll see a message there referencing your recently pushed branches. Select :guilabel:`Compare & pull request` to start a pull request.
 
@@ -345,7 +345,7 @@ Now you can find a new issue to work on, create a new branch, and get to work...
 Writing in Sphinx
 ====================
 
-The NEMO/ELMO documentation is built using `Sphinx <http://sphinx-doc.org>`_, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, a semantic, extensible markup syntax similar to Markdown.
+The NEMO documentation is built using `Sphinx <http://sphinx-doc.org>`_, a static-site generator designed to create structured, semantic, and internally consistent documentation. Source documents are written in `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, a semantic, extensible markup syntax similar to Markdown.
 
 - `reStructuredText Primer <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_ — Introduction to reStructuredText
 
@@ -436,8 +436,8 @@ For example:
   div[class^='example'] {
     color: black;
   }
-  
-  /* New section ends */ 
+
+  /* New section ends */
 
 .. _about-toc:
 
@@ -888,24 +888,24 @@ The `csv-table` directive is used to create a table from CSV (comma-separated va
    "Albatross", 2.99, "On a stick!"
    "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
    crunchy, now would it?"
-   "Gannet Ripple", 1.99, "On a stick!"   
+   "Gannet Ripple", 1.99, "On a stick!"
 
 Some of the options recognized are:
 
-.. rst:role:: widths 
-    
+.. rst:role:: widths
+
   Contains a comma or space-separated list of relative column widths. The default is equal-width columns.
-   
+
   .. note::
 
     The special value *auto* may be used by writers to decide whether to delegate the determination of column widths to the backend.
 
-.. rst:role:: header 
+.. rst:role:: header
 
-  Contains column titles. It must use the same CSV format as the main CSV data.  
+  Contains column titles. It must use the same CSV format as the main CSV data.
 
 .. rst:role:: delim
-  
+
   Contains a one character string used to separate fields. Default value is comma. It must be a single character or Unicode code.
 
   .. code-block:: rst
@@ -928,7 +928,7 @@ Some of the options recognized are:
 
 .. rst:role:: align
 
-  It specifies the horizontal alignment of the table. It can be `left` ,`right` or `center`. 
+  It specifies the horizontal alignment of the table. It can be `left` ,`right` or `center`.
 
   .. code-block:: rst
 
@@ -947,7 +947,7 @@ Some of the options recognized are:
       "Paul", "B"
 
 .. rst:role:: file
-  
+
   Contains the local filesystem path to a CSV data file.
 
 .. rst:role:: url
@@ -962,13 +962,13 @@ Some of the options recognized are:
 
       .. csv-table:: Table with different number of columns in each row
          :header: "Name", "Grade"
-   
+
          "Peter"
          "Paul", "B"
 
    .. csv-table:: Table with different number of columns in each row
       :header: "Name", "Grade"
-   
+
       "Peter"
       "Paul", "B"
 
@@ -999,7 +999,7 @@ A directive is a block-level markup construct. They look like this::
 
   This is no longer part of the block controlled by the directive.
 
-Most of the Sphinx-specific and NEMO/ELMO-specific markup will use one or both of these constructs.
+Most of the Sphinx-specific and NEMO-specific markup will use one or both of these constructs.
 
 .. _cross-referencing:
 
@@ -1144,10 +1144,6 @@ Other semantic markup
 
   Marks up an abbreviation. If the role content contains a parenthesized explanation, it will be treated specially: it will be shown in a tool-tip in HTML.
 
-  .. code-block:: rst
-
-    :abbr:`ELMO (Election Monitoring)`
-
 .. rst:role:: dfn
 
   Marks the defining instance of a term outside the glossary.
@@ -1216,24 +1212,24 @@ Substitutions are a useful way to define a value which is needed in many places.
 
 You can define the value once like this:
 
-.. code-block:: rst 
+.. code-block:: rst
 
   .. |RST| replace:: reStructuredText
-  
+
 and then reuse it like this:
 
-.. code-block:: rst 
+.. code-block:: rst
 
   We use |RST| to write documentation source files.
-  
+
 Here, ``|RST|`` will be replaced by reStructuredText
 
 You can also create a reference with styled text:
 
 .. code-block:: rst
-  
+
   .. |slack| replace:: **NEMO Slack**
-  .. slack: https://elmonemo.slack.com
+  .. slack: https://nemo.slack.com
 
 You can use the hyperlink reference by appending a "_" at the end of the vertical bars, for example:
 
@@ -1242,7 +1238,7 @@ You can use the hyperlink reference by appending a "_" at the end of the vertica
   You can ask about your problem in |slack|_.
 
 .. |slack| replace:: **NEMO Slack**
-.. _slack: https://elmonemo.slack.com  
+.. _slack: https://nemo.slack.com
 
 You can ask about your problem in |slack|_.
 
@@ -1253,39 +1249,39 @@ The ``rst_epilog`` in :file:`conf.py` contains a list of global substitutions th
   .. code-block:: rst
 
     You can use |nemo-slack|_ to ask your questions.
-  
+
   You can use |nemo-slack|_ to ask your questions.
-  
+
 |
-  
+
 - To create a hyperlink reference for docs-related issues, use ``|docs-issue|_``.
 
   .. code-block:: rst
-  
+
     If you find a problem, file an |docs-issue|_.
-  
+
   If you find a problem, file an |docs-issue|_.
 
-|  
-  
+|
+
 - To create a hyperlink reference for contributors guide, use ``|contrib-guide|_``.
 
   .. code-block:: rst
-    
-  Be sure to read the |contrib-guide|_.
-  
+
   Be sure to read the |contrib-guide|_.
 
-You can add inline images in the document using substitutions. The following block of code substitutes arrow in the text with the image specified.  
+  Be sure to read the |contrib-guide|_.
 
-.. code-block:: rst 
+You can add inline images in the document using substitutions. The following block of code substitutes arrow in the text with the image specified.
+
+.. code-block:: rst
 
   The |arrow| icon opens the jump menu.
-  
+
   .. |arrow| image:: /img/{document-subdirectory}/{file}.*
              :alt: Alt text.
 
-       
+
 .. _image-names:
 
 Image file names
@@ -1347,7 +1343,7 @@ Use the ``code-block`` directive to markup code samples. Specify the language on
     }
 
 .. note::
-  
+
   **rst** code-blocks wrap overflow lines by default. To unwrap overflow lines, use **unwrap** class with **rst** code-blocks.
 
   .. code-block:: rst
@@ -1372,7 +1368,7 @@ the below syntax is used.
 .. code-block:: rst
 
   :fa:`pencil`
-  
+
 
 
 .. _screenshots:
@@ -1400,7 +1396,7 @@ Prefer using **guilabel** or **Font Awesome icons**.
 
 
 
-.. note:: 
+.. note::
 
   This document is a derivative of the original `Contributing to ODK Docs <https://docs.opendatakit.org/contributing/>`_ licensed under a Creative Commons Attribution 4.0 International License.
 
