@@ -1,3 +1,6 @@
 # Read the docs files
 *.mo
 _build/
+
+# IDEs
+.idea/

@@ -1229,7 +1229,7 @@ You can also create a reference with styled text:
 .. code-block:: rst
 
   .. |slack| replace:: **NEMO Slack**
-  .. slack: https://nemo.slack.com
+  .. slack: https://nemocommunity.slack.com
 
 You can use the hyperlink reference by appending a "_" at the end of the vertical bars, for example:
 
@@ -1238,7 +1238,7 @@ You can use the hyperlink reference by appending a "_" at the end of the vertica
   You can ask about your problem in |slack|_.
 
 .. |slack| replace:: **NEMO Slack**
-.. _slack: https://nemo.slack.com
+.. _slack: https://nemo.nemocommunity.com
 
 You can ask about your problem in |slack|_.
 
