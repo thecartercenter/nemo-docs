@@ -94,7 +94,7 @@ html_static_path = ['_static']
 
 html_favicon = "_static/img/favicon.png"
 
-html_logo = '_static/img/nemo-elmo-light.png'
+html_logo = '_static/img/light-NEMO-logo.png'
 html_theme_options = {
     'logo_only': True,
     'display_version': False,
