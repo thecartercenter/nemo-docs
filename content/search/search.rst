@@ -21,7 +21,7 @@ Responses menu have a specific filter component with multiple dropdowns where yo
 
 
 Free search box
---------------- 
+---------------
 
 The free search box is available on responses, questions, users, and SMS menu. Below is the search box from users menu.
 
@@ -33,7 +33,7 @@ Operators
 
 You can combine search terms with operators for a more accurate search.
 
-Operators in NEMO/ELMO are: **AND, OR, NOT**\ ( ! or -), **grouping** operator (parentheses), and **phrase** operator (“”).
+Operators in NEMO are: **AND, OR, NOT**\ ( ! or -), **grouping** operator (parentheses), and **phrase** operator (“”).
 
 .. list-table::
    :widths: auto
@@ -59,7 +59,7 @@ Qualifiers
 A qualifier is a word you add to an expression to specify where to
 search. Example:
 
-- **form: observation** within the responses menu will return all forms with the word **observation** in them. 
+- **form: observation** within the responses menu will return all forms with the word **observation** in them.
 - **type: long text** in the questions menu returns all questions of the long text type.
 
 Available qualifiers depends on the menu you are in. They are listed below:

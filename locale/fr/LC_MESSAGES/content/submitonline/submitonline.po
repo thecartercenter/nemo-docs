@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -22,11 +22,11 @@ msgid "7. Submitting data: Online"
 msgstr ""
 
 #: ../../content/submitonline/submitonline.rst:4
-msgid "Forms can be submitted to ELMO through three different platforms:"
+msgid "Forms can be submitted to NEMO through three different platforms:"
 msgstr ""
 
 #: ../../content/submitonline/submitonline.rst:6
-msgid "Online (Via the ELMO website)"
+msgid "Online (Via the NEMO website)"
 msgstr ""
 
 #: ../../content/submitonline/submitonline.rst:7
@@ -42,7 +42,7 @@ msgid "To submit a form online:"
 msgstr ""
 
 #: ../../content/submitonline/submitonline.rst:12
-msgid "Click the **Submit** menu on the main menu bar of ELMO"
+msgid "Click the **Submit** menu on the main menu bar of NEMO"
 msgstr ""
 
 #: ../../content/submitonline/submitonline.rst:13
@@ -91,4 +91,3 @@ msgstr ""
 #: ../../content/submitonline/submitonline.rst:28
 msgid "|reviewing responses 2 edited|"
 msgstr ""
-

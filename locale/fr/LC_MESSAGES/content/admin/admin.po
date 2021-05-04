@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../content/admin/admin.rst:16
 msgid ""
-"Before entering your settings on ELMO, you will need to set things up on "
+"Before entering your settings on NEMO, you will need to set things up on "
 "FrontlineCloud in order to obtain the Frontline API key."
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 #: ../../content/admin/admin.rst:32
 msgid ""
 "Target URL is the URL generated the Incoming SMS Token in the Settings "
-"panel of the ELMO Mission"
+"panel of the NEMO Mission"
 msgstr ""
 
 #: ../../content/admin/admin.rst:34
@@ -159,7 +159,7 @@ msgid "Select “Connect an external web service to your workspace”"
 msgstr ""
 
 #: ../../content/admin/admin.rst:58
-msgid "Name it something meaningful (e.g. “ELMO API”)"
+msgid "Name it something meaningful (e.g. “NEMO API”)"
 msgstr ""
 
 #: ../../content/admin/admin.rst:60
@@ -170,12 +170,12 @@ msgid ""
 msgstr ""
 
 #: ../../content/admin/admin.rst:64
-msgid "**II. ELMO:**"
+msgid "**II. NEMO:**"
 msgstr ""
 
 #: ../../content/admin/admin.rst:68
 msgid ""
-"In ELMO, you can establish multiple incoming and outgoing SMS numbers on "
+"In NEMO, you can establish multiple incoming and outgoing SMS numbers on "
 "different gateway services such as Twilio or Frontline. We will deal with"
 " the simplest case first, a single number for SMSes. In settings,"
 msgstr ""
@@ -282,4 +282,3 @@ msgid ""
 " corner of the screen. Check with FrontlineSMS for more information on "
 "these parameters."
 msgstr ""
-

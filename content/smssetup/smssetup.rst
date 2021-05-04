@@ -3,7 +3,7 @@
 SMS Provider Setup
 ==================================
 
-NEMO/ELMO needs to be synced with an SMS provider in order to use the SMS feature. Three options are available:
+NEMO needs to be synced with an SMS provider in order to use the SMS feature. Three options are available:
 
 - :ref:`frontline-sms`
 - :ref:`twilio-sms`
@@ -40,10 +40,10 @@ You should now be able to see the device you have previously set up.
   For more details check `Frontline documentation <https://frontlinecloud.zendesk.com/hc/en-us/articles/208115663-Creating-a-FrontlineSync-Connection-to-FrontlineCloud>`_.
 
 
-Synchronize FrontlineSMS with NEMO/ELMO
+Synchronize FrontlineSMS with NEMO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now that you have synchronized your Android device with FrontlineCloud, you will need to synchronize FrontlineCloud with NEMO/ELMO.
+Now that you have synchronized your Android device with FrontlineCloud, you will need to synchronize FrontlineCloud with NEMO.
 
 **Set up a new activity**
 
@@ -52,7 +52,7 @@ Now that you have synchronized your Android device with FrontlineCloud, you will
 3. Select :guilabel:`Forward to URL`.
 4. Type a name for your activity.
 5. Select :guilabel:`All inbound SMS`.
-6. To get the :guilabel:`Target URL`, get back to your NEMO/ELMO mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
+6. To get the :guilabel:`Target URL`, get back to your NEMO mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
 7. Make sure :guilabel:`HTTP Method` is set to **POST**.
 8. Now set the following key-value pairs:
 
@@ -71,7 +71,7 @@ Now that you have synchronized your Android device with FrontlineCloud, you will
 9. Click :guilabel:`Save`.
 
 .. image:: frontline-elmo-config.png
-   :alt: Frontline NEMO/ELMO config
+   :alt: Frontline NEMO config
 
 
 **Generate an API Key**
@@ -84,7 +84,7 @@ Now that you have synchronized your Android device with FrontlineCloud, you will
 
 A new row will appear on the screen with an API Key in the :guilabel:`Details`. We will need this API Key for the next step.
 
-**NEMO/ELMO setup**
+**NEMO setup**
 
 1. Click :guilabel:`Settings` menu.
 2. Add the SIM card number to the :guilabel:`Incoming Number(s)` field. If adding more than one number, separate the numbers with a comma.
@@ -148,7 +148,7 @@ Set up a Twilio phone number
 Create a new Messaging service
 """"""""""""""""""""""""""""""
 
-You need to create a new messaging service in order to forward all incoming SMSes to NEMO/ELMO, for this:
+You need to create a new messaging service in order to forward all incoming SMSes to NEMO, for this:
 
 1. Click :fa:`comment-alt` :guilabel:`Programmable SMS` on the left navigation.
 2. Click :guilabel:`SMS` on the left menu.
@@ -156,7 +156,7 @@ You need to create a new messaging service in order to forward all incoming SMSe
 4. Choose a name for the service and set the :guilabel:`use case` to Mixed.
 5. Click :guilabel:`Create`.
 6. Under Inbound Settings, check :guilabel:`PROCESS INBOUND MESSAGES`.
-7. To get the :guilabel:`REQUEST URL`, get back to your NEMO/ELMO mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
+7. To get the :guilabel:`REQUEST URL`, get back to your NEMO mission, click :guilabel:`Settings` then in the :guilabel:`Incoming SMS Token` section click :guilabel:`How do I use this?` and copy the URL that shows up in the dialog.
 8. Outbound Settings should be left blank.
 
 At the end you should have a configuration similar to this one:
@@ -170,10 +170,10 @@ At the end you should have a configuration similar to this one:
 
 
 
-NEMO/ELMO setup for Twilio
+NEMO setup for Twilio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In your NEMO/ELMO mission:
+In your NEMO mission:
 
 1. Click :guilabel:`Settings`.
 2. Add the phone number from which you will receive SMSes to :guilabel:`Incoming Number(s)` field. If adding more than one number, separate the numbers with a comma.
@@ -191,7 +191,7 @@ Generic SMS Adapter Settings
 
 If you are using a provider other than Twilio and FrontlineSMS you will need to set up a Generic SMS Adapter.
 
-1. Click :guilabel:`Settings` on your NEMO/ELMO mission.
+1. Click :guilabel:`Settings` on your NEMO mission.
 2. Make sure the :guilabel:`Default Outgoing Provider:` is set to :guilabel:`none`.
 3. In :guilabel:`Generic SMS Adapter Settings` set a JSON formatted configuration string for the generic adapter. Example :
 

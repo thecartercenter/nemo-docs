@@ -1,7 +1,7 @@
 ODK Collect
 ===========
 
-NEMO/ELMO forms can be submitted via Android devices with **ODK Collect**.
+NEMO forms can be submitted via Android devices with **ODK Collect**.
 `The ODK Collect App is available in the Google Play store <https://play.google.com/store/apps/details?id=org.odk.collect.android&hl=en>`_.
 
 Setup ODK Collect
@@ -15,8 +15,8 @@ Setup ODK Collect
 
 3.  Select :guilabel:`Server`.
 4.  Make sure :guilabel:`Type` is set to :guilabel:`ODK Aggregate`.
-5.  Type the :guilabel:`URL` of the mission, example https://example.getelmo.org/en/m/missionname.
-6. Type your NEMO/ELMO :guilabel:`Username` and :guilabel:`Password`.
+5.  Type the :guilabel:`URL` of the mission, example https://example.getnemo.org/en/m/missionname.
+6. Type your NEMO :guilabel:`Username` and :guilabel:`Password`.
 
 Download forms
 --------------
@@ -32,7 +32,7 @@ Forms must be downloaded to ODK Collect before they can be submitted. To downloa
 3. Press :guilabel:`Get Selected`.
 
 .. note::
-  When forms are updated in ELMO they need to be downloaded again to ODK Collect.
+  When forms are updated in NEMO they need to be downloaded again to ODK Collect.
 
 
 Submit forms
@@ -135,5 +135,5 @@ If you already have the QR code settings as an image:
 2. Select your QR code image.
 
 .. note::
-  
+
   For more details about Import/Export settings see `ODK Collect documentation <https://docs.opendatakit.org/collect-import-export/>`_.

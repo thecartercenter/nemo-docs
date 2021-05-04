@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The Carter Center
-# This file is distributed under the same license as the Elmo package.
+# This file is distributed under the same license as the NEMO package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Elmo 7.0\n"
+"Project-Id-Version: NEMO 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../content/features/features.rst:12
 msgid ""
-"Please note that you need an ELMO SMS gateway with SMS credit established"
+"Please note that you need an NEMO SMS gateway with SMS credit established"
 " before messages can be sent."
 msgstr ""
 
@@ -331,7 +331,7 @@ msgstr ""
 
 #: ../../content/features/features.rst:223
 msgid ""
-"Data sent to ELMO should be set up securely using HTTPS (**Administrators"
+"Data sent to NEMO should be set up securely using HTTPS (**Administrators"
 " take note!**). In addition, each physical device should also be secured."
 " Here are some security methods you might consider:"
 msgstr ""
@@ -604,7 +604,7 @@ msgstr ""
 #: ../../content/features/features.rst:378
 msgid ""
 "After the initial install of necessary programs on the device, such as "
-"ELMO software, device preparers can add security measures to protect "
+"NEMO software, device preparers can add security measures to protect "
 "against harmful applications."
 msgstr ""
 
@@ -715,7 +715,7 @@ msgid ""
 "In case you are worried about sensitive information you’ve collected and "
 "“what if I lose my device,” you may want to also consider removing any "
 "filled out forms on the ODK Collect app after they have been submitted "
-"and received by ELMO."
+"and received by NEMO."
 msgstr ""
 
 #: ../../content/features/features.rst:448
@@ -723,4 +723,3 @@ msgid ""
 "The “Delete After Send” option is available through ODK Collect settings."
 " For more information, please visit https://opendatakit.org/."
 msgstr ""
-

@@ -1,6 +1,6 @@
 OData via API
 =============
-The API works with any external application that supports the OData standard (e.g. PowerBI, ArcGIS, Tableau.)
+The API works with any external application that supports the OData standard (e.g. Power BI, ArcGIS, Tableau.)
 
 1. Click :guilabel:`Responses` menu
 2. Click :guilabel:`Export` and select :guilabel:`OData via API`

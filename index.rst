@@ -1,4 +1,4 @@
-.. Elmo documentation master file, created by
+.. NEMO documentation master file, created by
    sphinx-quickstart on Thu Nov 30 14:12:15 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -9,7 +9,7 @@
 NEMO Documentation
 =========================================
 
-NEMO is The Carter Center’s open-source data collection and reporting system. Equipped with NEMO, enumerators can submit evaluations of a process via Android devices, SMS, or directly online in real-time to field or mission headquarters. NEMO’s
+NEMO is The Carter Center’s open-source data collection and reporting system. Equipped with NEMO, enumerators can submit evaluations of a process via Android devices, SMS, or directly online in real-time to field or mission headquarters. NEMO's
 reporting system organizes enumerator findings, and is relied upon by The Carter Center missions around the globe to analyze and assess data.
 
 The open source license for NEMO is Apache 2.0. NEMO can be hosted on personal servers and users can control who has access to the data.

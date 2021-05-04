@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Elmo documentation build configuration file, created by
+# NEMO documentation build configuration file, created by
 # sphinx-quickstart on Thu Nov 30 14:12:15 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -46,8 +46,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'NEMO/ELMO Documentation'
-copyright = u'2019, The Carter Center. This document is licensed under a Creative Commons Attribution 4.0 International License'
+project = u'NEMO Documentation'
+copyright = u'2021, The Carter Center. This document is licensed under a Creative Commons Attribution 4.0 International License'
 author = u'The Carter Center'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -94,12 +94,12 @@ html_static_path = ['_static']
 
 html_favicon = "_static/img/favicon.png"
 
-html_logo = '_static/img/light-NEMO-logo.png'
+html_logo = '_static/img/nemo-light.png'
 html_theme_options = {
     'logo_only': True,
     'display_version': False,
 }
-html_title = "NEMO/ELMO Documentation"
+html_title = "NEMO Documentation"
 
 
 # Add custom CSS
@@ -123,7 +123,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Elmodoc'
+htmlhelp_basename = 'Nemodoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -150,7 +150,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Elmo.tex', u'NEMO/ELMO Documentation',
+    (master_doc, 'nemo.tex', u'NEMO Documentation',
      u'The Carter Center', 'manual'),
 ]
 
@@ -160,7 +160,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'elmo', u'NEMO/ELMO Documentation',
+    (master_doc, 'nemo', u'NEMO Documentation',
      [author], 1)
 ]
 
@@ -171,7 +171,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'NEMO/ELMO', u'NEMO/ELMO Documentation',
-     author, 'NEMO/ELMO', 'One line description of project.',
+    (master_doc, 'NEMO', u'NEMO Documentation',
+     author, 'NEMO', 'One line description of project.',
      'Miscellaneous'),
 ]

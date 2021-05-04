@@ -66,7 +66,7 @@ Types of questions
    * - Annotated Image
      - The image should be at most 5MB. Accepted formats are: jpg, png. You can add markup to the image.
    * - Signature
-     - Sign with a finger in ODK Collect or upload a signature image in NEMO/ELMO.
+     - Sign with a finger in ODK Collect or upload a signature image in NEMO.
    * - Sketch
      - Sketch an image with a finger.
    * - Barcode
@@ -84,8 +84,8 @@ Hints
 
 Hints are optional help texts used to provide additional instructions on the question.
 
-- On NEMO/ELMO desktop, click :fa:`info-circle` on the right of the question to see the hint.
-- On ODK Collect (NEMO/ELMO Android app), the hint will be shown below the question as follows:
+- On NEMO desktop, click :fa:`info-circle` on the right of the question to see the hint.
+- On ODK Collect (NEMO Android app), the hint will be shown below the question as follows:
 
 .. image:: hint-android.png
   :alt: hint Android
@@ -93,7 +93,7 @@ Hints are optional help texts used to provide additional instructions on the que
 Read-Only
 --------------
 
-The NEMO/ELMO development team is working on a read-only question type. In the meantime, you can
+The NEMO development team is working on a read-only question type. In the meantime, you can
 still create read-only text on your form (ODK forms only). To create read-only text:
 
 - Create a :guilabel:`Text` question.
@@ -130,7 +130,7 @@ Tags
 ----
 
 Tags are an easy way to organize information around a common keyword or
-theme. In NEMO/ELMO, questions may be tagged with keywords or descriptors,
+theme. In NEMO, questions may be tagged with keywords or descriptors,
 which may be used to find all of the questions with the same tag. Tags
 are also used in Reports to help sort information assigned to questions.
 
@@ -197,7 +197,7 @@ To edit display logic:
 Skip logic
 ^^^^^^^^^^
 
-On ODK Collect (NEMO/ELMO Android app), by default when you swipe left or click :fa:`arrow-right` you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
+On ODK Collect (NEMO Android app), by default when you swipe left or click :fa:`arrow-right` you will be redirected to the following question in the form. With the skip logic you can go to any question on the form if conditions are met.
 
 To edit skip logic:
 
