@@ -1,12 +1,12 @@
-# nemo-docs
+# NEMO docs
 
-Documentation for NEMO
+Documentation for [NEMO](https://github.com/thecartercenter/nemo/).
 
 ## Publishing
 
-To rebuild, just push commits to `master`. Read the Docs will pick them up automatically.
+To rebuild, just push commits to `main`. Read the Docs will pick them up automatically.
 
-Automatic deploys can be configured [here](https://readthedocs.org/dashboard/nemo/integrations/).
+Automatic deploys can be configured [here](https://readthedocs.org/dashboard/getnemo/integrations/).
 
 ## Development
 

@@ -3,13 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
+.. cssclass:: main-logo
 .. image:: _static/img/nemo-dark.png
+    :width: 250
+    :alt: NEMO logo
 
 NEMO Documentation
 =========================================
 
-NEMO is The Carter Center’s open-source data collection and reporting system. Equipped with NEMO, enumerators can submit evaluations of a process via Android devices, SMS, or directly online in real-time to field or mission headquarters. NEMO's
+NEMO is The Carter Center's open-source data collection and reporting system. Equipped with NEMO, enumerators can submit evaluations of a process via Android devices, SMS, or directly online in real-time to field or mission headquarters. NEMO's
 reporting system organizes enumerator findings, and is relied upon by The Carter Center missions around the globe to analyze and assess data.
 
 The open source license for NEMO is Apache 2.0. NEMO can be hosted on personal servers and users can control who has access to the data.
