@@ -34,7 +34,6 @@ import sphinx_fontawesome
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx_fontawesome',
-    'notfound.extension',
 ]
 
 notfound_context = {

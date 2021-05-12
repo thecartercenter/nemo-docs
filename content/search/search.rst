@@ -42,11 +42,11 @@ Operators in NEMO are: **AND, OR, NOT**\ ( ! or -), **grouping** operator (paren
    * - Operator
      - Description
    * - AND
-     - By default, all terms in the search must be matched. |br| For example, :guilabel:`voters ballots stations` is equivalent to :guilabel:`voters AND ballots AND stations`.
+     - By default, all terms in the search must be matched. |br| For example, :guilabel:`apples oranges bananas` is equivalent to :guilabel:`apples AND oranges AND bananas`.
    * - OR ( | )
-     - Matches when any of the terms match. |br| Example :guilabel:`Opening Form | Polling Form` returns matches that are :guilabel:`Opening Form` or :guilabel:`Polling Form`.
+     - Matches when any of the terms match. |br| Example :guilabel:`Household Form | Fruit Form` returns matches that are :guilabel:`Household Form` or :guilabel:`Fruit Form`.
    * - NOT (!= or -)
-     - Matches when the first term matches, but the second one does not. |br| Example: :guilabel:`form != Closing` returns the forms that are NOT Closing. |br| Another example: :guilabel:`ballot -box` matches any response with an answer containing the word ballot but NOT the word box.
+     - Matches when the first term matches, but the second one does not. |br| Example: :guilabel:`form != Household` returns the forms that are NOT Household. |br| Another example: :guilabel:`apple -oranges` matches any response with an answer containing the word apples but NOT the word oranges.
    * - (…)
      - Grouping parenthesis denotes the search terms boundaries. |br| Example: :guilabel:`(red | green | blue) pixel` is equivalent to :guilabel:`(red OR Green OR blue) AND pixel`.
    * - “…”
@@ -59,7 +59,7 @@ Qualifiers
 A qualifier is a word you add to an expression to specify where to
 search. Example:
 
-- **form: observation** within the responses menu will return all forms with the word **observation** in them.
+- **form: apples** within the responses menu will return all forms with the word **apples** in them.
 - **type: long text** in the questions menu returns all questions of the long text type.
 
 Available qualifiers depends on the menu you are in. They are listed below:
