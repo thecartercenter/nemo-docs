@@ -239,8 +239,10 @@ Text entered here will be pre-filled in the answer space (for ODK Collect only).
 to include the number of the current item in a repeat group.
 
 For example, entering ID: ``$Household-$!RepeatNum`` would pre-fill the answer with ID: 176-2 for the second person in household 176,
-assuming you have a question with code 'Household'. You can also enter an XPath expression by wrapping it with calc():
-``calc($VillageNum + 100 div 2)``
+assuming you have a question with code 'Household'.
+
+You can also enter an XPath expression by wrapping it with calc():``calc($VillageNum + 100 div 2)``
+If you need the expression to output the value of a selected option, add a colon and value to the question code: ``calc($likert1:value + $likert2:value)``
 
 Required, hidden, and disabled options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
