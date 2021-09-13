@@ -20,6 +20,9 @@ Create new option set
 
 :guilabel:`Options` Click :guilabel:`Add Option` to add a new option.
 
+For each option added, you can add a value and relevant translations.
+To access or perform calculations with the option values, please see the sections on :ref:`defaultanswer` and :ref:`xpath`.
+
 
 .. _multilevel:
 
@@ -76,11 +79,7 @@ Import option set with coordinates
 
 To upload an option set with coordinates:
 
-<<<<<<< HEAD
 1. Outside of NEMO/ELMO, create a CSV file (you can export from XLS to CSV from any standard spreadsheet software).
-=======
-1. Outside of NEMO, create a CSV or XLS file.
->>>>>>> change_names
 2. In the first row, include the name for each level as an individual column header with **Coordinates** as the last column (example: Province \| City \| District \| Coordinates ).
 3. Add the names of the options.
 4. In the column for **Coordinates**, include both latitude and longitude in decimal format separated by a comma (example 0.054396, 18.259688).

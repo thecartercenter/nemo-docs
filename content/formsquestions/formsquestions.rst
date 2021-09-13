@@ -170,7 +170,6 @@ The following features are only available for questions that are added to form.
 Display logic
 ^^^^^^^^^^^^^
 By default all questions are shown in the form. Display logic controls which question to show depending on conditions.
-Note if you would like to use advanced expressions such as XPath, you should use default answer to perform the calculation, and then use display logic on the default answer calculated value.
 
 .. image :: display-logic.png
   :alt: Display logic
@@ -193,6 +192,8 @@ To edit display logic:
 .. note::
 
   - Click :guilabel:`+ Add Condition` if you want to add another condition for the same question.
+  - If you would like to use advanced expressions such as XPath, you should use default answer to perform the calculation, and then use display logic on a separate question. See Default answer and XPath Expressions below.
+
 
 
 Skip logic
@@ -232,14 +233,18 @@ To edit constraints:
   - Constraints can only be added on previous questions.
   - When editing an Integer question type you can also add a constraint about the :guilabel:`Minimum` and :guilabel:`Maximum` value.
 
+  .. _defaultanswer:
 
 Default answer
 ^^^^^^^^^^^^^^
+
 Text entered here will be pre-filled in the answer space (for ODK Collect only).
 
 Previous answers:
 You can enter a ``$QuestionCode`` to include the value of a previous question.
-If the question has multiple options, use ``$QuestionCode:value``
+If the question has an option set and has values assigned to each option, you can use ``$QuestionCode:value`` to get the value of the answer.
+You can use the value to calculate a sum or average of the answers over multiple questions.
+Both of these types of expressions must be wrapped in a calc(). See the XPath expression section below for examples.
 
 Repeat groups:
 When using repeat groups, you can access the number of the current item in the repeat group by using ``$!RepeatNum``
@@ -259,7 +264,10 @@ Required, hidden, and disabled options
 - *Hidden*: Check :guilabel:`Hidden?` to hide question on the form but still collect default answer (ODK Collect only). For web and SMS forms, the question will behave as if disabled.
 - *Disabled*: Check :guilabel:`Disabled?` to hide the question and not collect anything.
 
-XPath Expressions
+
+.. _xpath:
+
+XPath expressions
 ^^^^^^^^^^^^^^^^^
 An XPath expression is a function, operator, or value from previous responses that are dynamically generated as the form is filled out.
 XPath is a query language used to perform operations on XLSForms (the form standard that ODK Collect uses). Currently, only the default answer field on a question supports XPath expressions when used with ODK Collect.
@@ -277,8 +285,8 @@ Complete documentation on XPath functions can be found `here <https://getodk.git
 
 *Conditionally display intervention*
 
-I want to display an intervention only if the sum of 5 likert questions is greater than 10.
+I want to display an intervention only if the sum of 2 likert questions is greater than 10.
 
 1. Create Likert questions and an option set with values set as a number.
 2. Create a question that calculates the score (e.g. put ``calc($likert1:value + $likert2:value)`` in the default answer.)
-3. Create the intervention question and use display logic to only show the question if the default answer is > 5.
+3. Create the intervention question and use display logic to only show the question if the default answer is > 2.
