@@ -54,7 +54,35 @@ Import standard option set
 Import new option set
 ---------------------
 
-Option Sets can be created with spreadsheet software like Excel, and uploaded directly into NEMO:
+Option Sets can be created with spreadsheet software like Excel, and uploaded directly into NEMO.
+You can import single level option sets with translations and multi-level option sets. Please note that multi-level option sets with translations are not supported.
+
+**Option sets with translations**
+
+1. Outside of NEMO, create a CSV or XLS file.
+
+2. In the first row, for each language you would like, put a language code in brackets for each column header and an optional `Value` column header.
+
+Example: occupation[en]|occupation[fr]|occupation[ht]|Value
+
+3. Add the translations of the options.
+
+.. image:: translations-import.png
+  :alt: Excel option set import with translations
+
+4. In NEMO, click :guilabel:`Option Set` menu.
+5. Click :guilabel:`Import New Option Set`.
+6. Choose a name for the option set.
+7. Choose the CSV file created in steps 1-3.
+8. Click :guilabel:`Import`.
+
+.. note::
+  * If you are importing values, the Value column header must be capitalized.
+  * Note that the name (in the example, occupation) next to the language in brackets is optional.
+
+
+
+**Multi-level option sets**
 
 1. Outside of NEMO, create a CSV or XLS file.
 2. In the first row, include the name for each level as an individual column header (example Company \| Department \| Name ).
