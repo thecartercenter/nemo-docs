@@ -33,8 +33,8 @@ To create a question:
 .. _question-types:
 
 
-Import questions
-----------------
+Import new questions
+--------------------
 Upload a CSV to import questions. Importing from a CSV is very useful for questions with many translations.
 
 1. Click :guilabel:`Questions` in the menu bar.
