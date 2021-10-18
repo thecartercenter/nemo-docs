@@ -32,6 +32,38 @@ To create a question:
 
 .. _question-types:
 
+
+Import questions
+----------------
+Upload a CSV to import questions. Importing from a CSV is very useful for questions with many translations.
+
+1. Click :guilabel:`Questions` in the menu bar.
+
+.. image:: import-questions.png
+  :alt: import questions link
+
+2. Click :guilabel:`Import from CSV`
+3. Click the :guilabel:`CSV template` link to download a CSV template to use in Excel or other spreadsheet software. Note that the file you upload must be CSV format.
+4. Upload the completed CSV file (description of columns below) and click :guilabel:`Import`.
+
+.. image:: import-questions-form.png
+  :alt: import questions form
+
+The format of the CSV columns are as follows:
+
++------+-------+-----------------+-----------+----------+-----------+-----------+
+| Code | QType | Option Set Name | Title[en] | Hint[en] | Title[fr] | Hint[fr]  |
++------+-------+-----------------+-----------+----------+-----------+-----------+
+
+* :guilabel:`Code` Code must be a short codename (between 2-20 characters). Should contain only letters and numbers, e.g. BallotBoxSealed, DepartTime.
+* :guilabel:`QType` The question type. The question types that are supported for importing questions are the following (must follow underscore case):
+  integer, select_one, select_multiple, text, long_text, decimal
+* :guilabel:`Option Set Name` If using a select_one or select_multiple question type, include an existing option set name.
+* :guilabel:`Title[en]` The title of the question in English or the default language of the mission. "en" represents the language code. Supported languages can be found in the mission settings where you can add or edit existing languages.
+* :guilabel:`Hint[en]` The hint of the question in English or the default language of the mission. Hints are optional.
+* :guilabel:`Title[fr]` Any additional languages that you would like to add (in this case French), should alternate with title and hints with the language shortcode in brackets. You can find view what languages are supported or add additional ones in the Mission settings.
+
+
 Types of questions
 ------------------
 
@@ -290,3 +322,12 @@ I want to display an intervention only if the sum of 2 likert questions is great
 1. Create Likert questions and an option set with values set as a number.
 2. Create a question that calculates the score (e.g. put ``calc($likert1:value + $likert2:value)`` in the default answer.)
 3. Create the intervention question and use display logic to only show the question if the default answer is > 2.
+
+*Using a Counter*
+While NEMO does not explicitly have a counter question type, you can access the number of an item within a repeat group.
+For example, you could put ``calc($Household-$!RepeatNum)`` in a default answer for a question. The answer would be with ID: 176-2 for the second person in household 176,
+assuming you have a question with code 'Household'.
+
+*Random Number Generator*
+
+I want to generate a random number to be associated with a response.
