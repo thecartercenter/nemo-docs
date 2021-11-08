@@ -64,6 +64,10 @@ The format of the CSV columns are as follows:
 * :guilabel:`Title[fr]` Any additional languages that you would like to add (in this case French), should alternate with title and hints with the language shortcode in brackets. You can find view what languages are supported or add additional ones in the Mission settings.
 
 
+.. note::
+  Uploaded CSV must be in UTF-8 format for proper language encoding. Microsoft excel does not by default export CSV with UTF-8 format. To explicitly export as UTF-8, please follow instructions `here <https://docs.workstars.com/en/latest/howto/save-csv-utf8.html/>`__.
+
+
 Types of questions
 ------------------
 
