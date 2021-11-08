@@ -332,6 +332,8 @@ While NEMO does not explicitly have a counter question type, you can access the 
 For example, you could put ``calc($Household-$!RepeatNum)`` in a default answer for a question. The answer would be with ID: 176-2 for the second person in household 176,
 assuming you have a question with code 'Household'.
 
-*Random Number Generator*
+*Random String Generator*
 
-I want to generate a random number to be associated with a response.
+I want to generate a random string to be associated with a response.
+
+1. Create a text question and put ``calc(uuid(8))`` in the default answer. The number parameter is the length of the string you wish to generate.
