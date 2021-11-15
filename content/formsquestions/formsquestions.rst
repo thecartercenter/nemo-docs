@@ -64,10 +64,6 @@ The format of the CSV columns are as follows:
 * :guilabel:`Title[fr]` Any additional languages that you would like to add (in this case French), should alternate with title and hints with the language shortcode in brackets. You can find view what languages are supported or add additional ones in the Mission settings.
 
 
-.. note::
-  Uploaded CSV must be in UTF-8 format for proper language encoding. Microsoft excel does not by default export CSV with UTF-8 format. To explicitly export as UTF-8, please follow instructions `here <https://docs.workstars.com/en/latest/howto/save-csv-utf8.html/>`__.
-
-
 Types of questions
 ------------------
 
@@ -327,12 +323,15 @@ I want to display an intervention only if the sum of 2 likert questions is great
 2. Create a question that calculates the score (e.g. put ``calc($likert1:value + $likert2:value)`` in the default answer.)
 3. Create the intervention question and use display logic to only show the question if the default answer is > 2.
 
+
 *Using a Counter*
+
 While NEMO does not explicitly have a counter question type, you can access the number of an item within a repeat group.
 For example, you could put ``calc($Household-$!RepeatNum)`` in a default answer for a question. The answer would be with ID: 176-2 for the second person in household 176,
 assuming you have a question with code 'Household'.
 
-*Random String Generator*
+
+*Generate a Random String*
 
 I want to generate a random string to be associated with a response.
 
