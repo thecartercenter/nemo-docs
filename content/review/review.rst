@@ -34,3 +34,12 @@ Enketo supports conditional logic, such as display/skip conditions, even when re
 
 .. image:: edit-response-enketo.png
   :alt: Edit response with Enketo
+
+Switching Between Editors
+-------------
+
+At any time, you can click the :guilabel:`View/Edit with Enketo` or :guilabel:`View/Edit with NEMO` link at the top of the page to switch between editors.
+
+Note that Enketo currently only supports responses that have an associated XML file, which means it cannot be used to view responses made through the NEMO web form.
+Similarly, if you edit a response with the NEMO web editor, those edits will not be visible in Enketo and you will see an earlier version of the form;
+in this case a warning will appear at the top of the screen as a reminder.
