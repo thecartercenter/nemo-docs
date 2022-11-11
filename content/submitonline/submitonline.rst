@@ -8,7 +8,7 @@ To submit a form online:
 
 1. Click :guilabel:`Submit` in the menu bar.
 2. Select a form from the drop down list.
-3. Fill the form.
+3. Fill the form using either the NEMO or Enketo editor.
 4. Click :guilabel:`Save`.
 
 .. image:: submit-form.png
@@ -24,8 +24,8 @@ Review a response
   :alt: Select response
 
 3. Make any necessary changes to the form.
-4. Check the box :guilabel:`Reviewed?`.
-5. You can optionaly add :guilabel:`Reviewer Notes`.
+4. Check the box :guilabel:`Reviewed?` (not available in Enketo).
+5. You can optionaly add :guilabel:`Reviewer Notes` (not available in Enketo).
 6. Click :guilabel:`Save`.
 
 .. image:: review-response.png
