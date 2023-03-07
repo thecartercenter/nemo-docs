@@ -53,14 +53,6 @@ Create a general form
 2. Click :guilabel:`Create New Form`.
 3. Type a name for the form in the text box.
 
-.. note::
-
-  By clicking on :guilabel:`More Settings` you can:
-
-  - Set a **Default Response Name** for the form.
-  - Check the :guilabel:`Allow Incomplete` box to allow forms to be submitted without required questions filled in.
-  - Check the :guilabel:`SMSable` box if you want to be able to receive responses to the form via SMS. For more information check :ref:`smsable`.
-
 
 **To add questions to the Form**:
 
@@ -70,6 +62,32 @@ Create a general form
   - Or create a new question to add to the Form (see :doc:`../formsquestions/formsquestions` section below for detailed instructions).
 
 2. Click :guilabel:`Save` when finished editing.
+
+
+**Form settings**:
+
+By clicking on :guilabel:`More Settings` you can:
+
+- Set a :guilabel:`Default Response Name` for the form:
+
+  Text entered here will be used as the default name of filled forms in ODK Collect only (it is not reflected in NEMO OData.) By default, the response name will be the title of the form.
+  
+  You can enter $QuestionCode to include the value of a question in the form. 
+  
+  For example, entering: `Survey for $VillageNum-$Household`
+  
+  might name the form: *Survey for 7-Smith*
+
+  This assumes you have questions with codes 'VillageNum' and 'Household'.
+
+  You can also enter an XPath calculate expression by wrapping it with calc(): `calc($VillageNum + 100 div 2)`
+
+
+
+- Check the :guilabel:`Allow Incomplete` box to allow forms to be submitted without required questions filled in.
+- Check the :guilabel:`SMSable` box if you want to be able to receive responses to the form via SMS. For more information check :ref:`smsable`.
+
+
 
 
 Create a standard form
