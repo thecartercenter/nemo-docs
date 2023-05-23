@@ -31,7 +31,7 @@ pytz==2019.3
 pyxform==0.15.1
 PyYAML==5.4
 recommonmark==0.6.0
-requests==2.26.0
+requests==2.31.0
 singledispatch==3.4.0.3
 six==1.13.0
 smmap==4.0.0
