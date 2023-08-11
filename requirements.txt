@@ -10,7 +10,7 @@ commonmark==0.9.1
 docutils==0.15.2
 FormEncode==2.0.0
 gitdb==4.0.7
-GitPython==3.1.30
+GitPython==3.1.32
 idna==2.8
 imagesize==1.2.0
 Jinja2==2.11.3
