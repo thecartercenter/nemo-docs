@@ -55,7 +55,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'NEMO Documentation'
-copyright = u'2021, The Carter Center. This document is licensed under a Creative Commons Attribution 4.0 International License'
+copyright = u'2024, The Carter Center. This document is licensed under a Creative Commons Attribution 4.0 International License'
 author = u'The Carter Center'
 
 # The version info for the project you're documenting, acts as replacement for
