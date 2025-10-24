@@ -109,6 +109,14 @@ html_theme_options = {
 }
 html_title = "NEMO Documentation"
 
+# Configure "View on GitHub" link
+html_context = {
+    "display_github": True,
+    "github_user": "thecartercenter",
+    "github_repo": "nemo-docs",
+    "github_version": "main",
+    "conf_py_path": "/",
+}
 
 # Add custom CSS
 def setup(app):
