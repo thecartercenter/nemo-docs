@@ -10,26 +10,24 @@ Automatic deploys can be configured [here](https://readthedocs.org/dashboard/get
 
 ## Development
 
-Local testing (on Apple Silicon with Python 3.8.X):
-As of 2/24/23, I couldn't get the pandas package to compile with Apple silicon, so defaulted to using the virtual arch x86 environment.
+### Requirements
 
-1. `arch -x86_64 zsh`
-1. run `arch` command to confirm you are now running i386
+1. Python 3 – Check if available in your terminal: `python3 --version` or `pyenv versions`
+
+### Setup
+
+(last verified on Mac 15 M1).
+
 1. `pip3 install pandas` to confirm it installs
-1. `pip3 install -r requirements.txt`
+1. `pip3 install -r requirements.txt` to install everything else
 1. `make html` (note you may have to add Python3.8 to your path for this to work)
-
-Local testing (verified on OSX with Python 3.7.6):
-
-1. `pip3 install -r requirements.txt`
-1. `make html`
 1. `open _build/html/index.html`
 
 More info at [Read the Docs](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html) docs.
 
 ### Upgrading dependencies
 
-1. Temporarily change `==` to `>=` in requirements.txt
+1. Temporarily change `==` to `>=` in `requirements.txt`
 1. `pip3 install -r requirements.txt --upgrade`
 1. `pip3 freeze > requirements.txt`
 
