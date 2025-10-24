@@ -91,7 +91,7 @@ platformdirs==3.0.0
 port-for==0.7.2
 prometheus-client==0.17.1
 prompt-toolkit==3.0.39
-protobuf==4.25.1
+protobuf==4.25.8
 psutil==5.9.5
 ptyprocess==0.7.0
 pure-eval==0.2.2
