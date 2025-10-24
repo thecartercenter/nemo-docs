@@ -16,11 +16,11 @@ Automatic deploys can be configured [here](https://readthedocs.org/dashboard/get
 
 ### Setup
 
-(last verified on Mac 15 M1).
+(Last verified on Mac v15 M1).
 
 1. `pip3 install pandas` to confirm it installs
 1. `pip3 install -r requirements.txt` to install everything else
-1. `make html` (note you may have to add Python3.8 to your path for this to work)
+1. `make html`
 1. `open _build/html/index.html`
 
 More info at [Read the Docs](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html) docs.
