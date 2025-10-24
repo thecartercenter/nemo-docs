@@ -1,6 +1,12 @@
 # Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
+#
+# NOTE for NEMO:
+#   There's a similar file that must also be edited at
+#   https://github.com/thecartercenter/nemo-docs-redirect/blob/main/.readthedocs.yaml
+#
+
 # Required
 version: 2
 
@@ -13,7 +19,7 @@ formats: all
 
 # Set the OS, Python version and other tools you might need
 build:
-  os: ubuntu-24.04
+  os: ubuntu-lts-latest
   tools:
     python: "3.12"
 

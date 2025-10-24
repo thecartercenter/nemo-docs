@@ -31,6 +31,8 @@ More info at [Read the Docs](https://docs.readthedocs.io/en/stable/intro/getting
 1. `pip3 install -r requirements.txt --upgrade`
 1. `pip3 freeze > requirements.txt`
 
+Note that the historical https://github.com/sassafrastech/nemo-docs-redirect may also need to be updated.
+
 ### Working with translations
 
 Once changes are made to the PO file in Transifex:
