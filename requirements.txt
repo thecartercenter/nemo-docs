@@ -165,4 +165,4 @@ websocket-client==1.6.1
 wheel==0.45.1
 widgetsnbextension==4.0.8
 xlrd==2.0.1
-zipp==3.16.2
+zipp==3.19.1
