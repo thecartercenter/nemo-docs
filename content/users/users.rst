@@ -1,6 +1,8 @@
 User Management
 ===============
 
+.. _user-roles:
+
 User permission levels
 ----------------------
 

@@ -62,6 +62,7 @@ The open source license for NEMO is Apache 2.0. NEMO can be hosted on personal s
    content/export/csv
    content/export/xml
    content/export/api
+   content/export/archive
 
 .. toctree::
    :hidden:
