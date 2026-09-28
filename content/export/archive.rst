@@ -77,6 +77,8 @@ Regardless of what tool you use to search, the following **index tags** (also ca
 
 For example, to find **all images uploaded by user X in response to form Y in March 2020** you could filter by **entityType = response attachment AND login = foo AND formId = abc-123 AND createdAt >= 2020-03 AND createdAt < 2020-04**.
 
+Note that Azure has some limits on allowable letters, so user logins like "clément" will be changed to "clement" for example.
+
 - All files:
     - createdAt (datetime string; refers to creation date within NEMO)
     - updatedAt (datetime string; refers to last modification within NEMO)
